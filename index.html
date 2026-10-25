@@ -1097,9 +1097,27 @@
     }
   }
   function loadConfigRaw(cb) {
-    if (STORE_MODE === "server" && syncReady()) {
+    if (STORE_MODE === "server" && syncReady() && !REMOTE_MODE) {
+      // 电脑端（本机服务）：始终拉服务器上的最新配置
       apiFetch("/工作台配置.json").then(function (r) { return r.ok ? r.text() : null; })
         .then(function (t) { cb(t); }).catch(function () { cb(null); });
+    } else if (REMOTE_MODE) {
+      // 手机端（Pages）：优先拉与页面同步部署的配置文件，防止浏览器里的旧布局配置压制新版
+      fetch("工作台配置.json", { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.text() : null; })
+        .then(function (t) {
+          if (t) {
+            try { JSON.parse(t); } catch (err) { t = null; }   // 容错：非 JSON 视为无效
+            if (t) { try { localStorage.setItem("wb_cfg_v1", t); } catch (e) {} }
+          }
+          if (!t) { try { t = localStorage.getItem("wb_cfg_v1"); } catch (e) {} }
+          cb(t);
+        })
+        .catch(function () {
+          var raw = null;
+          try { raw = localStorage.getItem("wb_cfg_v1"); } catch (err) {}
+          cb(raw);
+        });
     } else {
       var raw = null;
       try { raw = localStorage.getItem("wb_cfg_v1"); } catch (err) {}
