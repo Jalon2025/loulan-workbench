@@ -1,0 +1,522 @@
+{
+  "v": 1,
+  "regions": {
+    "create": [
+      {
+        "id": "tmvn5eqlv0sk",
+        "name": "写作一键启动",
+        "desc": "组合拉起写作环境",
+        "href": "",
+        "local": "write",
+        "web": "",
+        "installed": true,
+        "icon": "🚀"
+      },
+      {
+        "id": "tmvn5eqlv1sl",
+        "name": "WorkBuddy",
+        "desc": "公众号写作助手",
+        "href": "",
+        "local": "workbuddy",
+        "web": "",
+        "installed": true,
+        "icon": "icons/workbuddy.png"
+      },
+      {
+        "id": "tmvn5eqlv231",
+        "name": "微信公众平台",
+        "desc": "图文发布与数据",
+        "href": "https://mp.weixin.qq.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/weixin.png"
+      },
+      {
+        "id": "tmvn5eqlv3sb",
+        "name": "头条号后台",
+        "desc": "文章视频与收益",
+        "href": "https://mp.toutiao.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/toutiao.png"
+      },
+      {
+        "id": "tmvn5eqlv4rt",
+        "name": "知乎创作者",
+        "desc": "回答、文章与想法",
+        "href": "https://www.zhihu.com/creator",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/zhihu.png"
+      },
+      {
+        "id": "tmvn5eqlv5fg",
+        "name": "mdnice",
+        "desc": "公众号一键排版",
+        "href": "https://editor.mdnice.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/mdnice.png"
+      },
+      {
+        "id": "tmvn5eqlv69f",
+        "name": "135编辑器",
+        "desc": "公众号模板排版",
+        "href": "https://www.135editor.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/bd135.png"
+      },
+      {
+        "id": "newrank",
+        "name": "新榜",
+        "desc": "爆款文章与账号数据",
+        "href": "https://www.newrank.cn",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "📊"
+      },
+      {
+        "id": "yiban",
+        "name": "壹伴",
+        "desc": "公众号运营增强",
+        "href": "https://yiban.io",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🔌"
+      },
+      {
+        "id": "tfoldermvn81zyi",
+        "name": "稿件文件夹",
+        "desc": "01 公众号内容更新",
+        "href": "file:///D:/04%20WorkBuddy_Project/01%20%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "📁"
+      }
+    ],
+    "video": [
+      {
+        "id": "tmvn5eqlv7fp",
+        "name": "剪映专业版",
+        "desc": "剪辑·自动字幕",
+        "href": "",
+        "local": "jianying",
+        "web": "https://www.capcut.cn",
+        "installed": true,
+        "icon": "icons/jianying.png"
+      },
+      {
+        "id": "tmvn5eqlv8gq",
+        "name": "即梦 AI",
+        "desc": "AI生图生视频",
+        "href": "https://jimeng.jianying.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🪄"
+      },
+      {
+        "id": "tmvn5eqlv9i",
+        "name": "ScreenToGif",
+        "desc": "录屏转GIF",
+        "href": "",
+        "local": "screentogif",
+        "web": "",
+        "installed": true,
+        "icon": "icons/screentogif.png"
+      },
+      {
+        "id": "tmvn5eqlvaee",
+        "name": "OBS Studio",
+        "desc": "高清录屏直播",
+        "href": "https://obsproject.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/obs.png"
+      },
+      {
+        "id": "tmvn5eqlvbuj",
+        "name": "视频号助手",
+        "desc": "剪映成片分发",
+        "href": "https://channels.weixin.qq.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/weixin.png"
+      },
+      {
+        "id": "zhvideo",
+        "name": "腾讯智影",
+        "desc": "数字人·文本配音",
+        "href": "https://zenvideo.qq.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🎬"
+      }
+    ],
+    "fun": [
+      {
+        "id": "tmvn5eqlvcca",
+        "name": "百度网盘",
+        "desc": "资源存储与备份",
+        "href": "",
+        "local": "baidu_pan",
+        "web": "https://pan.baidu.com",
+        "installed": true,
+        "icon": "icons/baidu_pan.png"
+      },
+      {
+        "id": "tmvn5eqlvdwj",
+        "name": "迅雷云盘",
+        "desc": "离线下载追剧",
+        "href": "https://pan.xunlei.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/xunlei.png"
+      },
+      {
+        "id": "tmvn5eqlvedr",
+        "name": "阿里云盘",
+        "desc": "不限速观影",
+        "href": "https://www.alipan.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/alipan.png"
+      },
+      {
+        "id": "tmvn5eqlvfy8",
+        "name": "PotPlayer",
+        "desc": "本地万能播放",
+        "href": "https://potplayer.daum.net",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/potplayer.png"
+      },
+      {
+        "id": "tbilimvn8s9wy",
+        "name": "哔哩哔哩",
+        "desc": "B站视频社区",
+        "href": "https://www.bilibili.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/bilibili.png"
+      },
+      {
+        "id": "tdymvn8s9wy",
+        "name": "抖音",
+        "desc": "短视频浏览",
+        "href": "https://www.douyin.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/douyin.png"
+      },
+      {
+        "id": "netease",
+        "name": "网易云音乐",
+        "desc": "背景音乐与歌单",
+        "href": "https://music.163.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🎶"
+      }
+    ],
+    "ai": [
+      {
+        "id": "tmvn5eqlvgmt",
+        "name": "豆包",
+        "desc": "问答与写作",
+        "href": "",
+        "local": "doubao",
+        "web": "https://www.doubao.com",
+        "installed": true,
+        "icon": "icons/doubao.png"
+      },
+      {
+        "id": "tmvn5eqlvhqy",
+        "name": "通义千问",
+        "desc": "长文档与PPT",
+        "href": "https://www.tongyi.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "☁️"
+      },
+      {
+        "id": "tmvn5eqlvi5i",
+        "name": "腾讯元宝",
+        "desc": "微信生态搜索",
+        "href": "https://yuanbao.tencent.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🧧"
+      },
+      {
+        "id": "tmvn5eqlvjhx",
+        "name": "ChatGPT",
+        "desc": "综合与英文",
+        "href": "https://chatgpt.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🌍"
+      },
+      {
+        "id": "deepseek",
+        "name": "DeepSeek",
+        "desc": "长思考与代码",
+        "href": "https://chat.deepseek.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🐳"
+      },
+      {
+        "id": "kimi",
+        "name": "Kimi",
+        "desc": "超长上下文对话",
+        "href": "https://kimi.moonshot.cn",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🌙"
+      },
+      {
+        "id": "tmvn5eqlvkmc",
+        "name": "TRAE",
+        "desc": "AI 编程 IDE",
+        "href": "",
+        "local": "trae",
+        "web": "https://www.trae.cn",
+        "installed": true,
+        "icon": "icons/trae.png"
+      },
+      {
+        "id": "tmvn5eqlvl16",
+        "name": "ZCode",
+        "desc": "终端自动化Agent",
+        "href": "",
+        "local": "zcode",
+        "web": "",
+        "installed": true,
+        "icon": "icons/zcode.png"
+      }
+    ],
+    "work": [
+      {
+        "id": "tmvn5eqlvmbr",
+        "name": "飞书",
+        "desc": "文档·表格·知识库",
+        "href": "",
+        "local": "feishu",
+        "web": "https://www.feishu.cn",
+        "installed": true,
+        "icon": "icons/feishu.png"
+      },
+      {
+        "id": "tmvn5eqlvnkc",
+        "name": "飞书妙记",
+        "desc": "会议转写总结",
+        "href": "https://www.feishu.cn/product/minutes",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/feishu.png"
+      },
+      {
+        "id": "tmvn5eqlvook",
+        "name": "腾讯 ima",
+        "desc": "微信生态知识库",
+        "href": "",
+        "local": "ima",
+        "web": "https://ima.qq.com",
+        "installed": true,
+        "icon": "icons/ima.png"
+      },
+      {
+        "id": "tmvn5eqlvpyg",
+        "name": "Obsidian",
+        "desc": "本地双链笔记",
+        "href": "https://obsidian.md",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/obsidian.png"
+      },
+      {
+        "id": "yuque",
+        "name": "语雀",
+        "desc": "在线文档知识库",
+        "href": "https://www.yuque.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "📘"
+      }
+    ],
+    "chat": [
+      {
+        "id": "tmvn5eqlvq4f",
+        "name": "微信",
+        "desc": "工作沟通主阵地",
+        "href": "",
+        "local": "weixin",
+        "web": "",
+        "installed": true,
+        "icon": "icons/weixin.png"
+      },
+      {
+        "id": "tmvn5eqlvr1l",
+        "name": "QQ",
+        "desc": "大文件传输",
+        "href": "",
+        "local": "qq",
+        "web": "",
+        "installed": true,
+        "icon": "icons/qq.png"
+      },
+      {
+        "id": "tmvn5eqlvs5o",
+        "name": "Chrome",
+        "desc": "插件生态最全",
+        "href": "",
+        "local": "chrome",
+        "web": "",
+        "installed": true,
+        "icon": "icons/chrome.png"
+      },
+      {
+        "id": "tmvn5eqlvtjw",
+        "name": "Edge",
+        "desc": "系统自带浏览器",
+        "href": "",
+        "local": "edge",
+        "web": "",
+        "installed": true,
+        "icon": "icons/edge.png"
+      },
+      {
+        "id": "tmvn5eqlvu9v",
+        "name": "今日头条",
+        "desc": "热榜资讯选题",
+        "href": "https://www.toutiao.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/toutiao.png"
+      },
+      {
+        "id": "weibo",
+        "name": "微博",
+        "desc": "热搜榜看热点",
+        "href": "https://weibo.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🅆"
+      }
+    ],
+    "extra": [
+      {
+        "id": "tmvn5eqlvvky",
+        "name": "Everything",
+        "desc": "全盘文件秒搜",
+        "href": "https://www.voidtools.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/everything.png"
+      },
+      {
+        "id": "tmvn5eqlvwkk",
+        "name": "uTools",
+        "desc": "快捷启动插件",
+        "href": "https://u.tools",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🚀"
+      },
+      {
+        "id": "tmvn5eqlvxyn",
+        "name": "PixPin",
+        "desc": "截图贴图OCR",
+        "href": "https://pixpin.cn",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/pixpin.png"
+      },
+      {
+        "id": "tmvn5eqlvywo",
+        "name": "沉浸式翻译",
+        "desc": "网页双语对照",
+        "href": "https://immersivetranslate.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "🈯"
+      },
+      {
+        "id": "tmvn5eqlvzxw",
+        "name": "Quicker",
+        "desc": "一键动作库",
+        "href": "https://getquicker.net",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/quicker.png"
+      },
+      {
+        "id": "tmvn5eqlv10ji",
+        "name": "坚果云",
+        "desc": "多设备同步",
+        "href": "https://www.jianguoyun.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "icons/jianguoyun.png"
+      },
+      {
+        "id": "snipaste",
+        "name": "Snipaste",
+        "desc": "截图贴图神器",
+        "href": "https://www.snipaste.com",
+        "local": "",
+        "web": "",
+        "installed": false,
+        "icon": "✂️"
+      }
+    ]
+  },
+  "stars": [
+    "tmvn5eqlv0sk",
+    "tmvn5eqlv1sl",
+    "tmvn5eqlv231",
+    "tmvn5eqlv3sb",
+    "tmvn5eqlv4rt",
+    "tmvn5eqlv5fg",
+    "tmvn5eqlvgmt",
+    "tmvn5eqlvmbr",
+    "tmvn5eqlvq4f",
+    "tbilimvn8s9wy",
+    "tdymvn8s9wy"
+  ]
+}
