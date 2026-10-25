@@ -1027,6 +1027,15 @@
   // SYNC_MODE：file:// 直开时若探测到本机服务在跑，也升级为 server（速记/目标可同步）
   var STORE_MODE = (location.protocol === "http:" || location.protocol === "https:") ? "server" : "local";
   var REMOTE_MODE = STORE_MODE === "server" && location.hostname !== "127.0.0.1" && location.hostname !== "localhost" && location.hostname !== "";
+  // 手机形态判定（布局与交互语义，与 REMOTE_MODE 同步语义解耦）：
+  // 电脑浏览器访问在线地址时 REMOTE_MODE=true 但 PHONE_MODE=false → 桌面布局，本地程序磁贴可见、不强制创作台；
+  // 真手机（窄屏 / 触摸优先）才走 mode-remote 适配。窗口拉窄到 900px 以下也会进入手机布局（便于模拟）。
+  var PHONE_MODE = REMOTE_MODE && (function () {
+    try {
+      if (window.matchMedia && matchMedia("(pointer: coarse)").matches && window.innerWidth < 1100) return true;
+    } catch (e) {}
+    return window.innerWidth < 900;
+  })();
   var SYNC_MODE = STORE_MODE;
   // 同步通道：lan = 工作台服务（同 WiFi 实时）| gh = GitHub Gist（异地轮询）| none = 不可用
   var CHAN = "none";
@@ -1141,7 +1150,8 @@
     var el = document.getElementById("storeMode");
     if (!el) return;
     if (CHAN === "gh") el.textContent = "云端模式：速记 / 目标经 GitHub Gist 同步（约 45 秒轮询）";
-    else if (REMOTE_MODE) el.textContent = "手机模式：与电脑实时同步（同一 WiFi）";
+    else if (PHONE_MODE) el.textContent = "手机模式：与电脑实时同步（同一 WiFi）";
+    else if (REMOTE_MODE) el.textContent = "远程访问：经在线地址打开（同一 WiFi 下自动走局域网同步）";
     else if (SYNC_MODE === "server") {
       el.textContent = STORE_MODE === "server"
         ? "存储：工作台配置.json（服务模式，多浏览器共享）"
@@ -1168,7 +1178,7 @@
     if (!el) return;
     var n = 0, local = 0;
     document.querySelectorAll(".region .tile:not(.add-tile)").forEach(function (t) {
-      if (REMOTE_MODE && (t.hasAttribute("data-local") || (t.getAttribute("href") || "").indexOf("file:") === 0)) return;
+    if (PHONE_MODE && (t.hasAttribute("data-local") || (t.getAttribute("href") || "").indexOf("file:") === 0)) return;
       n++;
       if (t.hasAttribute("data-local")) local++;
     });
@@ -2259,7 +2269,7 @@
   function showGhGate(need) {
     var sec = document.getElementById("ghSec");
     if (sec) sec.classList.toggle("gh-need", !!need);
-    if (need && REMOTE_MODE && STORE_MODE === "server") switchView("studio");
+    if (need && PHONE_MODE && STORE_MODE === "server") switchView("studio");
   }
 
   /* ============================================================
@@ -2729,10 +2739,10 @@
 
   // 初始化：导航与视图 → 创作台数据 → 布局 → 异步同步
   buildNav();
-  if (REMOTE_MODE) document.body.classList.add("mode-remote");
+  if (PHONE_MODE) document.body.classList.add("mode-remote");
   var lastView = "studio";
   try { lastView = localStorage.getItem("wb_lastview_v1") || "studio"; } catch (e) {}
-  switchView(REMOTE_MODE ? "studio" : lastView);
+  switchView(PHONE_MODE ? "studio" : lastView);
   loadSyncState();
   loadGoals();
   loadNotes();
