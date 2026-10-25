@@ -145,6 +145,8 @@
   .region h2 { font-size: 14px; letter-spacing: 0.5px; white-space: nowrap; }
   .r-hint { margin-left: auto; font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   @media (max-width: 640px) { .r-hint { display: none; } }
+  .r-desc { font-size: 12px; color: var(--muted); margin: -2px 0 10px; line-height: 1.7; }
+  @media (max-width: 640px) { .r-desc { font-size: 11.5px; margin-bottom: 8px; } }
   .region .tile { background: var(--bg); }
 
   /* ===== 磁贴 ===== */
@@ -635,6 +637,7 @@
     <!-- ✍️ 写作与发布 -->
     <section class="region view" id="create" data-view="create">
       <div class="r-head"><h2>✍️ 写作与发布</h2><span class="r-hint">WorkBuddy 起草 → mdnice 排版 → 三平台发布</span></div>
+      <p class="r-desc">「楼兰的AI实战笔记」生产线：从初稿到公众号 / 头条 / 知乎三端分发的完整链路；新榜找爆款、壹伴管运营。每周三 / 周六各一篇，发布进度在左侧「创作台」自动跟踪。</p>
       <div class="grid">
         <div class="tile installed" data-local="write" tabindex="0" role="link" title="一键启动写作环境：WorkBuddy → TRAE → 稿件文件夹 → 微信公众平台 → 微信文件传输助手">
           <span class="t-ico"><span class="fb">🚀</span></span>
@@ -664,6 +667,14 @@
           <span class="t-ico"><span class="fb">🧩</span><img src="icons/bd135.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">135编辑器</span><span class="t-desc">公众号模板排版</span></span>
         </a>
+        <a class="tile" href="https://www.newrank.cn" target="_blank" rel="noopener" title="新榜：公众号 / 短视频账号数据、爆款文章与榜单查询，选题调研和竞品分析用">
+          <span class="t-ico"><span class="fb">📊</span></span>
+          <span class="t-body"><span class="t-name">新榜</span><span class="t-desc">爆款文章与账号数据</span></span>
+        </a>
+        <a class="tile" href="https://yiban.io" target="_blank" rel="noopener" title="壹伴：公众号运营增强插件，排版素材、数据看板、违规检测">
+          <span class="t-ico"><span class="fb">🔌</span></span>
+          <span class="t-body"><span class="t-name">壹伴</span><span class="t-desc">公众号运营增强</span></span>
+        </a>
         <a class="tile" href="file:///D:/04%20WorkBuddy_Project/01%20%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0" target="_blank" title="打开本地文件夹：D:\04 WorkBuddy_Project\01 公众号内容更新">
           <span class="t-ico"><span class="fb">📁</span></span>
           <span class="t-body"><span class="t-name">稿件文件夹</span><span class="t-desc">01 公众号内容更新</span></span>
@@ -674,6 +685,7 @@
     <!-- 🎬 视频创作 -->
     <section class="region" id="video">
       <div class="r-head"><h2>🎬 视频创作</h2><span class="r-hint">即梦出素材 → 剪映成片 → 视频号分发</span></div>
+      <p class="r-desc">即梦出 AI 素材、剪映成片、智影补数字人与配音；ScreenToGif / OBS 负责教程录屏，成品分发视频号与 B 站。</p>
       <div class="grid">
         <div class="tile installed" data-local="jianying" data-web="https://www.capcut.cn" tabindex="0" role="link" title="点击启动本机剪映：自动字幕、曲库素材、一键模板；工程存「03-视频创作/剪映工程」">
           <span class="t-ico"><span class="fb">🎞️</span><img src="icons/jianying.png" alt="" loading="lazy" onerror="this.remove()"></span>
@@ -696,12 +708,17 @@
           <span class="t-ico"><span class="fb">📺</span><img src="icons/weixin.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">视频号助手</span><span class="t-desc">剪映成片分发</span></span>
         </a>
+        <a class="tile" href="https://zenvideo.qq.com" target="_blank" rel="noopener" title="腾讯智影：AI 数字人、文本配音、智能字幕，补上即梦之外的成片能力">
+          <span class="t-ico"><span class="fb">🎬</span></span>
+          <span class="t-body"><span class="t-name">腾讯智影</span><span class="t-desc">数字人·文本配音</span></span>
+        </a>
       </div>
     </section>
 
     <!-- 🍿 影音娱乐 -->
     <section class="region" id="fun">
       <div class="r-head"><h2>🍿 影音娱乐</h2><span class="r-hint">网盘看片，PotPlayer 播本地</span></div>
+      <p class="r-desc">网盘找片、PotPlayer 播本地、B 站抖音刷碎片时间；写稿和剪片时挂上网易云歌单。</p>
       <div class="grid">
         <div class="tile installed" data-local="baidu_pan" data-web="https://pan.baidu.com" tabindex="0" role="link" title="点击启动本机百度网盘；重要文件建议开自动备份">
           <span class="t-ico"><span class="fb">🔗</span><img src="icons/baidu_pan.png" alt="" loading="lazy" onerror="this.remove()"></span>
@@ -728,12 +745,17 @@
           <span class="t-ico"><span class="fb">🎵</span><img src="icons/douyin.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">抖音</span><span class="t-desc">短视频浏览</span></span>
         </a>
+        <a class="tile" href="https://music.163.com" target="_blank" rel="noopener" title="网易云音乐：写稿 / 剪视频时的背景音乐与歌单">
+          <span class="t-ico"><span class="fb">🎶</span></span>
+          <span class="t-body"><span class="t-name">网易云音乐</span><span class="t-desc">背景音乐与歌单</span></span>
+        </a>
       </div>
     </section>
 
     <!-- 🤖 AI 助手 -->
     <section class="region" id="ai">
       <div class="r-head"><h2>🤖 AI 助手</h2><span class="r-hint">问答找大模型，写代码找 ZCode / TRAE</span></div>
+      <p class="r-desc">问答与长文档交给大模型（DeepSeek / Kimi / 豆包 / 元宝），写代码和自动化交给 TRAE / ZCode。</p>
       <div class="grid">
         <div class="tile installed" data-local="doubao" data-web="https://www.doubao.com" tabindex="0" role="link" title="点击启动本机豆包：日常问答、写作润色、语音对话">
           <span class="t-ico"><span class="fb">🥟</span><img src="icons/doubao.png" alt="" loading="lazy" onerror="this.remove()"></span>
@@ -752,6 +774,14 @@
           <span class="t-ico"><span class="fb">🌍</span><img src="icons/chatgpt.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">ChatGPT</span><span class="t-desc">综合与英文</span></span>
         </a>
+        <a class="tile" href="https://chat.deepseek.com" target="_blank" rel="noopener" title="DeepSeek：长思考推理与代码能力强，日常主力对话模型之一">
+          <span class="t-ico"><span class="fb">🐳</span></span>
+          <span class="t-body"><span class="t-name">DeepSeek</span><span class="t-desc">长思考与代码</span></span>
+        </a>
+        <a class="tile" href="https://kimi.moonshot.cn" target="_blank" rel="noopener" title="Kimi：超长上下文对话，专利文档、长论文一口气读完">
+          <span class="t-ico"><span class="fb">🌙</span></span>
+          <span class="t-body"><span class="t-name">Kimi</span><span class="t-desc">超长上下文对话</span></span>
+        </a>
         <div class="tile installed" data-local="trae" data-web="https://www.trae.cn" tabindex="0" role="link" title="点击启动本机 TRAE：字节 AI 编程 IDE，Builder 模式一句话生成小项目">
           <span class="t-ico"><span class="fb">🛠️</span><img src="icons/trae.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">TRAE</span><span class="t-desc">AI 编程 IDE</span></span>
@@ -767,6 +797,7 @@
     <!-- 📊 工作与知识 -->
     <section class="region" id="work">
       <div class="r-head"><h2>📊 工作与知识</h2><span class="r-hint">经验记飞书，资料进 ima</span></div>
+      <p class="r-desc">飞书管文档与会议，ima 攒微信生态资料，Obsidian / 语雀做长期知识沉淀。</p>
       <div class="grid">
         <div class="tile installed" data-local="feishu" data-web="https://www.feishu.cn" tabindex="0" role="link" title="点击启动本机飞书：云文档、多维表格；建议建「工作经验」「AI 实践」两份周报模板">
           <span class="t-ico"><span class="fb">📗</span><img src="icons/feishu.png" alt="" loading="lazy" onerror="this.remove()"></span>
@@ -786,12 +817,17 @@
           <span class="t-ico"><span class="fb">🪨</span><img src="icons/obsidian.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">Obsidian</span><span class="t-desc">本地双链笔记</span></span>
         </a>
+        <a class="tile" href="https://www.yuque.com" target="_blank" rel="noopener" title="语雀：阿里在线文档与知识库，结构化沉淀、对外分享方便">
+          <span class="t-ico"><span class="fb">📘</span></span>
+          <span class="t-body"><span class="t-name">语雀</span><span class="t-desc">在线文档知识库</span></span>
+        </a>
       </div>
     </section>
 
     <!-- 💬 沟通与资讯 -->
     <section class="region" id="chat">
       <div class="r-head"><h2>💬 沟通与资讯</h2><span class="r-hint">微信沟通，头条看热点</span></div>
+      <p class="r-desc">微信 / QQ 是沟通主通道，Chrome 配沉浸式翻译打开外网资料；头条、微博热榜提供选题线索。</p>
       <div class="grid">
         <div class="tile installed" data-local="weixin" tabindex="0" role="link" title="点击启动本机微信：工作与读者沟通主阵地；公众号文章收藏可转存 ima">
           <span class="t-ico"><span class="fb">💚</span><img src="icons/weixin.png" alt="" loading="lazy" onerror="this.remove()"></span>
@@ -813,12 +849,17 @@
           <span class="t-ico"><span class="fb">🔥</span><img src="icons/toutiao.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">今日头条</span><span class="t-desc">热榜资讯选题</span></span>
         </a>
+        <a class="tile" href="https://weibo.com" target="_blank" rel="noopener" title="微博热搜榜：看全民热点，追突发事件类选题">
+          <span class="t-ico"><span class="fb">🅆</span></span>
+          <span class="t-body"><span class="t-name">微博</span><span class="t-desc">热搜榜看热点</span></span>
+        </a>
       </div>
     </section>
 
     <!-- ⚡ 效率工具 -->
     <section class="region" id="extra">
       <div class="r-head"><h2>⚡ 效率工具</h2><span class="r-hint">把重复操作变成一键</span></div>
+      <p class="r-desc">把重复操作变一键：Everything 秒搜文件，PixPin / Snipaste 截图贴图，沉浸式翻译读外网，Quicker 攒动作。</p>
       <div class="grid">
         <a class="tile" href="https://www.voidtools.com" target="_blank" rel="noopener" title="全盘文件秒搜，几十万文件也能瞬间找到，免费必装">
           <span class="t-ico"><span class="fb">🔍</span><img src="icons/everything.png" alt="" loading="lazy" onerror="this.remove()"></span>
@@ -843,6 +884,10 @@
         <a class="tile" href="https://www.jianguoyun.com" target="_blank" rel="noopener" title="增量同步盘，工作文件多设备实时同步，免费额度够用">
           <span class="t-ico"><span class="fb">🔄</span><img src="icons/jianguoyun.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <span class="t-body"><span class="t-name">坚果云</span><span class="t-desc">多设备同步</span></span>
+        </a>
+        <a class="tile" href="https://www.snipaste.com" target="_blank" rel="noopener" title="Snipaste：截图即时贴回屏幕，对照素材写稿、核对参数不用来回切窗">
+          <span class="t-ico"><span class="fb">✂️</span></span>
+          <span class="t-body"><span class="t-name">Snipaste</span><span class="t-desc">截图贴图神器</span></span>
         </a>
       </div>
     </section>
