@@ -38,6 +38,7 @@
     }
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }   /* 保证 hidden 属性压过 flex/grid 等布局规则 */
   body {
     font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", system-ui, sans-serif;
     background: var(--bg); color: var(--text); line-height: 1.4;
@@ -70,6 +71,26 @@
     color: var(--muted); cursor: pointer; font-family: inherit;
   }
   .edit-btn:hover { color: var(--primary); border-color: var(--primary); }
+
+  /* ===== 顶栏「同步」入口菜单（唤回被隐藏的同步面板） ===== */
+  .sync-menu { position: relative; }
+  #syncMenuBtn { position: relative; }
+  #syncMenuBtn.has-dot::after {           /* 隐藏期间若云端通道需要关注，加提醒小点 */
+    content: ""; position: absolute; top: -3px; right: -3px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #d97706; border: 1.5px solid var(--bg);
+  }
+  .sync-pop {
+    position: absolute; top: calc(100% + 6px); right: 0; z-index: 80;
+    min-width: 240px; padding: 10px 12px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .22);
+  }
+  .sp-title { font-size: 11.5px; color: var(--muted); margin-bottom: 4px; }
+  .sp-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .sp-row .tbtn { min-height: 32px; padding: 4px 14px; font-size: 12px; }
+  .sp-name { font-size: 12.5px; color: var(--text); }
+  .sp-hint { font-size: 11px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
 
   /* ===== 工作流通栏 ===== */
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }
@@ -377,6 +398,10 @@
     .t-web { padding: 6px 8px; font-size: 11px; }
     .note-item .n-del { min-height: 32px; padding: 6px 10px; font-size: 12px; }
     .pool-sec > summary { padding: 10px 0; min-height: 44px; align-items: center; }
+    .sp-row .tbtn { min-height: 40px; padding: 6px 16px; }
+    .gh-sec .sec-x { min-height: 42px; padding: 6px 10px; }
+    .lan-bar .lan-hide { min-height: 36px; padding: 6px 10px; }
+    .sync-pop { min-width: 248px; }
   }
 
   /* ===== 双端同步：手机模式 / 同步状态 / 令牌门 ===== */
@@ -390,6 +415,12 @@
   .lan-bar b { color: var(--text); font-family: ui-monospace, Consolas, monospace; font-size: 12px; }
   .lan-bar .tbtn { min-height: 26px; padding: 2px 8px; font-size: 11.5px; }
   .lan-bar .lan-tip { width: 100%; }
+  .lan-bar .lan-hide {
+    margin-left: auto; border: none; background: transparent; cursor: pointer;
+    color: var(--muted); font-size: 13px; line-height: 1;
+    min-height: 28px; padding: 4px 7px; border-radius: 6px; font-family: inherit;
+  }
+  .lan-bar .lan-hide:hover { color: var(--text); background: rgba(127, 127, 127, .16); }
   .sync-gate {
     border: 1px dashed var(--amber, #d97706); border-radius: 12px;
     padding: 14px; margin-bottom: 12px; background: var(--amber-soft, rgba(217, 119, 6, 0.08));
@@ -418,6 +449,12 @@
   }
   .gh-hint { font-size: 12.5px; color: var(--muted); margin-top: 8px; line-height: 1.7; }
   .gh-hint b { color: var(--text); font-family: ui-monospace, Consolas, monospace; font-weight: 600; }
+  .gh-sec .sec-x {
+    border: none; background: transparent; cursor: pointer; color: var(--muted);
+    font-size: 13px; line-height: 1; min-height: 30px; padding: 4px 7px;
+    border-radius: 6px; font-family: inherit;
+  }
+  .gh-sec .sec-x:hover { color: var(--text); background: rgba(127, 127, 127, .16); }
 
   /* ===== 页脚 ===== */
   footer { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border);
@@ -437,6 +474,21 @@
           <button id="resetBtn" type="button">↺ 恢复默认</button>
           <input type="file" id="impFile" accept=".json,application/json" hidden>
         </span>
+        <div class="sync-menu" id="syncMenu">
+          <button id="syncMenuBtn" class="edit-btn" type="button" aria-haspopup="true" title="同步入口：控制「手机同步」栏与「云端同步」区的显示">📶 同步</button>
+          <div class="sync-pop" id="syncPop" hidden>
+            <div class="sp-title">同步入口</div>
+            <div class="sp-row" id="spLanRow">
+              <span class="sp-name">📱 手机同步提示</span>
+              <button id="spLanBtn" class="tbtn" type="button">隐藏</button>
+            </div>
+            <div class="sp-row">
+              <span class="sp-name">☁️ 云端同步 · GitHub</span>
+              <button id="spGhBtn" class="tbtn" type="button">隐藏</button>
+            </div>
+            <div class="sp-hint">两处均可彻底隐藏，需要时在这里重新显示。</div>
+          </div>
+        </div>
         <button id="editBtn" type="button" class="edit-btn">✏️ 编辑</button>
         <div class="clock"><b id="time">--:--</b><span id="dateStr"></span><span id="greet"></span></div>
       </div>
@@ -489,6 +541,7 @@
       <span>📱 手机同步：<b id="lanUrl">…</b><button id="lanUrlCopy" class="tbtn" type="button">复制地址</button></span>
       <span>令牌：<b id="lanToken">…</b><button id="lanTokenCopy" class="tbtn" type="button">复制令牌</button></span>
       <span class="lan-tip">手机连同一 WiFi 后访问该地址，首次打开粘贴令牌即可；此后速记与目标两秒内互相同步。</span>
+      <button id="lanBarHide" class="lan-hide" type="button" title="隐藏此栏，需要时点顶栏「📶 同步」重新显示">✕</button>
     </div>
 
     <!-- 令牌门（手机端首次打开时出现） -->
@@ -511,6 +564,7 @@
           <button id="ghToggleBtn" class="tbtn" type="button">展开</button>
           <button id="ghSaveBtn" class="tbtn primary" type="button">保存并连接</button>
           <button id="ghOffBtn" class="tbtn" type="button" hidden>停用</button>
+          <button id="ghHideBtn" class="sec-x" type="button" title="隐藏此区域，需要时点顶栏「📶 同步」重新显示">✕</button>
         </span>
       </div>
       <div id="ghBody" hidden>
@@ -1758,6 +1812,7 @@
     if (input && c.token && !input.value) input.placeholder = "已保存令牌（粘贴新令牌可替换）";
     if (sec) sec.classList.toggle("gh-need", !(c.enabled && c.token) && CHAN !== "lan");
     ghApplyPref();
+    updateSyncMenu();
   }
 
   // —— 云端同步区：默认收起；需要关注（未配置且无局域网）时自动展开；手动选择被记住 ——
@@ -1775,6 +1830,8 @@
   function ghApplyPref() {
     var sec = document.getElementById("ghSec");
     var gate = document.getElementById("syncGate");
+    if (ghSecHidden()) { if (sec) sec.hidden = true; return; }   // 用户已彻底隐藏：尊重选择，不自动展开
+    if (sec) sec.hidden = false;
     var need = !!(sec && sec.classList.contains("gh-need"));
     var gateBusy = !!(gate && !gate.hidden);   // 局域网令牌门打开时优先引导填局域网令牌
     var pref = ghSecPref();
@@ -1785,6 +1842,71 @@
     var body = document.getElementById("ghBody");
     ghSetOpen(!!(body && body.hidden), true);
   });
+
+  // —— 「手机同步」栏 / 「云端同步」区：可彻底隐藏（选择被记住），顶栏「📶 同步」随时唤回 ——
+  var GH_HIDE_KEY = "wb_ghhidden_v1";   // "1"=彻底隐藏云端同步区
+  var LAN_BAR_KEY = "wb_lanbar_v1";     // "1"=用户隐藏了手机同步栏
+  function ghSecHidden() { try { return localStorage.getItem(GH_HIDE_KEY) === "1"; } catch (e) { return false; } }
+  function lanBarUserHidden() { try { return localStorage.getItem(LAN_BAR_KEY) === "1"; } catch (e) { return false; } }
+  var lanBarAvail = false;              // 局域网信息是否已拉到（决定取消隐藏时能否真正显示）
+  function ghSetHidden(hidden, remember) {
+    try { if (remember) localStorage.setItem(GH_HIDE_KEY, hidden ? "1" : "0"); } catch (e) {}
+    var sec = document.getElementById("ghSec");
+    if (sec) sec.hidden = hidden;
+    if (!hidden) ghApplyPref();         // 重新显示时恢复之前的展开/收起状态
+    updateSyncMenu();
+  }
+  function setLanBarUserHidden(hidden) {
+    try { localStorage.setItem(LAN_BAR_KEY, hidden ? "1" : "0"); } catch (e) {}
+    var bar = document.getElementById("lanBar");
+    if (bar) bar.hidden = hidden ? true : !lanBarAvail;
+    updateSyncMenu();
+  }
+  function updateSyncMenu() {
+    var lanRow = document.getElementById("spLanRow");
+    var lanBtn = document.getElementById("spLanBtn");
+    var ghBtn = document.getElementById("spGhBtn");
+    var menuBtn = document.getElementById("syncMenuBtn");
+    var sec = document.getElementById("ghSec");
+    var bar = document.getElementById("lanBar");
+    if (lanRow) lanRow.hidden = REMOTE_MODE;                       // 手机端没有「手机同步栏」，不显示该行
+    if (lanBtn && bar) lanBtn.textContent = bar.hidden ? "显示" : "隐藏";
+    if (ghBtn && sec) ghBtn.textContent = sec.hidden ? "显示" : "隐藏";
+    if (menuBtn && sec) menuBtn.classList.toggle("has-dot", ghSecHidden() && sec.classList.contains("gh-need"));
+  }
+  document.getElementById("lanBarHide").addEventListener("click", function () {
+    setLanBarUserHidden(true);
+    toast("已隐藏手机同步提示，需要时点顶栏「📶 同步」");
+  });
+  document.getElementById("ghHideBtn").addEventListener("click", function () {
+    ghSetHidden(true, true);
+    toast("已隐藏云端同步区，需要时点顶栏「📶 同步」");
+  });
+  document.getElementById("spLanBtn").addEventListener("click", function () {
+    var bar = document.getElementById("lanBar");
+    setLanBarUserHidden(!(bar && bar.hidden));                  // 当前显示→隐藏；当前隐藏→显示
+  });
+  document.getElementById("spGhBtn").addEventListener("click", function () {
+    var sec = document.getElementById("ghSec");
+    ghSetHidden(!(sec && sec.hidden), true);
+  });
+  (function () {                                                    // 顶栏「同步」弹出菜单
+    var menu = document.getElementById("syncMenu");
+    var btn = document.getElementById("syncMenuBtn");
+    var pop = document.getElementById("syncPop");
+    if (!menu || !btn || !pop) return;
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      pop.hidden = !pop.hidden;
+      if (!pop.hidden) updateSyncMenu();
+    });
+    document.addEventListener("click", function (e) {
+      if (!pop.hidden && !menu.contains(e.target)) pop.hidden = true;
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !pop.hidden) pop.hidden = true;
+    });
+  })();
 
   function setSyncStatus(s) {
     var el = document.getElementById("syncStatus");
@@ -1933,16 +2055,18 @@
   // —— 电脑端「手机同步」信息栏 ——
   function loadLanInfo() {
     var bar = document.getElementById("lanBar");
-    if (REMOTE_MODE || CHAN !== "lan") { if (bar) bar.hidden = true; return; }
+    if (REMOTE_MODE || CHAN !== "lan") { lanBarAvail = false; if (bar) bar.hidden = true; updateSyncMenu(); return; }
     apiFetch("/api/info")
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (info) {
-        if (!info || !info.lan || !info.lanUrl) { if (bar) bar.hidden = true; return; }
-        if (bar) bar.hidden = false;
+        if (!info || !info.lan || !info.lanUrl) { lanBarAvail = false; if (bar) bar.hidden = true; updateSyncMenu(); return; }
+        lanBarAvail = true;
+        if (bar) bar.hidden = lanBarUserHidden();
         var u = document.getElementById("lanUrl");
         if (u) u.textContent = info.lanUrl;
         var t = document.getElementById("lanToken");
         if (t) t.textContent = info.token || "（见服务窗口输出或 启动器\\局域网令牌.txt）";
+        updateSyncMenu();
       })
       .catch(function () {});
   }
