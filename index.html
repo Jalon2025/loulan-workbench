@@ -675,10 +675,10 @@
           <span class="t-ico"><span class="fb">🔌</span></span>
           <span class="t-body"><span class="t-name">壹伴</span><span class="t-desc">公众号运营增强</span></span>
         </a>
-        <a class="tile" href="file:///D:/04%20WorkBuddy_Project/01%20%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0" target="_blank" title="打开本地文件夹：D:\04 WorkBuddy_Project\01 公众号内容更新">
+        <div class="tile" data-local="folder-drafts" tabindex="0" role="link" title="点击打开本地文件夹：D://04 WorkBuddy_Project\01 公众号内容更新（经本机 workbench: 协议，不受浏览器 file:// 限制）">
           <span class="t-ico"><span class="fb">📁</span></span>
           <span class="t-body"><span class="t-name">稿件文件夹</span><span class="t-desc">01 公众号内容更新</span></span>
-        </a>
+        </div>
       </div>
     </section>
 
@@ -1681,6 +1681,64 @@
     }
   }
 
+  // 镜像专用合并（只增不删）：ghMirror 从 Gist 拉数据时使用。
+  // 与 applyRemote 的区别：不做「远端消失且本地曾推送 → 视为远端已删」判定——
+  // Gist 镜像可能暂时停留在旧状态，此时若按权威语义删除，会把本地刚写的速记误删并全量推空。
+  // 删除只认 applyTombstones 的墓碑（ghMirror 已单独调用）。
+  function ghMergeAdditive(remote) {
+    var byId = {}, i, j, changed = false;
+    for (i = 0; i < remote.length; i++) if (remote[i] && remote[i].id) byId[remote[i].id] = remote[i];
+    for (i = 0; i < remote.length; i++) {
+      var r = remote[i];
+      if (r.kind !== "note" || !r.data) continue;
+      var nid = r.id.slice(5), local = null;
+      for (j = 0; j < notes.length; j++) if (notes[j].id === nid) local = notes[j];
+      var rUpd = r.upd || 0;
+      if (!local) {
+        notes.unshift({ id: nid, text: String(r.data.text || "").slice(0, 2000), at: r.data.at || rUpd, upd: rUpd });
+        syncState.pushed["note:" + nid] = rUpd;
+        changed = true;
+      } else if ((local.upd || 0) < rUpd) {
+        local.text = String(r.data.text || "").slice(0, 2000);
+        local.at = r.data.at || local.at;
+        local.upd = rUpd;
+        syncState.pushed["note:" + nid] = rUpd;
+        changed = true;
+      }
+    }
+    ["wed", "sat"].forEach(function (k) {
+      var sid = goalSyncId(k), r = byId[sid], g = goals[k];
+      if (r && r.data) {
+        var rUpd = r.upd || 0;
+        if (!g) {
+          goals[k] = { done: true, at: r.data.at || rUpd, title: r.data.title || "", source: r.data.source || "manual", upd: rUpd };
+          syncState.pushed[sid] = rUpd;
+          changed = true;
+        } else if ((g.upd || g.at || 0) < rUpd) {
+          goals[k] = { done: true, at: r.data.at || g.at, title: r.data.title || "", source: r.data.source || g.source, upd: rUpd };
+          syncState.pushed[sid] = rUpd;
+          changed = true;
+        }
+      }
+    });
+    for (i = 0; i < remote.length; i++) {
+      var rc = remote[i];
+      if (rc.kind !== "consumed" || !rc.data) continue;
+      var merged = false, key;
+      for (key in inboxConsumed) if (!rc.data[key]) { rc.data[key] = inboxConsumed[key]; merged = true; }
+      inboxConsumed = rc.data;
+      if ((rc.upd || 0) > consumedUpd) consumedUpd = rc.upd;
+      if (merged) consumedUpd = Date.now();
+      if (consumedUpd === (rc.upd || 0)) syncState.pushed["consumed"] = consumedUpd;
+      changed = true;
+    }
+    if (changed) {
+      saveNotes(); saveGoals(); saveConsumed(); saveSyncState();
+      notes.sort(function (a, b) { return (b.at || 0) - (a.at || 0); });
+      refreshAll();
+    }
+  }
+
   function pushDirty() {
     var c = collectSync();
     if (!c.items.length && !c.del.length) return Promise.resolve();
@@ -1789,8 +1847,10 @@
       return ghFetch("/gists/" + encodeURIComponent(id)).then(ghJson).then(function (g) {
         var f = g.files && g.files[GH_FILE];
         if (!f || !f.content) return { items: [], del: [] };
+        // ghPush 写的是明文 JSON；此处按明文解析，失败再兜底 base64（兼容旧版本写入的数据）
         var doc = null;
-        try { doc = JSON.parse(b64ToUtf8(f.content)); } catch (e) {}
+        try { doc = JSON.parse(f.content); } catch (e) {}
+        if (!doc || !Array.isArray(doc.items)) { try { doc = JSON.parse(b64ToUtf8(f.content)); } catch (e2) {} }
         if (!doc || !Array.isArray(doc.items)) return { items: [], del: [] };
         return { items: doc.items, del: Array.isArray(doc.del) ? doc.del : [] };
       });
@@ -1869,6 +1929,27 @@
         else setSyncStatus("offline");
         ghRefreshUi();
       });
+  }
+  // Gist 镜像桥接：局域网同步成功后，如已配置 GitHub 通道，把 Gist 数据合并进来并回推。
+  // 解决两条通道各写各的的问题——手机经 gh 写的速记由此进入电脑视野，电脑端新数据也镜像到 Gist 供异地手机读取。
+  function ghMirror() {
+    if (!ghReady()) return Promise.resolve();
+    return ghPull()
+      .then(function (doc) {
+        ghMergeAdditive(doc.items || []);
+        applyTombstones(doc.del || []);
+        syncState.lastPull = Date.now();
+        var items = ghCollectAll(), del = ghDelList(doc.del);
+        return ghPush(items, del).then(function () {
+          items.forEach(function (it) { syncState.pushed[it.id] = it.upd; });
+          syncState.lastPush = Date.now();
+          saveSyncState();
+          // 反登记 pushed：让本次从 Gist 采用的数据也补推到局域网服务器，保持两份存储一致
+          items.forEach(function (it) { delete syncState.pushed[it.id]; });
+          return pushDirty();
+        });
+      })
+      .catch(function () {});   // 镜像失败不影响局域网同步主链路
   }
   function ghRefreshUi() {
     var c = ghCfg();
@@ -2008,7 +2089,7 @@
         if (!res || !res.ok) throw new Error("pull rejected");
         applyRemote(res.items || []);
         syncState.lastPull = Date.now();
-        return pushDirty();
+        return pushDirty().then(function () { return ghMirror(); });
       })
       .then(function () {
         syncState.lastOk = Date.now();
