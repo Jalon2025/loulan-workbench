@@ -96,8 +96,8 @@
         "id": "tfoldermvn81zyi",
         "name": "稿件文件夹",
         "desc": "01 公众号内容更新",
-        "href": "file:///D:/04%20WorkBuddy_Project/01%20%E5%85%AC%E4%BC%97%E5%8F%B7%E5%86%85%E5%AE%B9%E6%9B%B4%E6%96%B0",
-        "local": "",
+        "href": "",
+        "local": "folder-drafts",
         "web": "",
         "installed": false,
         "icon": "📁"
