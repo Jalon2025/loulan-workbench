@@ -366,6 +366,11 @@
                border: 1px solid var(--border); border-radius: 6px; background: var(--card);
                color: var(--muted); cursor: pointer; font-family: inherit; }
   .note-item .n-del:hover { color: var(--red); border-color: var(--red); }
+  .note-item .n-top { float: right; margin-left: 8px; font-size: 11px; padding: 3px 8px; min-height: 24px;
+               border: 1px solid var(--border); border-radius: 6px; background: var(--card);
+               color: var(--muted); cursor: pointer; font-family: inherit; }
+  .note-item .n-top:hover { color: var(--primary); border-color: var(--primary); }
+  .note-item .n-top.done { color: var(--green); border-color: var(--green); cursor: default; }
   .note-empty { font-size: 12.5px; color: var(--muted); padding: 4px 2px; }
 
   /* ===== 选题池（折叠） ===== */
@@ -1400,9 +1405,12 @@
     text = String(text || "").trim();
     if (!text) return false;
     var now = Date.now();
-    notes.unshift({ id: "nt" + now.toString(36) + Math.floor(Math.random() * 1296).toString(36), text: text.slice(0, 2000), at: now, upd: now });
+    var n = { id: "nt" + now.toString(36) + Math.floor(Math.random() * 1296).toString(36), text: text.slice(0, 2000), at: now, upd: now };
+    notes.unshift(n);
     if (notes.length > 500) notes = notes.slice(0, 500);
     saveNotes();
+    // 带 #选题 / #topic 标签的速记自动进选题池；速记本身保留
+    if (noteHasTopicTag(text)) noteToTopic(n);
     return true;
   }
   function renderNotes() {
@@ -1423,9 +1431,16 @@
           var del = document.createElement("button");
           del.type = "button"; del.className = "n-del"; del.textContent = "删除";
           del.setAttribute("data-note-del", n.id);
+          var toT = document.createElement("button");
+          var taken = topicTaken(n.id);
+          toT.type = "button";
+          toT.className = "n-top" + (taken ? " done" : "");
+          toT.textContent = taken ? "已入池" : "转选题";
+          toT.title = taken ? "这条速记已经进选题池了" : "把这条速记复制成一条选题（速记本身保留）";
+          if (!taken) toT.setAttribute("data-note-topic", n.id);
           var body = document.createElement("span");
           body.innerHTML = linkify(n.text);
-          item.appendChild(time); item.appendChild(del); item.appendChild(body);
+          item.appendChild(time); item.appendChild(del); item.appendChild(toT); item.appendChild(body);
           box.appendChild(item);
         });
       }
@@ -1503,6 +1518,17 @@
     if ((e.ctrlKey || e.metaKey) && e.key === "Enter") { e.preventDefault(); submitNote(); }
   });
   document.getElementById("noteList").addEventListener("click", function (e) {
+    var toT = e.target.closest("button[data-note-topic]");
+    if (toT) {
+      var tid = toT.getAttribute("data-note-topic"), tn = null;
+      for (var i = 0; i < notes.length; i++) if (notes[i].id === tid) tn = notes[i];
+      if (tn && noteToTopic(tn)) {
+        var ps = document.getElementById("poolSec");
+        if (ps) ps.open = true;
+        refreshAll(); scheduleSync(); toast("已转入选题池，速记保留");
+      }
+      return;
+    }
     var btn = e.target.closest("button[data-note-del]");
     if (!btn) return;
     var id = btn.getAttribute("data-note-del");
@@ -1584,6 +1610,8 @@
   }
   function noteSyncId(n) { return "note:" + n.id; }
   function goalSyncId(key) { return "goal:" + (goals.weekStart || "wk") + ":" + key; }
+  // 选题同步 id：由速记转来的用 noteId 做键——两端各自转同一条速记时是同一个 id，不会变成两条重复选题
+  function topicSyncId(t) { return "topic:" + (t.fromNote ? "n:" + t.fromNote : t.id); }
 
   // 收集本地待推送项：items = 非空且未同步的项，del = 待传播的删除
   function collectSync() {
@@ -1591,6 +1619,17 @@
     for (i = 0; i < notes.length; i++) {
       var n = notes[i], sid = noteSyncId(n), upd = n.upd || n.at || 0;
       if (syncState.pushed[sid] !== upd) items.push({ id: sid, kind: "note", upd: upd, data: { text: n.text, at: n.at || 0 } });
+    }
+    for (i = 0; i < todayItems.length; i++) {
+      var t = todayItems[i];
+      if (t.sample) continue;   // 示例数据只留本地，不上云
+      var tsid = topicSyncId(t), tupd = t.upd || t.createdAt || 0;
+      if (syncState.pushed[tsid] !== tupd) {
+        items.push({ id: tsid, kind: "topic", upd: tupd, data: {
+          title: t.title, platform: t.platform || "其他", due: t.due || "",
+          status: t.status || "todo", doneAt: t.doneAt || 0, createdAt: t.createdAt || 0
+        } });
+      }
     }
     ["wed", "sat"].forEach(function (k) {
       var sid = goalSyncId(k), g = goals[k];
@@ -1662,6 +1701,43 @@
         changed = true;
       }
     });
+    // —— 选题池（LWW；远端消失且本地曾推送 → 视为远端已删） ——
+    for (i = 0; i < remote.length; i++) {
+      var tr = remote[i];
+      if (tr.kind !== "topic" || !tr.data || !tr.data.title) continue;
+      var tsid = tr.id, tUpd = tr.upd || 0, lt = null;
+      for (j = 0; j < todayItems.length; j++) if (topicSyncId(todayItems[j]) === tsid) lt = todayItems[j];
+      var st = tr.data.status;
+      var norm = (st === "writing" || st === "done") ? st : "todo";
+      if (!lt) {
+        todayItems.push({
+          id: newTodayId(), title: String(tr.data.title).slice(0, 80),
+          platform: tr.data.platform || "其他", due: tr.data.due || todayStr(),
+          status: norm, doneAt: tr.data.doneAt || 0, sample: false,
+          fromNote: tsid.indexOf("topic:n:") === 0 ? tsid.slice(8) : undefined,
+          createdAt: tr.data.createdAt || tUpd, upd: tUpd
+        });
+        syncState.pushed[tsid] = tUpd;
+        changed = true;
+      } else if ((lt.upd || 0) < tUpd) {
+        lt.title = String(tr.data.title).slice(0, 80);
+        lt.platform = tr.data.platform || "其他";
+        lt.due = tr.data.due || lt.due;
+        lt.status = norm;
+        lt.doneAt = tr.data.doneAt || 0;
+        lt.upd = tUpd;
+        syncState.pushed[tsid] = tUpd;
+        changed = true;
+      }
+    }
+    todayItems = todayItems.filter(function (t) {
+      if (t.sample) return true;
+      var tsid = topicSyncId(t);
+      if (byId[tsid] || syncState.pushed[tsid] === undefined) return true;
+      delete syncState.pushed[tsid];
+      changed = true;
+      return false;
+    });
     // —— 收集箱已读（单调递增 → 并集合并，不丢标记） ——
     for (i = 0; i < remote.length; i++) {
       var rc = remote[i];
@@ -1675,7 +1751,7 @@
       changed = true;
     }
     if (changed) {
-      saveNotes(); saveGoals(); saveConsumed(); saveSyncState();
+      saveNotes(); saveGoals(); saveToday(); saveConsumed(); saveSyncState();
       notes.sort(function (a, b) { return (b.at || 0) - (a.at || 0); });
       refreshAll();
     }
@@ -1732,8 +1808,37 @@
       if (consumedUpd === (rc.upd || 0)) syncState.pushed["consumed"] = consumedUpd;
       changed = true;
     }
+    // 选题池（只增不删；删除只认墓碑）
+    for (i = 0; i < remote.length; i++) {
+      var tr = remote[i];
+      if (tr.kind !== "topic" || !tr.data || !tr.data.title) continue;
+      var tsid = tr.id, tUpd = tr.upd || 0, lt = null;
+      for (j = 0; j < todayItems.length; j++) if (topicSyncId(todayItems[j]) === tsid) lt = todayItems[j];
+      var st = tr.data.status;
+      var norm = (st === "writing" || st === "done") ? st : "todo";
+      if (!lt) {
+        todayItems.push({
+          id: newTodayId(), title: String(tr.data.title).slice(0, 80),
+          platform: tr.data.platform || "其他", due: tr.data.due || todayStr(),
+          status: norm, doneAt: tr.data.doneAt || 0, sample: false,
+          fromNote: tsid.indexOf("topic:n:") === 0 ? tsid.slice(8) : undefined,
+          createdAt: tr.data.createdAt || tUpd, upd: tUpd
+        });
+        syncState.pushed[tsid] = tUpd;
+        changed = true;
+      } else if ((lt.upd || 0) < tUpd) {
+        lt.title = String(tr.data.title).slice(0, 80);
+        lt.platform = tr.data.platform || "其他";
+        lt.due = tr.data.due || lt.due;
+        lt.status = norm;
+        lt.doneAt = tr.data.doneAt || 0;
+        lt.upd = tUpd;
+        syncState.pushed[tsid] = tUpd;
+        changed = true;
+      }
+    }
     if (changed) {
-      saveNotes(); saveGoals(); saveConsumed(); saveSyncState();
+      saveNotes(); saveGoals(); saveToday(); saveConsumed(); saveSyncState();
       notes.sort(function (a, b) { return (b.at || 0) - (a.at || 0); });
       refreshAll();
     }
@@ -1863,6 +1968,14 @@
       var n = notes[i], upd = n.upd || n.at || 0;
       items.push({ id: noteSyncId(n), kind: "note", upd: upd, data: { text: n.text, at: n.at || 0 } });
     }
+    for (i = 0; i < todayItems.length; i++) {
+      var t = todayItems[i];
+      if (t.sample) continue;
+      items.push({ id: topicSyncId(t), kind: "topic", upd: t.upd || t.createdAt || 0, data: {
+        title: t.title, platform: t.platform || "其他", due: t.due || "",
+        status: t.status || "todo", doneAt: t.doneAt || 0, createdAt: t.createdAt || 0
+      } });
+    }
     ["wed", "sat"].forEach(function (k) {
       var g = goals[k];
       if (g) items.push({ id: goalSyncId(k), kind: "goal", upd: g.upd || g.at || 0, data: { done: true, at: g.at || 0, title: g.title || "", source: g.source || "manual" } });
@@ -1901,9 +2014,13 @@
           var k = parts[2];
           if ((k === "wed" || k === "sat") && goals[k]) { goals[k] = null; delete syncState.pushed[sid]; changed = true; }
         }
+      } else if (sid.indexOf("topic:") === 0) {
+        var tbefore = todayItems.length;
+        todayItems = todayItems.filter(function (t) { return topicSyncId(t) !== sid; });
+        if (todayItems.length !== tbefore) { delete syncState.pushed[sid]; changed = true; }
       }
     }
-    if (changed) { saveNotes(); saveGoals(); saveSyncState(); refreshAll(); }
+    if (changed) { saveNotes(); saveGoals(); saveToday(); saveSyncState(); refreshAll(); }
   }
   function ghSync() {
     if (!ghReady()) { setSyncStatus("ghneed"); ghRefreshUi(); return Promise.resolve(); }
@@ -2357,6 +2474,7 @@
    * 选题池（独立数据层：localStorage wb_today_v1，不占用布局配置）
    * ============================================================ */
   var TODAY_KEY = "wb_today_v1";
+  var TODAY_SEED_KEY = "wb_today_seeded_v1";
   var todayItems = [];
   var todayBackupDismissed = false;
   var STATUS_LABEL = { todo: "待写", writing: "写稿中", done: "已完成" };
@@ -2370,11 +2488,41 @@
       { id: "s4", title: "车灯竞品分析：胶槽结构三种方案对比", platform: "公众号", due: dateStr(shiftDays(now, 3)), status: "todo", sample: true, createdAt: Date.now() }
     ];
   }
+  // ===== 速记 → 选题池：复制一条进来，速记自身保留不动 =====
+  var TOPIC_TAG_RE = /(?:^|\s)#(?:选题|topic)(?=\s|$)/i;
+  function noteHasTopicTag(text) { return TOPIC_TAG_RE.test(String(text || "")); }
+  function topicTitleFromNote(text) {
+    var s = String(text || "").replace(/#(选题|topic)/gi, "").trim();
+    var lines = s.split(/\r?\n/), line = "";
+    for (var i = 0; i < lines.length; i++) { if (lines[i].trim()) { line = lines[i].trim(); break; } }
+    line = line.replace(/^[-*·•>]+\s*/, "").replace(/^\d+[.、)]\s*/, "").slice(0, 80);
+    return line || "（来自速记）";
+  }
+  function topicTaken(noteId) {
+    for (var i = 0; i < todayItems.length; i++) if (todayItems[i].fromNote === noteId) return true;
+    return false;
+  }
+  function noteToTopic(n) {
+    if (!n || !n.id || topicTaken(n.id)) return false;
+    todayItems.push({
+      id: newTodayId(), title: topicTitleFromNote(n.text),
+      platform: "公众号", due: todayStr(), status: "todo",
+      sample: false, fromNote: n.id, createdAt: Date.now(), upd: Date.now()
+    });
+    saveToday();
+    return true;
+  }
+
   function loadToday() {
     todayItems = [];
-    try { var raw = localStorage.getItem(TODAY_KEY); if (raw) todayItems = JSON.parse(raw) || []; } catch (err) {}
+    var raw = null;
+    try { raw = localStorage.getItem(TODAY_KEY); if (raw) todayItems = JSON.parse(raw) || []; } catch (err) {}
     if (!Array.isArray(todayItems)) todayItems = [];
-    if (!todayItems.length) { todayItems = sampleToday(); saveToday(); }
+    var seeded = false;
+    try { seeded = localStorage.getItem(TODAY_SEED_KEY) === "1"; } catch (e) {}
+    // 只在「从未初始化过」时补一次示例数据；此后删空或点「清空示例」都不再自动补货
+    if (!todayItems.length && !seeded && raw === null) { todayItems = sampleToday(); saveToday(); }
+    try { localStorage.setItem(TODAY_SEED_KEY, "1"); } catch (e) {}
   }
   function saveToday() {
     try { localStorage.setItem(TODAY_KEY, JSON.stringify(todayItems)); }
@@ -2554,9 +2702,10 @@
     var title = titleEl.value.trim();
     if (!title) { toast("先填选题标题"); titleEl.focus(); return; }
     var due = document.getElementById("todayDue").value || todayStr();
-    todayItems.push({ id: newTodayId(), title: title.slice(0, 80), platform: document.getElementById("todayPlatform").value, due: due, status: "todo", createdAt: Date.now() });
+    var tn = Date.now();
+    todayItems.push({ id: newTodayId(), title: title.slice(0, 80), platform: document.getElementById("todayPlatform").value, due: due, status: "todo", sample: false, createdAt: tn, upd: tn });
     titleEl.value = "";
-    saveToday(); refreshAll();
+    saveToday(); refreshAll(); scheduleSync();
   });
   document.getElementById("todayGroups").addEventListener("click", function (e) {
     var btn = e.target.closest("button[data-act]");
@@ -2565,11 +2714,20 @@
     var it = item && todayFind(item.getAttribute("data-id"));
     if (!it) return;
     var act = btn.getAttribute("data-act");
-    if (act === "go") it.status = "writing";
-    else if (act === "ok") { it.status = "done"; it.doneAt = Date.now(); }
-    else if (act === "reopen") { it.status = "todo"; delete it.doneAt; }
-    else if (act === "del") { todayItems = todayItems.filter(function (x) { return x.id !== it.id; }); }
-    saveToday(); refreshAll();
+    if (act === "del") {
+      // 进墓碑：让对端也删掉，否则下次 pull 会被当成「本地没有的新条目」重新拉回来
+      var dsid = topicSyncId(it);
+      todayItems = todayItems.filter(function (x) { return x.id !== it.id; });
+      if (syncState.del.indexOf(dsid) < 0) syncState.del.push(dsid);
+      delete syncState.pushed[dsid];
+      toast("已删除");
+    } else {
+      if (act === "go") it.status = "writing";
+      else if (act === "ok") { it.status = "done"; it.doneAt = Date.now(); }
+      else if (act === "reopen") { it.status = "todo"; delete it.doneAt; }
+      it.upd = Date.now();
+    }
+    saveToday(); refreshAll(); scheduleSync();
   });
   document.getElementById("todayExp").addEventListener("click", studioExport);
   document.getElementById("todayBackupExp").addEventListener("click", studioExport);
