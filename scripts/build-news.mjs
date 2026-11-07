@@ -114,6 +114,9 @@ function parseRss(xml) {
       desc: stripHtml(tagText(b, 'description')),
       source: source || '公开新闻源',
       date: dt && !isNaN(dt.getTime()) ? bj(dt) : '',
+      // 前端 relTime()/freshTag() 按 UTC 解析 date，必须给 UTC 墙钟时间，
+      // 否则北京时间字符串会被多吃 8 小时，实时条目被误标成「近期/回顾」
+      dateUtc: dt && !isNaN(dt.getTime()) ? dt.toISOString().slice(0, 16).replace('T', ' ') : '',
       ts: dt && !isNaN(dt.getTime()) ? dt.getTime() : 0
     };
   }).filter(x => x.title && /^https?:\/\//.test(x.url));
@@ -138,7 +141,7 @@ function toItem(it, kw, hot) {
     title: it.title.slice(0, 120),
     summary: summarize(it, kw),
     source: it.source,
-    date: it.date || '',
+    date: it.dateUtc || it.date || '',   // UTC 墙钟时间，供前端算相对时间/分级
     tag: '动态',
     hot: !!hot,
     live: true,
@@ -257,6 +260,7 @@ function selfTest() {
   console.log('真实摘要保留:', b.slice(0, 40));
   if (parsed.length !== 3 || merge(parsed).length !== 2) throw new Error('解析/去重失败');
   if (parsed[0].source !== '盖世汽车' || parsed[0].date !== '2026-11-07 17:00') throw new Error('来源/时间解析失败');
+  if (parsed[0].dateUtc !== '2026-11-07 09:00') throw new Error('UTC 时间解析失败');
   if (!b.startsWith('这是一段足够长')) throw new Error('真实摘要被误替换');
   const seed = { sections: [{ id: 'lamp', items: [{ title: '常设入口', tag: '关注', summary: 'x', source: 'x', url: 'https://x.com' }] }] };
   const r = build(seed, { lamp: parsed }, []);
