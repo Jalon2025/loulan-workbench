@@ -10,7 +10,8 @@
         "local": "write",
         "web": "",
         "installed": true,
-        "icon": "🚀"
+        "icon": "🚀",
+        "tip": "一键启动写作环境：依次拉起 WorkBuddy、TRAE、稿件文件夹、微信公众平台与微信文件传输助手。特色是「流程化启动」而不是单开一个软件，把选题、初稿、排版、发布要用的窗口一次就位，适合每次开写前点一下进入状态。"
       },
       {
         "id": "tmvn5eqlv1sl",
@@ -20,7 +21,8 @@
         "local": "workbuddy",
         "web": "",
         "installed": true,
-        "icon": "icons/workbuddy.png"
+        "icon": "icons/workbuddy.png",
+        "tip": "本机 AI 助手，承载公众号选题、初稿撰写、三平台文案差异化改写与本地文件操作。特色是能直接读写项目目录、按固定 Skill 跑完整流水线，适合把重复性的写作、排版与发布动作交给它执行；点击磁贴经 workbench: 协议直接启动本机程序。"
       },
       {
         "id": "tmvn5eqlv231",
@@ -30,7 +32,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/weixin.png"
+        "icon": "icons/weixin.png",
+        "tip": "公众号官方后台，图文编辑、草稿箱、定时群发、留言精选与后台数据统计都在这里。特色是唯一能真正发布并查看阅读量、分享率与流量来源的入口，写完稿后核标题表现、复盘数据都靠它；网页端即开即用，手机端也能看。"
       },
       {
         "id": "tmvn5eqlv3sb",
@@ -40,7 +43,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/toutiao.png"
+        "icon": "icons/toutiao.png",
+        "tip": "今日头条创作者后台，发布文章、微头条与视频，查看推荐量、阅读完成率与创作收益。特色是算法推荐分发、读者画像与公众号不同，适合把同一主题改写成更偏资讯与冲突感的标题，做多平台标题测试与数据对照。"
       },
       {
         "id": "tmvn5eqlv4rt",
@@ -50,7 +54,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/zhihu.png"
+        "icon": "icons/zhihu.png",
+        "tip": "知乎创作中心，发布回答、文章与想法，查看赞同、收藏、关注转化，也能接商业任务。特色是长尾搜索流量强、专业内容能持续沉淀，适合把车灯结构、仿真方法这类干货改成问答体复用，一篇内容吃几年流量。"
       },
       {
         "id": "tmvn5eqlv5fg",
@@ -60,7 +65,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/mdnice.png"
+        "icon": "icons/mdnice.png",
+        "tip": "Markdown 一键转公众号排版的在线编辑器，主题皮肤丰富，支持代码块、公式与图床。特色是「写完 md 直接复制进公众号后台」，与本地稿件目录里的 draft.md 无缝衔接，适合习惯纯文本写作、不想碰可视化排版的人。"
       },
       {
         "id": "tmvn5eqlv69f",
@@ -70,7 +76,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/bd135.png"
+        "icon": "icons/bd135.png",
+        "tip": "公众号模板与花式排版工具，提供大量样式组件、SVG 动效与一键秒排。特色是活动类、节庆类图文的视觉素材最全，适合需要强排版冲击力的推送；日常技术长文用 mdnice 更轻快，两者按内容类型分工。"
       },
       {
         "id": "newrank",
@@ -80,7 +87,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/newrank.png"
+        "icon": "icons/newrank.png",
+        "tip": "公众号与短视频账号数据、爆款文章及行业榜单查询平台。特色是能看到同赛道账号的阅读表现与选题方向，适合做标题复盘、竞品拆解和高互动内容发现；已登录状态可直接在网页端查，是选题调研的主要外部数据源。"
       },
       {
         "id": "yiban",
@@ -90,7 +98,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/yiban.png"
+        "icon": "icons/yiban.png",
+        "tip": "浏览器插件形态的公众号运营增强工具，提供排版素材、数据看板、违规词检测与多账号管理。特色是直接嵌在公众号后台里、不用切窗口，适合发布前做一次合规自检，以及批量调用固定样式与素材模板。"
       },
       {
         "id": "tfoldermvn81zyi",
@@ -100,7 +109,8 @@
         "local": "folder-drafts",
         "web": "",
         "installed": false,
-        "icon": "📁"
+        "icon": "📁",
+        "tip": "本机稿件根目录，每篇文章一个任务子目录，集中放 draft.md、排版 HTML、手动截图配图、多平台改写版与发布结果。特色是素材与产物一起归档、事后可追溯，点击磁贴经 workbench: 协议直接打开文件夹，不受浏览器 file:// 限制。"
       }
     ],
     "video": [
@@ -112,7 +122,8 @@
         "local": "jianying",
         "web": "https://www.capcut.cn",
         "installed": true,
-        "icon": "icons/jianying.png"
+        "icon": "icons/jianying.png",
+        "tip": "本机桌面剪辑工具，自动字幕、曲库素材、一键模板与多轨剪辑齐全。特色是对中文语音识别准、成片速度快，适合把文章配图做成短视频，或给教程录屏加字幕；工程建议统一存到「视频创作/剪映工程」便于复用。"
       },
       {
         "id": "tmvn5eqlv8gq",
@@ -122,7 +133,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/jimeng.png"
+        "icon": "icons/jimeng.png",
+        "tip": "AI 生图、图生视频与数字人口播平台。特色是中文提示词理解好、出图风格稳定，适合做封面草稿、插图构思与短视频素材；正式推文配图建议仍优先用手动截图，保证内容真实、不会因为生成痕迹影响可信度。"
       },
       {
         "id": "tmvn5eqlv9i",
@@ -132,7 +144,8 @@
         "local": "screentogif",
         "web": "",
         "installed": true,
-        "icon": "icons/screentogif.png"
+        "icon": "icons/screentogif.png",
+        "tip": "本机录屏转 GIF 工具，可逐帧删改、加标注、调帧率后导出小体积动图。特色是免安装、无需工程文件，最适合演示「点击流程」「参数前后对比」这类 3~10 秒的短操作；超过几分钟的完整教程改用 OBS 录 MP4。"
       },
       {
         "id": "tmvn5eqlvaee",
@@ -142,7 +155,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/obs.png"
+        "icon": "icons/obs.png",
+        "tip": "免费开源的高清录屏与直播推流工具，支持多场景、多画面源叠加与音频分轨。特色是长时间录制稳定、画布与码率可精细控制，适合录完整软件操作教程或做直播；比 GIF 更适合 5 分钟以上、需要保留声音的内容。"
       },
       {
         "id": "tmvn5eqlvbuj",
@@ -152,7 +166,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/weixin.png"
+        "icon": "icons/weixin.png",
+        "tip": "微信视频号创作平台，上传成片、写标题、设置封面并查看播放与互动数据。特色是与公众号、微信生态天然打通，剪映导出的成片可以顺手分发一次，适合把同一篇文章的核心结论复用到短视频渠道，扩大触达。"
       }
     ],
     "fun": [
@@ -164,7 +179,8 @@
         "local": "baidu_pan",
         "web": "https://pan.baidu.com",
         "installed": true,
-        "icon": "icons/baidu_pan.png"
+        "icon": "icons/baidu_pan.png",
+        "tip": "本机客户端形态的资源存储与备份网盘。特色是容量大、分享链接通用，收到的素材包与历史工程归档都放这里；重要文件建议开启自动备份，避免只存本地。点击磁贴经 workbench: 协议直接启动本机程序。"
       },
       {
         "id": "tmvn5eqlvdwj",
@@ -174,7 +190,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/xunlei.png"
+        "icon": "icons/xunlei.png",
+        "tip": "磁力与离线下载、并支持在线播放的云盘。特色是冷门资源离线秒取、不用挂机等待，适合偶尔找影视素材或别人分享的下载链接；与百度网盘分工——一个管长期归档与备份，一个管临时获取与在线预览。"
       },
       {
         "id": "tmvn5eqlvedr",
@@ -184,7 +201,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/alipan.png"
+        "icon": "icons/alipan.png",
+        "tip": "上传下载不限速、界面干净的云盘，支持原画质在线观影。特色是没有限速与广告干扰，适合存放大体积视频素材并直接预览；与坚果云那种「同步盘」定位不同，它更偏存储与播放，不做本地文件夹自动同步。"
       },
       {
         "id": "tmvn5eqlvfy8",
@@ -194,7 +212,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/potplayer.png"
+        "icon": "icons/potplayer.png",
+        "tip": "Windows 本地万能播放器，几乎通吃所有封装与编码，支持倍速、外挂字幕与逐帧查看。特色是解码能力强、启动极快，网盘同步下来的片子和技术录屏都用它看；官方站点在境外，国内直连可能时好时坏。"
       },
       {
         "id": "tbilimvn8s9wy",
@@ -204,7 +223,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/bilibili.png"
+        "icon": "icons/bilibili.png",
+        "tip": "综合视频社区，动画与番剧之外，知识区、科技区的系统性教程最集中。特色是长视频能讲透一个工具，弹幕常补充操作细节，适合系统学一款软件或找别人做过的操作演示；比短视频更适合当学习资料收藏。"
       },
       {
         "id": "tdymvn8s9wy",
@@ -214,7 +234,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/douyin.png"
+        "icon": "icons/douyin.png",
+        "tip": "短视频浏览与搜索入口。特色是热点反应最快、同类内容密度高，适合快速扫当下话题、看爆款的表达节奏与封面写法；网页端主要用来检索，深度浏览与互动还是手机端更顺手。"
       },
       {
         "id": "netease",
@@ -224,7 +245,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/netease_music.png"
+        "icon": "icons/netease_music.png",
+        "tip": "在线音乐与歌单平台。特色是歌单分类细、社区氛围好，写稿和剪视频时当背景音很顺手；做对外发布的视频时要注意版权，商用或公开分发的配乐建议优先用剪映自带曲库等可授权素材。"
       }
     ],
     "ai": [
@@ -236,7 +258,8 @@
         "local": "doubao",
         "web": "https://www.doubao.com",
         "installed": true,
-        "icon": "icons/doubao.png"
+        "icon": "icons/doubao.png",
+        "tip": "本机 AI 助手，覆盖日常问答、写作润色、语音对话与文件摘要。特色是中文口语化表达自然、响应快，适合随手改一段文案、把模糊想法说清楚或快速问一个小问题；点击磁贴经 workbench: 协议直接启动本机程序。"
       },
       {
         "id": "tmvn5eqlvhqy",
@@ -246,7 +269,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/qianwen.png"
+        "icon": "icons/qianwen.png",
+        "tip": "阿里的大模型助手，长文档阅读、PPT 生成与表格分析能力较强。特色是一次能吃下整份报告并直接产出结构化材料，适合把专利文档、竞品资料或调研结果整理成汇报页，省去手工摘要点的时间。"
       },
       {
         "id": "tmvn5eqlvi5i",
@@ -256,7 +280,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/yuanbao.png"
+        "icon": "icons/yuanbao.png",
+        "tip": "混元与 DeepSeek 双模型助手，能检索微信生态内的公众号内容。特色是查公众号历史文章、中文资料比通用模型更准，适合做选题溯源、素材核查和旧文回查；网页端即开即用，不必装客户端。"
       },
       {
         "id": "tmvn5eqlvjhx",
@@ -266,7 +291,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/chatgpt.png"
+        "icon": "icons/chatgpt.png",
+        "tip": "综合能力与英文表达的标杆模型。特色是外文资料的翻译、润色与跨语言改写最稳，适合把中文技术说明压成英文摘要，或读写外文论文时做术语对照；服务在境外，国内直连可能不稳定，重要任务建议留备选。"
       },
       {
         "id": "deepseek",
@@ -276,7 +302,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/deepseek.png"
+        "icon": "icons/deepseek.png",
+        "tip": "长思考推理与代码能力突出的国产模型。特色是推理过程可见、适合拆解复杂问题与写脚本，也常用于批量生成摘要；API 成本较低，适合接进周报推送、内容改写这类自动化流程里当后台模型。"
       },
       {
         "id": "kimi",
@@ -286,7 +313,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/kimi.png"
+        "icon": "icons/kimi.png",
+        "tip": "超长上下文对话助手。特色是能把整本专利文档、长论文或标准条文一次性读完再问答，适合车灯专利检索、法规条文对照与长材料交叉比对；上下文长度是它相对其他通用模型最明显的优势。"
       },
       {
         "id": "tmvn5eqlvkmc",
@@ -296,7 +324,8 @@
         "local": "trae",
         "web": "https://www.trae.cn",
         "installed": true,
-        "icon": "icons/trae.png"
+        "icon": "icons/trae.png",
+        "tip": "AI 编程 IDE，Builder 模式一句话生成小项目，内置代码补全与 Agent。特色是把「需求 → 可运行页面」压缩到一轮对话，适合快速做工作台小工具、验证脚本与临时原型；本机已安装，点击磁贴直接启动。"
       },
       {
         "id": "tmvn5eqlvl16",
@@ -306,7 +335,8 @@
         "local": "zcode",
         "web": "",
         "installed": true,
-        "icon": "icons/zcode.png"
+        "icon": "icons/zcode.png",
+        "tip": "终端自动化 Agent，能写代码、跑批处理、生成页面并直接操作本地文件。特色是命令行原生的多步执行能力，适合批量改文件、部署脚本、跑定时同步这类重复任务；本机已安装，点击磁贴直接启动。"
       }
     ],
     "work": [
@@ -318,7 +348,8 @@
         "local": "feishu",
         "web": "https://www.feishu.cn",
         "installed": true,
-        "icon": "icons/feishu.png"
+        "icon": "icons/feishu.png",
+        "tip": "本机客户端，云文档、多维表格、知识库与日程一体。特色是文档与表格可联动、跨设备同步稳定，适合把公众号排期、选题池和周报做成结构化数据；建议按「工作经验」「AI 实践」各建一份模板长期填。"
       },
       {
         "id": "tmvn5eqlvnkc",
@@ -328,7 +359,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/feishu.png"
+        "icon": "icons/feishu.png",
+        "tip": "会议录音自动转文字、按说话人分离并生成纪要与待办。特色是把一场会直接变成可检索的文本，适合复盘评审结论、抽取车灯项目里的设计约束与待确认项；不用再手抄会议记录，回查也能按关键词定位。"
       },
       {
         "id": "tmvn5eqlvook",
@@ -338,7 +370,8 @@
         "local": "ima",
         "web": "https://ima.qq.com",
         "installed": true,
-        "icon": "icons/ima.png"
+        "icon": "icons/ima.png",
+        "tip": "微信生态 AI 知识管家，能搜公众号文章、导入十几种文件格式并基于资料问答。特色是把收藏的文章与本地资料合成个人知识库，适合写作时回查旧文、串起专业素材；本机已安装，点击磁贴直接启动。"
       },
       {
         "id": "tmvn5eqlvpyg",
@@ -348,7 +381,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/obsidian.png"
+        "icon": "icons/obsidian.png",
+        "tip": "本地 Markdown 双链笔记，数据完全是自己硬盘上的纯文本文件。特色是双向链接与关系图谱能把零散技术笔记长成知识网络，适合长期沉淀车灯结构、仿真经验与踩坑记录；不依赖云端、离线可用，插件生态丰富。"
       },
       {
         "id": "yuque",
@@ -358,7 +392,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/yuque.png"
+        "icon": "icons/yuque.png",
+        "tip": "在线文档与知识库，结构化目录、团队协作和对外分享都方便。特色是能把成体系的文档编成一本「书」，适合整理对外可分享的教程与方法论；目前服务正常运营，与 Obsidian 的本地优先形成互补。"
       }
     ],
     "chat": [
@@ -370,7 +405,8 @@
         "local": "weixin",
         "web": "",
         "installed": true,
-        "icon": "icons/weixin.png"
+        "icon": "icons/weixin.png",
+        "tip": "本机客户端，工作沟通与读者联系的主阵地。特色是公众号文章、文件传输助手与群聊都在一个生态里，看到的好文可收藏后转存 ima 做知识库；点击磁贴经 workbench: 协议直接启动本机程序。"
       },
       {
         "id": "tmvn5eqlvr1l",
@@ -380,7 +416,8 @@
         "local": "qq",
         "web": "",
         "installed": true,
-        "icon": "icons/qq.png"
+        "icon": "icons/qq.png",
+        "tip": "本机客户端，大文件传输与群文件管理方便。特色是超大文件、长期群文件留存比微信省事，适合传仿真工程、录屏素材这类几百 MB 的东西；点击磁贴经 workbench: 协议直接启动本机程序。"
       },
       {
         "id": "tmvn5eqlvs5o",
@@ -390,7 +427,8 @@
         "local": "chrome",
         "web": "",
         "installed": true,
-        "icon": "icons/chrome.png"
+        "icon": "icons/chrome.png",
+        "tip": "本机主浏览器，插件生态最全。特色是沉浸式翻译、多平台同步扩展这类工具只有它最稳，适合作为写作、排版与分发流程的默认浏览器；点击磁贴经 workbench: 协议直接启动本机程序。"
       },
       {
         "id": "tmvn5eqlvtjw",
@@ -400,7 +438,8 @@
         "local": "edge",
         "web": "",
         "installed": true,
-        "icon": "icons/edge.png"
+        "icon": "icons/edge.png",
+        "tip": "系统自带浏览器，集锦收藏与 PDF 阅读体验好。特色是开箱即用、内存占用控制较好，适合快速查资料与批注标准类 PDF 文件；与 Chrome 分工做资料核对，也能避免两边插件互相干扰。"
       },
       {
         "id": "tmvn5eqlvu9v",
@@ -410,7 +449,8 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/toutiao.png"
+        "icon": "icons/toutiao.png",
+        "tip": "资讯门户与热榜入口。特色是热点反应快、标题写法可直接参考，既是选题来源，也是头条号内容数据复盘的对照面；配合工作台里的「新闻资讯」栏目，一边看行业动态一边看全网热点。"
       }
     ],
     "extra": [
