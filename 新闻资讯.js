@@ -1,5 +1,5 @@
 /* 新闻资讯数据 · 个人工作台 —— 本文件由 GitHub Actions 自动生成，请勿手改
- * 生成时间：2026-11-07 19:11（北京时间）· 每 30 分钟更新一次
+ * 生成时间：2026-11-07 19:35（北京时间）· 每 30 分钟更新一次
  * 数据源：公开新闻 RSS，按 8 个板块关键词聚合；失败时保留上一版。
  * 维护方式：改 scripts/build-news.mjs 的 SECTIONS.queries 即可调整关键词。
  * 注意：本文件随 Pages 公开，禁止写入本机路径、账号等私密信息。
@@ -7,10 +7,10 @@
 window.WB_NEWS = {
   "v": 2,
   "live": true,
-  "updated": "2026-11-07 19:11",
-  "generatedAt": "2026-11-07T11:11:46.963Z",
-  "stale": true,
-  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-07 19:11（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
+  "updated": "2026-11-07 19:35",
+  "generatedAt": "2026-11-07T11:35:04.859Z",
+  "stale": false,
+  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-07 19:35（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
   "sections": [
     {
       "id": "oem",
@@ -20,16 +20,6 @@ window.WB_NEWS = {
       "desc": "整车厂战略、平台与新车型节奏 —— 决定灯具项目定点与开发周期的上游信号。",
       "fresh": 6,
       "items": [
-        {
-          "title": "全球前十中国占三席，但这张榜单真正的挑战才刚刚开始|比亚迪|吉利|奇瑞|全球汽车销量_新浪新闻",
-          "summary": "新浪网 报道 · 11-07 17:20 发布 · 由「比亚迪 吉利 奇瑞 销量」关键词自动聚合，点标题看原文全文",
-          "source": "新浪网",
-          "date": "2026-11-07 09:20",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFNm1jdXEtQWVRZjRYSEs1X1cybkZtaGxHWnJnRExmX3hVekZXY25LWWRCaEx0ZzFOUEJhR1kyY0hWLWZVa2J3M1l2ZWhMcjhpbDZIY2VGU0ZWWDh4Z005SlFsNA?oc=5"
-        },
         {
           "title": "汽车出行产业日报(11.06) : 车企出海盈利",
           "summary": "搜狐网 报道 · 11-07 11:32 发布 · 由「车企 平台 战略 出海」关键词自动聚合，点标题看原文全文",
@@ -46,7 +36,7 @@ window.WB_NEWS = {
           "source": "汽车之家",
           "date": "2026-11-07 01:59",
           "tag": "动态",
-          "hot": false,
+          "hot": true,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1EXzNUSUNkOS03dl8wYzQySWR0b0JDd2ttandSSkktRjBHbVNxWk9lcjBjOFRhalVINnlJV3owRlFRRzZkUEVsVWxTRUV6SVVDUjlvWnY4bnozR1k?oc=5"
         },
@@ -59,6 +49,16 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB6QXNvV045NHJuT1ZMVlk5QkpYYkZpZU9UVTRNSXVVektFY2hvMllOcnFFbE93R3BKaG52cDEtR3hFTDY1YWVOdGh3TFJaNFNua0I2dTRBUkRuMVVNNGVJaWtOd3JzRWJzbEV1QmNXeWg?oc=5"
+        },
+        {
+          "title": "上半年汽车集团销量榜！比亚迪销量下滑丢冠，吉利奇瑞谁是老三？",
+          "summary": "汽车之家 报道 · 11-06 23:55 发布 · 由「比亚迪 吉利 奇瑞 销量」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-06 15:55",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jc3ZTY3B5QkJhdkQ0SXZFeWdLdmVYWGZQcC12eVEwdGNBUmt5dTJRM2ktYkZPN3BvbjBJSXpkRzRNYm9abkFhS0M2bDVTUXB5QWU4QUZwR1Frd2JVMVE?oc=5"
         },
         {
           "title": "出海新阶段， 中国车企要换一种活法",
@@ -378,29 +378,67 @@ window.WB_NEWS = {
       "icon": "🧪",
       "cadence": "30 分钟",
       "desc": "Moldflow / Ansys / 3DEXPERIENCE 的版本更新与方法实践，关联注塑、结构与光学仿真。",
-      "fresh": 0,
+      "fresh": 6,
       "items": [
         {
-          "title": "SIMULIA R2026x FD03：注塑工程师角色支持 8–32 核并行",
-          "summary": "单任务可用令牌调用 8–32 CPU 核并并行跑多项仿真；新增局部 CVM 网格控制，可针对面、边、顶点定向加密，多相流支持继承已有结果做初始场。结构侧引入 GPU 显式动力学、默认开启欠约束检测。灯壳胶槽与厚壁光导的局部加密，能直接提升熔接痕与缩痕的预测精度。",
-          "source": "达索系统 / 智诚科技中文解读",
-          "date": "2026-07",
+          "title": "2026工业软件创新发展大会在湖南株洲举行",
+          "summary": "央视网 报道 · 11-07 17:48 发布 · 由「仿真 工业软件」关键词自动聚合，点标题看原文全文",
+          "source": "央视网",
+          "date": "2026-11-07 09:48",
           "tag": "动态",
           "hot": true,
-          "url": "https://www.ict.com.cn/SIMULIA/5628.html",
-          "live": false,
-          "stale": true
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1fS0ttYjhKR1RLb211dlpZb2doamRaUG1icG9LRzhnV2w0Z0tTemdzSEZfN0JzOGZFcS13YVQ4dm5NbGJETmNxQ056QzM5ZXo0Snlnekhkck8zeVJjazMtZ19zZ2dkNmxacHlXWnh1cTJ3TTJZM0pzSWNB?oc=5"
         },
         {
-          "title": "R2026x FD04：生成式虚拟孪生与可验证的代理模型",
-          "summary": "用机器学习基于高保真物理数据训练 Virtual Twin 行为模型，支持把预测结果与留白设计点的 FEA 结果对照验证、分析训练空间覆盖均匀性；新增子模型、分析步骤交互重排与 4K 云结果可视化。适合把反复跑的灯壳翘曲、热变形工况固化成秒级代理模型。",
-          "source": "达索系统 · SIMULIA 新版本说明",
-          "date": "2026",
+          "title": "在市场推动下 中国导航仿真与测试行业加快发展步伐",
+          "summary": "新思界产业研究中心 报道 · 11-07 13:46 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "新思界产业研究中心",
+          "date": "2026-11-07 05:46",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFByc3lXbnNFMTRFY05UcElocmxtRFJESEhVU0Rmd1QyUmZ1M3pWNnlldGVkcDJBcFBmTHV6ZW4zSnA0OGpXU1RveFN4Z3F5aXQxX3k5TVZ3VkRKb0tPTl94QlNXTHFmcWh5Smh1Y0pORG45QUFFanJZcQ?oc=5"
+        },
+        {
+          "title": "长安汽车申请基于车辆冷却系统仿真的数据处理方法及装置、电子设备",
+          "summary": "金融界 报道 · 11-07 11:00 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "金融界",
+          "date": "2026-11-07 03:00",
           "tag": "动态",
           "hot": false,
-          "url": "https://akamai.3ds.com/products/simulia/3dexperience-simulia/latest-release",
-          "live": false,
-          "stale": true
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhN2hTSEdDRVEySXk1bm50Tm9qLXNYSkJXWHFYZk9iamN2aGw2RzVZMVY3SGpObHl1bHlfLTFHMThRS0ZJVmg5elBVYTR5S1R4eFA0SXM0bVRIb2piUTFyZEpNdXdabVV0U1A3QjlpVzZWeGxf?oc=5"
+        },
+        {
+          "title": "Modelware智能系统：为工业软件研发按下“加速键”",
+          "summary": "中国科技网 报道 · 11-06 18:21 发布 · 由「仿真 工业软件」关键词自动聚合，点标题看原文全文",
+          "source": "中国科技网",
+          "date": "2026-11-06 10:21",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uc3o5d1o0WXlESldiQUZsSnlsRFN6YXpJa0RmNE9Yelk0TFcxV1BXN0VwMWN0VGlpT2Y1RUwtTTVvemhIeWJGS2dybEQxYXV2b0JCeGxMcEFnUUVvcjJaTmludjJndjVlUkNzX2JBdEU?oc=5"
+        },
+        {
+          "title": "行云创新：AI CAD/CAE设计仿真一体化平台，多Agent串起设计仿真闭环",
+          "summary": "CSDN 报道 · 11-06 18:03 发布 · 由「仿真 工业软件」关键词自动聚合，点标题看原文全文",
+          "source": "CSDN",
+          "date": "2026-11-06 10:03",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LOWU2SEZzZ3ZMRGRadHQzUndsTWpRY3pkNUx1ZkstdHF1WllESm85Rzc1akNUUjl1SDhTa1p2S1ZTRFBQNy1taUNBekphaFdOSWlWQzZTSjhscDFhVFE?oc=5"
+        },
+        {
+          "title": "Vector推CANoe EV仿真套件，实验室复现充电桩行为",
+          "summary": "汽车之家 报道 · 11-06 17:48 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-06 09:48",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hMnp4ME1LNjctc3FkMGdiREM0UFlULWdqU016cV9GQTNRNjZyS3RCNHlCcFhsWUZ4SUIzLS0xV1JJVmljakMxQm5JeFBMUnhMU2lCUTlzd0dTbEE?oc=5"
         },
         {
           "title": "Autodesk Moldflow · 官方帮助与新功能",
@@ -408,10 +446,9 @@ window.WB_NEWS = {
           "source": "Autodesk Help",
           "date": "",
           "tag": "关注",
-          "hot": true,
+          "hot": false,
           "url": "https://help.autodesk.com/view/MFIA/2026/ENU/",
-          "live": false,
-          "stale": true
+          "live": false
         },
         {
           "title": "Ansys 官方博客 · 结构强度 / 模态 / 热-结构耦合",
@@ -421,19 +458,7 @@ window.WB_NEWS = {
           "tag": "关注",
           "hot": false,
           "url": "https://www.ansys.com/blog",
-          "live": false,
-          "stale": true
-        },
-        {
-          "title": "Ansys Speos · 车灯光学仿真",
-          "summary": "配光、光导、面罩散射与杂散光/炫光分析，支持与 CAD 联动并对照法规配光屏评测。做光导齿形与面罩纹理方案时，把 Moldflow 的成型结果（缩痕、双折射）带入光学模型，比按理想几何算更接近实件表现。",
-          "source": "Ansys Optics",
-          "date": "",
-          "tag": "关注",
-          "hot": true,
-          "url": "https://www.ansys.com/products/optics/ansys-speos",
-          "live": false,
-          "stale": true
+          "live": false
         }
       ]
     },
@@ -533,17 +558,67 @@ window.WB_NEWS = {
       "icon": "🔬",
       "cadence": "30 分钟",
       "desc": "灯壳胶槽、干燥密封、光导材料与注塑缺陷，是结构仿真最常见的失效来源。",
-      "fresh": 1,
+      "fresh": 6,
       "items": [
         {
-          "title": "从LED到智能控制2027武汉汽车电子车灯照明技术展览会有哪些看点",
-          "summary": "手机新浪网 报道 · 11-03 10:02 发布 · 由「车灯 材料 光学 注塑」关键词自动聚合，点标题看原文全文",
-          "source": "手机新浪网",
-          "date": "2026-11-03 02:02",
+          "title": "基于自发光光谱-时间联合分析的水环境中微塑料快速无标记鉴别",
+          "summary": "生物通 报道 · 11-07 10:55 发布 · 由「改性塑料 汽车」关键词自动聚合，点标题看原文全文",
+          "source": "生物通",
+          "date": "2026-11-07 02:55",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ONl9VZFZRNU5WeGxMbzhKc256OVhFMkxkN1ZUMzl3aGRhN2c2MDNxbVJTbGFaQzU5Ml9jaW1EdjNGdUUxU1VUZFNFQ1FYeXpmV190ZG1Pd2UwNEU2VEV6cWpNVXFtRzZXNlE5NDNVRW1WVm5rT1g3bEVLTlVGTjA?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZQVd6M1NOcDFKNW1QVkxNb004NVVUZDNDVmRCbGVlaHlkamxFeFpPVGdTOW1KVDRoSGJKSEpVTjk0TFo4OHdpTzg0UkZHVmJBaFl1dUdlNmdBTTlqemk0SlBQMnlMSkpZOVF6b1F3?oc=5"
+        },
+        {
+          "title": "蒙迪欧15款时尚版车灯究竟怎么样？",
+          "summary": "汽车之家 报道 · 11-07 09:32 发布 · 由「车灯 光学 设计」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-07 01:32",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6S0JqSVRkYWphMlA5SkhJVzEzekt1MUhhM2JwYWlJLTdtb0Jhb21KNV9OMnpWR3dNOTJpbEVac2ZqYjdhUnZUbURPbGJIWHo5cUp4c3NOX3E?oc=5"
+        },
+        {
+          "title": "弯管机市场展望2035：汽车轻量化与暖通需求驱动增长 - 新闻和统计",
+          "summary": "IndexBox 报道 · 11-07 07:16 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
+          "source": "IndexBox",
+          "date": "2026-11-06 23:16",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZlA2OWxTTzg3YlNXTVVxajBNWWdWdVNXLTlrU1NTYjdQanB1TW1PM2lvVnJrTGVZZmVWcnZOaXNDWnBGWGxxMkp1aDlwUk9XajJ1N1A1QmtINEs3d2wzNmdkLTEtVHA5bTRoTHc2NnVQMTRNUlNaX2d6UVpiYnI5cVhmNUVWLWNnNWNiXzJod3p2VTI3S09ZS0s3Q20xeHhzdnlvVzFuUTljU0h3WHkwMGQ1UkFQUDhjSk12MUZjT3hnVFRvOXJidTRvU2FDTm1nVXBwMTlzS1A?oc=5"
+        },
+        {
+          "title": "工业激光器市场展望2035：汽车轻量化与精密焊接驱动增长 - 新闻和统计",
+          "summary": "IndexBox 报道 · 11-07 07:06 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
+          "source": "IndexBox",
+          "date": "2026-11-06 23:06",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOOTdEV0NkSnVMUUVKTkNXWFRqdkJYSWp4N1NLU2lTYnVGcUFOSGJLLS11WjNLM3RBZldHZEgzZkVqel9adkVPdHl6TEttU3gzZHlaS3k2RmVERzkteVFmUU9GRndLMzZtU2RZY2JiZHBJTEJIRTk2bWZuM1diSUlnZVZwbkJZaS1kdlZPQ3pXWXRDSmMyTUJZdFFaSE9ibHJKdnE1VEprYTFqdVB2UHNLVmJtTTc5NVRFSnFndWpvQnJoSHFXdHY4cnhYWVExd0cxWEVQRGJINHZVbEctVDlUUjlWcw?oc=5"
+        },
+        {
+          "title": "玻纤增强聚酰胺复合材料（PA GF）市场展望至2035年：轻量化与电动化驱动增长 - 新闻和统计",
+          "summary": "IndexBox 报道 · 11-06 22:56 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
+          "source": "IndexBox",
+          "date": "2026-11-06 14:56",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQNmE5NVNIN3RtSEtJZVZKb1lILW9tWUw0bkFZM3pPWW5nMkd4YlpUaWYxN3p0RXIyaEF0VHJDOUUzaklLdTBZSDh0dHB5UXdDY1ZHSmxMbEZWQnRsanNacGM1TmZwSGlVVEphQVBaUWIwNTZmUzVRcEcxSmxlQzRnWG43ZUxIamVtX2ZDa0FBb1JGVjFfRWlZNmZSekVjaEtnNFFja1FQdDZBSkxBNjNiWGgxWUstUm4tN2tvTGtTYXV2eS1SUHNMSkVqbkhKSnZmbVRUdnQ1Ri1JdWlyUVIyWnd5MHJiM2dDNWdreQ?oc=5"
+        },
+        {
+          "title": "2026国内专业精密医疗模具公司口碑排行｜五大厂商实力多维解析",
+          "summary": "衡阳新闻网 报道 · 11-06 17:37 发布 · 由「注塑 模具 工艺」关键词自动聚合，点标题看原文全文",
+          "source": "衡阳新闻网",
+          "date": "2026-11-06 09:37",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwcFYwVS1ZeDV5a1Blek9HYUZQZzBUNnFrbnFGMi1VdVF6NVRGZEx6QUVic1gtWl9WZHozY3V6b2xsY3pHRzZaSUo4dk9lb2R2Wk1MakRkSW1RUWU2T1l5OGcyM1o?oc=5"
         },
         {
           "title": "光导与面罩材料：PC / PMMA 的耐候、雾度与镀铝",
@@ -576,14 +651,14 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "通用汽车搞了个狠专利！不用踩踏板：车会自己弹射起步_热点推荐",
-          "summary": "证券之星 报道 · 11-07 16:12 发布 · 由「汽车 车灯 专利 申请」关键词自动聚合，点标题看原文全文",
-          "source": "证券之星",
-          "date": "2026-11-07 08:12",
+          "title": "通用汽车获自动弹射专利，摄像头识别灯序无需踩踏板",
+          "summary": "汽车之家 报道 · 11-07 16:32 发布 · 由「汽车 车灯 专利 申请」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-07 08:32",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lUTc1cmU3QkZNSFNfLVQ2RzJNODBUQ0t4TEVhbTBYbThMeW1sWDR1ODdZVTdBbXRuNTJoeTFjWUlHc3gyYml2TFR2d3otTnp0V2NXSUk5aE9TVDl1YzBoYw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByemU4LWxEekdHR0tLbVU0Y1lPSkRCM3pvbzZHdEEyRFhTWjAycnU0QVI3TjNUYlRobUZwRVU4ZkZ0al9CcDZoMXllbVZMeENiVXVaUjlnUkhPYTA?oc=5"
         },
         {
           "title": "通用汽车新专利：看灯自己弹射起步",
