@@ -417,72 +417,79 @@
       {
         "id": "tmvn5eqlvvky",
         "name": "Everything",
-        "desc": "全盘文件秒搜",
+        "desc": "NTFS 秒搜·零等待",
         "href": "https://www.voidtools.com",
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/everything.png"
+        "icon": "icons/everything.png",
+        "tip": "Everything：基于 NTFS 索引的全盘文件名搜索，边输入边出结果，百万级文件零等待；常驻内存仅几 MB、免费无广告，是 Windows 上最快的找文件方式。适合秒找稿件、截图与车灯仿真工程文件。"
       },
       {
         "id": "tmvn5eqlvwkk",
         "name": "uTools",
-        "desc": "快捷启动插件",
+        "desc": "Alt+Space·插件即装",
         "href": "https://u.tools",
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/utools.png"
+        "icon": "icons/utools.png",
+        "tip": "uTools：Alt+Space 呼出的万能启动器，找应用/文件、翻译、剪贴板历史、OCR、JSON 格式化等插件即装即用。特色是「一个输入框办完所有小事」，不必为每个小功能单独装软件。"
       },
       {
         "id": "tmvn5eqlvxyn",
         "name": "PixPin",
-        "desc": "截图贴图OCR",
+        "desc": "截图全家桶·OCR 识别",
         "href": "https://pixpin.cn",
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/pixpin.png"
+        "icon": "icons/pixpin.png",
+        "tip": "PixPin：国产截图全家桶，截图、贴图、长截图、OCR 文字识别与标注一体，截完可直接复制图中文字。特色是功能最全且免费版足够用，写教程配图、抄参数、扒网页文字不必开多个工具。"
       },
       {
         "id": "tmvn5eqlvywo",
         "name": "沉浸式翻译",
-        "desc": "网页双语对照",
+        "desc": "双语对照·网页 PDF 字幕",
         "href": "https://www.immersivetranslate.net",
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🈯"
+        "icon": "🈯",
+        "tip": "沉浸式翻译：浏览器扩展，网页 / PDF / EPUB 段落双语对照，还覆盖视频字幕与漫画图片；内置 DeepL、DeepSeek 等 10+ 引擎与 100+ 语言，译文不破坏原排版。看外网 AI 资料与论文首选，中国站 www.immersivetranslate.net。"
       },
       {
         "id": "tmvn5eqlvzxw",
         "name": "Quicker",
-        "desc": "一键动作库",
+        "desc": "轮盘动作库·一键批处理",
         "href": "https://getquicker.net",
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/quicker.png"
+        "icon": "icons/quicker.png",
+        "tip": "Quicker：Windows 动作效率库，中键或轮盘呼出，把批量重命名、固定话术、软件联动做成一键动作，还能直接安装别人共享的动作。特色是「动作可分享、可视化编排」，比写脚本门槛低，适合流程固定的日常批处理。"
       },
       {
         "id": "tmvn5eqlv10ji",
         "name": "坚果云",
-        "desc": "多设备同步",
+        "desc": "增量同步·多端自动流转",
         "href": "https://www.jianguoyun.com",
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/jianguoyun.png"
+        "icon": "icons/jianguoyun.png",
+        "tip": "坚果云：增量同步网盘，只传文件改动部分，本地文件夹与云端实时一致，支持多设备、历史版本回溯与共享。特色是「同步盘」而非「存储盘」，无需手动上传下载，适合电脑↔手机传稿件、多机续写。"
       },
       {
         "id": "snipaste",
         "name": "Snipaste",
-        "desc": "截图贴图神器",
+        "desc": "F1 截图 F3 贴屏·不切窗",
         "href": "https://www.snipaste.com",
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "icons/snipaste.png"
+        "icon": "icons/snipaste.png",
+        "tip": "Snipaste：F1 截图、F3 把图钉在屏幕最上层，可缩放、透明、取色与标注。特色是「贴图常驻」，对照素材写稿或核对参数时不必反复切窗口，极轻量几乎不占内存；与 PixPin 相比更专注贴图这一件事。"
       }
     ]
   },
