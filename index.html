@@ -993,7 +993,7 @@
       <div id="newsBody"></div>
       <div class="news-foot">
         标「动态 / 标准」的条目均已核实来源与日期，点标题或「阅读原文」直达原页面；标「关注 / 方法」的是长期有效的入口与主题卡。
-        每次<b>切换到本页</b>、从后台回到前台或点「↻ 刷新」，都会现场抓取公开新闻（Google 新闻中文索引，经带 CORS 的 RSS 代理）并显示相对时间；<b>「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早</b>，「关注」是常设情报入口。代理限流或断网时自动降级为 <b>新闻资讯.js</b> 里的常设清单，不会白屏。
+        每次<b>切换到本页</b>、从后台回到前台或点「↻ 刷新」都会刷新：若 <b>新闻资讯.js</b> 是云端 30 分钟内生成的，直接显示全部 8 个板块；否则浏览器现场抓取公开新闻（Google 新闻中文索引，经带 CORS 的 RSS 代理）并显示相对时间。<b>「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早</b>，「关注」是常设情报入口。代理限流或断网时自动降级为常设清单，不会白屏。
       </div>
     </section>
 
@@ -3146,6 +3146,25 @@
     var liveBy = {}, liveAt = 0, liveOK = 0, liveTotal = 0;
     var loadedAt = "";
     var loading = false, guard = null;
+    // 云端优先：GitHub Actions 每 30 分钟生成 新闻资讯.js（live:true + generatedAt）。
+    // 该文件足够新时直接渲染云端 8 板块，不再打免费 RSS 代理；过旧 / 不存在时
+    // 自动回退到浏览器现场抓取 + 常设清单，保证 workflow 未启用时行为不变。
+    var cloudMode = false, CLOUD_MAX_AGE = 90 * 60 * 1000;
+    function cloudFresh(d) {
+      if (!valid(d) || d.live !== true || !d.generatedAt) return false;
+      var t = Date.parse(d.generatedAt);
+      return !isNaN(t) && (Date.now() - t) < CLOUD_MAX_AGE && (Date.now() - t) > -10 * 60 * 1000;
+    }
+    function enterCloud() {
+      cloudMode = true; liveBy = {}; liveOK = 0; liveTotal = 0;
+      data.sections.forEach(function (s) {
+        var n = s.fresh || 0;
+        if (n > 0) liveOK++;
+        liveTotal += n;
+      });
+      return liveOK;
+    }
+    function srcWord() { return cloudMode ? "云端抓取" : "本次抓取"; }
 
     function esc(v) {
       return String(v == null ? "" : v).replace(/[&<>"']/g, function (c) {
@@ -3245,11 +3264,14 @@
         return;
       }
       if (updatedEl) updatedEl.textContent = liveOK
-        ? "本次抓取 " + liveTotal + " 条 / " + liveOK + " 个板块 · " + (loadedAt || hhmmss(new Date()))
+        ? srcWord() + " " + liveTotal + " 条 / " + liveOK + " 个板块 · " + (loadedAt || hhmmss(new Date()))
         : "常设清单 " + (data.updated || "-") + (loadedAt ? " · 载入 " + loadedAt : "");
-      if (leadEl) leadEl.textContent = liveOK
-        ? "切入本页现场抓取公开新闻（Google 新闻中文索引，按 8 个板块关键词聚合）：「实时」= 7 天内，「近期」= 30 天内，「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。"
-        : (data.lead || "");
+      if (leadEl) leadEl.textContent = cloudMode
+        ? "每 30 分钟由云端按板块关键词聚合公开新闻（最近生成 " + (data.updated || "-") +
+          "）：「实时」= 7 天内，「近期」= 30 天内，「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。"
+        : (liveOK
+          ? "切入本页现场抓取公开新闻（Google 新闻中文索引，按 8 个板块关键词聚合）：「实时」= 7 天内，「近期」= 30 天内，「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。"
+          : (data.lead || ""));
       if (st.focus && !data.sections.some(function (s) { return s.id === st.focus; })) st.focus = "";
       renderChips();
       var TOTAL = data.sections.reduce(function (n, s) { return n + sectionItems(s).length; }, 0);
@@ -3277,7 +3299,7 @@
       });
       body.innerHTML = html || '<div class="news-empty">没有匹配的资讯。<br>换个关键词，或点「全部 ' + data.sections.length + ' 块」清除板块筛选。</div>';
       stat.textContent = "共 " + data.sections.length + " 个板块 / " + TOTAL + " 条" +
-                         (liveOK ? "（本次抓取 " + liveTotal + " 条）" : "（常设清单）") +
+                         (liveOK ? "（" + srcWord() + " " + liveTotal + " 条）" : "（常设清单）") +
                          " · 当前显示 " + shown + " 条 · 每块默认预览 " + PREVIEW + " 条" +
                          (st.focus ? " · 已筛选板块" : "") + (st.hot ? " · 仅看重点" : "");
     }
@@ -3469,7 +3491,8 @@
       if (refreshBtn) refreshBtn.classList.remove("busy");
       loadedAt = hhmmss(new Date());
       var ok = live && live.ok ? live.ok : 0;
-      if (ok >= LIVE_Q.length) setState("实时 " + LIVE_Q.length + " 块 · " + live.total + " 条 · " + loadedAt, "ok");
+      if (cloudMode) setState("云端 " + ok + "/" + LIVE_Q.length + " 块 · " + (data.updated || "").slice(11, 16), "ok");
+      else if (ok >= LIVE_Q.length) setState("实时 " + LIVE_Q.length + " 块 · " + live.total + " 条 · " + loadedAt, "ok");
       else if (ok > 0) setState("实时 " + ok + "/" + LIVE_Q.length + " 块 · " + loadedAt, "ok");
       else setState(valid(data) ? "实时暂不可用 · 显示常设清单" : "数据未加载", "warn");
       render();
@@ -3483,8 +3506,14 @@
       var ts = Date.now(), settled = false;
       clearTimeout(guard);
       guard = setTimeout(function () { if (!settled) { settled = true; finish({ ok: 0, total: 0 }); } }, 32000);
-      Promise.all([reloadLocal(ts), fetchLive(reason === "manual")])
-        .then(function (r) { if (!settled) { settled = true; finish(r[1]); } })
+      reloadLocal(ts)
+        .then(function () {
+          // 必须先重读 新闻资讯.js 再判断，否则拿到的是上一版
+          if (cloudFresh(data)) return { ok: enterCloud(), total: liveTotal, cloud: true };
+          cloudMode = false;
+          return fetchLive(reason === "manual");
+        })
+        .then(function (r) { if (!settled) { settled = true; finish(r); } })
         .catch(function () { if (!settled) { settled = true; finish({ ok: 0, total: 0 }); } });
     }
     if (refreshBtn) refreshBtn.addEventListener("click", function () { refresh("manual"); });
@@ -3493,6 +3522,7 @@
     window.WB_NEWS_VIEW = {
       refresh: refresh,
       live: function () { return liveOK; },
+      mode: function () { return cloudMode ? "cloud" : "live"; },
       count: function () { return valid(data) ? data.sections.reduce(function (n, s) { return n + sectionItems(s).length; }, 0) : 0; }
     };
     // switchView 早于本模块执行；若打开页面时上次就停在新闻页，这里补刷
