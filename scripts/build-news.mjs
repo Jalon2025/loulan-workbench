@@ -24,32 +24,49 @@ const TIMEOUT = 12000;
 const PER_SECTION = 6;      // 每板块最多实时条数
 const STATIC_PER = 2;       // 每板块最多保留的常设入口卡
 
-/* 8 个板块的关键词。Google News RSS 的 q 支持中文与空格（AND），when:7d 只取近 7 天。 */
+/* 8 个板块的关键词。Google News RSS 的 q 支持中文与空格（AND），when:7d 只取近 7 天。
+ * queries  = 精准主词，优先用；
+ * fallback = 主词命中不足时的宽泛兜底词（专业垂直词在中文新闻索引里常常一条都没有）；
+ * must     = 兜底结果的相关性闸门，标题或摘要至少命中一个词才收，避免为凑数塞无关新闻。 */
 const SECTIONS = [
   { id: 'oem', name: '汽车主机厂', icon: '🏭',
     desc: '整车厂战略、平台与新车型节奏 —— 决定灯具项目定点与开发周期的上游信号。',
-    queries: ['汽车 主机厂 新车 发布', '车企 平台 战略 出海', '比亚迪 吉利 奇瑞 销量'] },
+    queries: ['汽车 主机厂 新车 发布', '车企 平台 战略 出海', '比亚迪 吉利 奇瑞 销量'],
+    fallback: ['汽车 新车 上市', '车企 动态'] },
   { id: 'sales', name: '销量与爆款', icon: '📊',
     desc: '大盘数据与爆款车型，直接决定竞品灯具该拆谁、项目资源往哪投。',
-    queries: ['乘用车 销量 乘联会', '新能源汽车 销量 榜单', '爆款车型 交付量'] },
+    queries: ['乘用车 销量 乘联会', '新能源汽车 销量 榜单', '爆款车型 交付量'],
+    fallback: ['汽车 销量', '新能源车 交付'] },
   { id: 'lamp', name: '车灯技术', icon: '💡',
     desc: '智能车灯的技术边界与合规红线，与配光、结构、光学、散热设计关联最紧。',
-    queries: ['车灯 ADB 像素大灯', '智能车灯 贯穿式 尾灯', '汽车照明 DLP 光学'] },
+    queries: ['车灯 ADB 像素大灯', '智能车灯 贯穿式 尾灯', '汽车照明 DLP 光学'],
+    fallback: ['汽车 大灯 车灯', '车灯 照明 技术'] },
   { id: 'ai', name: 'AI 要闻', icon: '🤖',
     desc: '影响写作与自动化工作流的模型 / Agent / 工具动态，优先看能直接上手的能力。',
-    queries: ['大模型 Agent 发布', 'AI 编程 智能体', '多模态 模型 开源'] },
+    queries: ['大模型 Agent 发布', 'AI 编程 智能体', '多模态 模型 开源'],
+    fallback: ['人工智能 大模型', 'AI 工具 发布'] },
   { id: 'cae', name: '仿真与 CAE', icon: '🧪',
     desc: 'Moldflow / Ansys / 3DEXPERIENCE 的版本更新与方法实践，关联注塑、结构与光学仿真。',
-    queries: ['Moldflow 注塑 仿真', 'Ansys 仿真 新版本', 'SIMULIA Abaqus 3DEXPERIENCE'] },
+    queries: ['Moldflow 注塑 仿真', 'Ansys 仿真 新版本', 'SIMULIA Abaqus 3DEXPERIENCE'],
+    fallback: ['仿真 工业软件', '汽车 仿真 设计', 'CAE 有限元', '注塑 模流 仿真',
+               '数字孪生 制造', '仿真'],
+    must: ['仿真', 'CAE', '有限元', '模流', '注塑', '模具', 'Ansys', 'Abaqus',
+           'Moldflow', 'SIMULIA', '3DEXPERIENCE', '工业软件', '数字孪生', '数值模拟'] },
   { id: 'reg', name: '法规与标准', icon: '📐',
     desc: '强标与型式认证是车灯方案的硬边界，冻结设计前必查。',
-    queries: ['汽车 强制性国家标准 灯光', 'GB 4785 前照灯 法规', '汽车 型式认证 新规'] },
+    queries: ['汽车 强制性国家标准 灯光', 'GB 4785 前照灯 法规', '汽车 型式认证 新规'],
+    fallback: ['汽车 国家标准', '汽车 新规 标准'] },
   { id: 'mat', name: '材料·模具与光学', icon: '🔬',
     desc: '灯壳胶槽、干燥密封、光导材料与注塑缺陷，是结构仿真最常见的失效来源。',
-    queries: ['车灯 材料 光学 注塑', '聚碳酸酯 光导 车灯', '注塑 模具 缺陷 仿真'] },
+    queries: ['车灯 材料 光学 注塑', '聚碳酸酯 光导 车灯', '注塑 模具 缺陷 仿真'],
+    fallback: ['汽车 材料 轻量化', '注塑 模具 工艺', '改性塑料 汽车',
+               '光学 材料 车灯', '车灯 光学 设计'],
+    must: ['材料', '注塑', '模具', '光学', '聚碳酸酯', '车灯', '塑料',
+           '轻量化', '光导', '胶槽', '密封', '改性'] },
   { id: 'ip', name: '专利与内容选题', icon: '📝',
     desc: '把专利检索、竞品拆解与公众号选题串成一条线，让技术积累能复用成内容。',
-    queries: ['汽车 车灯 专利 申请', '专利 检索 分析', 'AI 内容创作 工具'] }
+    queries: ['汽车 车灯 专利 申请', '专利 检索 分析', 'AI 内容创作 工具'],
+    fallback: ['汽车 专利', '专利 申请'] }
 ];
 
 const KR_RSS = 'https://www.36kr.com/feed-newsflash';   // 辅源：有真实摘要的科技快讯
@@ -150,16 +167,26 @@ function toItem(it, kw, hot) {
 }
 
 /* ------------------------------ 抓取 ------------------------------ */
-async function fetchGoogle(cfg) {
+async function fetchGoogle(cfg, qs, when) {
   const out = [];
-  for (const q of cfg.queries) {
-    const url = GOOGLE + '?q=' + encodeURIComponent(q + ' when:7d') +
+  for (const q of qs) {
+    const win = when || '7d';
+    const url = GOOGLE + '?q=' + encodeURIComponent(q + ' when:' + win) +
                 '&hl=zh-CN&gl=CN&ceid=CN:zh-Hans';
     const xml = await get(url, cfg.id + ' / ' + q);
-    out.push(...parseRss(xml).map(x => ({ ...x, kw: q })));
+    const items = parseRss(xml).map(x => ({ ...x, kw: q }));
+    console.log('      ' + q + ' (when:' + win + ') → ' + items.length + ' 条');
+    out.push(...items);
     await new Promise(r => setTimeout(r, 250));   // 轻微限速，避免被判定为滥用
   }
   return out;
+}
+
+/* 相关性闸门：垂直板块的兜底词较宽，必须命中专业词才收，避免凑数塞无关新闻 */
+function gate(cfg, it) {
+  if (!cfg.must) return true;
+  const s = (String(it.title || '') + ' ' + String(it.desc || '')).toLowerCase();
+  return cfg.must.some(k => s.indexOf(k.toLowerCase()) >= 0);
 }
 
 async function fetch36kr() {
@@ -286,8 +313,22 @@ async function main() {
 
   const freshBySection = {};
   for (const cfg of SECTIONS) {
-    freshBySection[cfg.id] = await fetchGoogle(cfg);
-    console.log('  → ' + cfg.id + ' 原始 ' + freshBySection[cfg.id].length + ' 条');
+    // 1) 精准主词（近 7 天）
+    let list = await fetchGoogle(cfg, cfg.queries, '7d');
+    let usable = () => merge(list).filter(x => gate(cfg, x)).length;
+
+    // 2) 命中不足 3 条 → 宽泛兜底词，仍限定 7 天，并逐词打印命中量供诊断
+    if (usable() < 3 && (cfg.fallback || []).length) {
+      console.log('    ↳ ' + cfg.id + ' 主词命中不足，启用宽泛兜底（' + cfg.fallback.length + ' 组）');
+      list = list.concat(await fetchGoogle(cfg, cfg.fallback, '7d'));
+    }
+    // 3) 仍为 0 条 → 用最宽的 3 组词放宽到 30 天，前端会如实标「近期/回顾」
+    if (usable() < 1 && (cfg.fallback || []).length) {
+      console.log('    ↳ ' + cfg.id + ' 7 天内无命中，放宽到 30 天');
+      list = list.concat(await fetchGoogle(cfg, cfg.fallback.slice(0, 3), '30d'));
+    }
+    freshBySection[cfg.id] = merge(list).filter(x => gate(cfg, x));
+    console.log('  → ' + cfg.id + ' 有效 ' + freshBySection[cfg.id].length + ' 条');
   }
 
   const { meta, data } = build(seed, freshBySection, kr);
