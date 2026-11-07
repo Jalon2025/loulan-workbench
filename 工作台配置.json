@@ -153,16 +153,6 @@
         "web": "",
         "installed": false,
         "icon": "icons/weixin.png"
-      },
-      {
-        "id": "zhvideo",
-        "name": "腾讯智影",
-        "desc": "数字人·文本配音",
-        "href": "https://zenvideo.qq.com",
-        "local": "",
-        "web": "",
-        "installed": false,
-        "icon": "🎬"
       }
     ],
     "fun": [
@@ -421,16 +411,6 @@
         "web": "",
         "installed": false,
         "icon": "icons/toutiao.png"
-      },
-      {
-        "id": "weibo",
-        "name": "微博",
-        "desc": "热搜榜看热点",
-        "href": "https://weibo.com",
-        "local": "",
-        "web": "",
-        "installed": false,
-        "icon": "icons/weibo.png"
       }
     ],
     "extra": [
