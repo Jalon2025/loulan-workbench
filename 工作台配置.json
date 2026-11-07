@@ -80,7 +80,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "📊"
+        "icon": "icons/newrank.png"
       },
       {
         "id": "yiban",
@@ -90,7 +90,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🔌"
+        "icon": "icons/yiban.png"
       },
       {
         "id": "tfoldermvn81zyi",
@@ -122,7 +122,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🪄"
+        "icon": "icons/jimeng.png"
       },
       {
         "id": "tmvn5eqlv9i",
@@ -234,7 +234,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🎶"
+        "icon": "icons/netease_music.png"
       }
     ],
     "ai": [
@@ -256,7 +256,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "☁️"
+        "icon": "icons/qianwen.png"
       },
       {
         "id": "tmvn5eqlvi5i",
@@ -266,7 +266,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🧧"
+        "icon": "icons/yuanbao.png"
       },
       {
         "id": "tmvn5eqlvjhx",
@@ -276,7 +276,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🌍"
+        "icon": "icons/chatgpt.png"
       },
       {
         "id": "deepseek",
@@ -286,7 +286,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🐳"
+        "icon": "icons/deepseek.png"
       },
       {
         "id": "kimi",
@@ -296,7 +296,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🌙"
+        "icon": "icons/kimi.png"
       },
       {
         "id": "tmvn5eqlvkmc",
@@ -368,7 +368,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "📘"
+        "icon": "icons/yuque.png"
       }
     ],
     "chat": [
@@ -430,7 +430,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🅆"
+        "icon": "icons/weibo.png"
       }
     ],
     "extra": [
@@ -452,7 +452,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "🚀"
+        "icon": "icons/utools.png"
       },
       {
         "id": "tmvn5eqlvxyn",
@@ -502,7 +502,7 @@
         "local": "",
         "web": "",
         "installed": false,
-        "icon": "✂️"
+        "icon": "icons/snipaste.png"
       }
     ]
   },
