@@ -239,6 +239,8 @@
             background: var(--primary-soft); color: var(--primary); white-space: nowrap; }
   .nc-tag.t-dyn { background: var(--amber-soft); color: var(--amber); }
   .nc-tag.t-live { background: var(--primary-soft); color: var(--green); }
+  .nc-tag.t-near { background: var(--amber-soft); color: var(--amber); }
+  .nc-tag.t-old  { background: var(--border); color: var(--muted); }
   .nc-tag.t-std { background: var(--red-soft); color: var(--red); }
   .nc-tag.t-how { background: var(--primary-soft); color: var(--primary); }
   .nc-date { font-size: 10.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -991,7 +993,7 @@
       <div id="newsBody"></div>
       <div class="news-foot">
         标「动态 / 标准」的条目均已核实来源与日期，点标题或「阅读原文」直达原页面；标「关注 / 方法」的是长期有效的入口与主题卡。
-        每次<b>切换到本页</b>、从后台回到前台或点「↻ 刷新」，都会现场抓取公开新闻（Google 新闻中文索引，经带 CORS 的 RSS 代理）并显示「x 分钟前」；标「实时」的是本次抓到的条目，标「关注」的是常设情报入口。代理限流或断网时自动降级为 <b>新闻资讯.js</b> 里的常设清单，不会白屏。
+        每次<b>切换到本页</b>、从后台回到前台或点「↻ 刷新」，都会现场抓取公开新闻（Google 新闻中文索引，经带 CORS 的 RSS 代理）并显示相对时间；<b>「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早</b>，「关注」是常设情报入口。代理限流或断网时自动降级为 <b>新闻资讯.js</b> 里的常设清单，不会白屏。
       </div>
     </section>
 
@@ -3165,13 +3167,28 @@
     function plain(s) {
       return String(s || "").replace(/[\s，。、！？：；「」《》（）·\-|"'&]/g, "").toLowerCase();
     }
+    function utcDate(s) {
+      // RSS 的 pubDate 是 UTC，按 UTC 解析再与本地时钟比较，避免 8 小时偏差
+      var m = String(s || "").match(/(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/);
+      var d = m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]))
+                : new Date(String(s || "").replace(/-/g, "/"));
+      return isNaN(d.getTime()) ? null : d;
+    }
+    function ageDays(s) {
+      var d = utcDate(s);
+      return d ? Math.floor((Date.now() - d.getTime()) / 86400000) : -1;
+    }
+    // 只把一周内的新稿标「实时」；更早的本次抓取结果如实标「近期 / 回顾」
+    function freshTag(s) {
+      var d = ageDays(s);
+      if (d < 0 || d <= 7) return { tag: "实时", cls: "live" };
+      if (d <= 30) return { tag: "近期", cls: "near" };
+      return { tag: "回顾", cls: "old" };
+    }
     function relTime(s) {
       if (!s) return "刚刚";
-      // RSS 的 pubDate 是 UTC，按 UTC 解析再与本地时钟比较，避免 8 小时偏差
-      var m = String(s).match(/(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/);
-      var d = m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]))
-                : new Date(String(s).replace(/-/g, "/"));
-      if (isNaN(d.getTime())) return String(s).slice(5, 16);
+      var d = utcDate(s);
+      if (!d) return String(s).slice(5, 16);
       var min = Math.floor((Date.now() - d.getTime()) / 60000);
       if (min < 1) return "刚刚";
       if (min < 60) return min + " 分钟前";
@@ -3199,8 +3216,9 @@
       });
     }
     function card(it) {
-      var cls = it.live ? "live" : (TAG_CLS[it.tag] || "src");
-      var tag = it.live ? "实时" : (it.tag || "关注");
+      var ft = it.live ? freshTag(it.date) : null;
+      var cls = ft ? ft.cls : (TAG_CLS[it.tag] || "src");
+      var tag = ft ? ft.tag : (it.tag || "关注");
       var when = it.live ? relTime(it.date) : (it.date || "常设");
       return '<a class="news-card' + (it.live ? " is-live" : "") + '" href="' + esc(it.url) + '" target="_blank" rel="noopener" title="' + esc(it.title) + '">' +
         '<div class="nc-top"><span class="nc-tag t-' + cls + '">' + esc(tag) + '</span>' +
@@ -3227,10 +3245,10 @@
         return;
       }
       if (updatedEl) updatedEl.textContent = liveOK
-        ? "实时 " + liveTotal + " 条 / " + liveOK + " 个板块 · 抓取 " + (loadedAt || hhmmss(new Date()))
+        ? "本次抓取 " + liveTotal + " 条 / " + liveOK + " 个板块 · " + (loadedAt || hhmmss(new Date()))
         : "常设清单 " + (data.updated || "-") + (loadedAt ? " · 载入 " + loadedAt : "");
       if (leadEl) leadEl.textContent = liveOK
-        ? "每次切入本页都会现场抓取公开新闻（Google 新闻中文索引，按 8 个板块关键词聚合），标「实时」的是本次抓到的条目，标「关注」的是长期有效的情报入口；点标题直达原文。"
+        ? "切入本页现场抓取公开新闻（Google 新闻中文索引，按 8 个板块关键词聚合）：「实时」= 7 天内，「近期」= 30 天内，「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。"
         : (data.lead || "");
       if (st.focus && !data.sections.some(function (s) { return s.id === st.focus; })) st.focus = "";
       renderChips();
@@ -3259,7 +3277,7 @@
       });
       body.innerHTML = html || '<div class="news-empty">没有匹配的资讯。<br>换个关键词，或点「全部 ' + data.sections.length + ' 块」清除板块筛选。</div>';
       stat.textContent = "共 " + data.sections.length + " 个板块 / " + TOTAL + " 条" +
-                         (liveOK ? "（实时 " + liveTotal + " 条）" : "（常设清单）") +
+                         (liveOK ? "（本次抓取 " + liveTotal + " 条）" : "（常设清单）") +
                          " · 当前显示 " + shown + " 条 · 每块默认预览 " + PREVIEW + " 条" +
                          (st.focus ? " · 已筛选板块" : "") + (st.hot ? " · 仅看重点" : "");
     }
