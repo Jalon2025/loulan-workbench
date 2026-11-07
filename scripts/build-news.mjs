@@ -222,8 +222,8 @@ function build(seed, freshBySection, kr) {
       updated: t,
       generatedAt: new Date().toISOString(),
       stale: staleSections.length > 0,
-      lead: '每 30 分钟自动按板块关键词聚合公开新闻，最近抓取于 ' + t +
-            '（北京时间）。标「动态」的是实时新闻，标「关注」的是长期有效的情报入口；点标题直达原文。',
+      lead: '云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 ' + t +
+            '（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。',
       sections
     }
   };
