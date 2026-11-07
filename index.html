@@ -168,6 +168,12 @@
   .t-body { min-width: 0; display: flex; flex-direction: column; gap: 0; }
   .t-name { font-size: 12.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .t-desc { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* 效率工具区：简介允许两行，容纳「主要功能 · 特色」 */
+  #extra .t-desc {
+    white-space: normal; display: -webkit-box; -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; line-height: 1.35; word-break: break-word;
+    min-height: 30px;
+  }
   .t-web {
     flex: none; align-self: center; margin-left: auto;
     font-size: 10px; line-height: 1; padding: 3px 5px; border-radius: 6px;
@@ -856,35 +862,35 @@
     <!-- ⚡ 效率工具 -->
     <section class="region" id="extra">
       <div class="r-head"><h2>⚡ 效率工具</h2><span class="r-hint">把重复操作变成一键</span></div>
-      <p class="r-desc">把重复操作变一键：Everything 秒搜文件，PixPin / Snipaste 截图贴图，沉浸式翻译读外网，Quicker 攒动作。</p>
+      <p class="r-desc">把重复操作变一键：Everything 秒搜文件，uTools / Quicker 把启动与动作收进一个入口；PixPin 管截图与 OCR、Snipaste 专精贴图对照；沉浸式翻译打通外文资料，坚果云让文件在多设备间自动流转。</p>
       <div class="grid">
-        <a class="tile" href="https://www.voidtools.com" target="_blank" rel="noopener" title="全盘文件秒搜，几十万文件也能瞬间找到，免费必装">
+        <a class="tile" href="https://www.voidtools.com" target="_blank" rel="noopener" title="Everything：基于 NTFS 索引的全盘文件名搜索，边输入边出结果，百万级文件零等待；常驻内存仅几 MB、免费无广告，是 Windows 上最快的找文件方式。适合秒找稿件、截图与车灯仿真工程文件。">
           <span class="t-ico"><span class="fb">🔍</span><img src="icons/everything.png" alt="" loading="lazy" onerror="this.remove()"></span>
-          <span class="t-body"><span class="t-name">Everything</span><span class="t-desc">全盘文件秒搜</span></span>
+          <span class="t-body"><span class="t-name">Everything</span><span class="t-desc">NTFS 秒搜·零等待</span></span>
         </a>
-        <a class="tile" href="https://u.tools" target="_blank" rel="noopener" title="Alt+Space 呼出快捷启动器，翻译、剪贴板、OCR 插件即装即用">
+        <a class="tile" href="https://u.tools" target="_blank" rel="noopener" title="uTools：Alt+Space 呼出的万能启动器，找应用/文件、翻译、剪贴板历史、OCR、JSON 格式化等插件即装即用。特色是「一个输入框办完所有小事」，不必为每个小功能单独装软件。">
           <span class="t-ico"><span class="fb">🚀</span><img src="icons/utools.png" alt="" loading="lazy" onerror="this.remove()"></span>
-          <span class="t-body"><span class="t-name">uTools</span><span class="t-desc">快捷启动插件</span></span>
+          <span class="t-body"><span class="t-name">uTools</span><span class="t-desc">Alt+Space·插件即装</span></span>
         </a>
-        <a class="tile" href="https://pixpin.cn" target="_blank" rel="noopener" title="截图贴图、长截图、OCR 识别一体，写教程配图神器">
+        <a class="tile" href="https://pixpin.cn" target="_blank" rel="noopener" title="PixPin：国产截图全家桶，截图、贴图、长截图、OCR 文字识别与标注一体，截完可直接复制图中文字。特色是功能最全且免费版足够用，写教程配图、抄参数、扒网页文字不必开多个工具。">
           <span class="t-ico"><span class="fb">📌</span><img src="icons/pixpin.png" alt="" loading="lazy" onerror="this.remove()"></span>
-          <span class="t-body"><span class="t-name">PixPin</span><span class="t-desc">截图贴图OCR</span></span>
+          <span class="t-body"><span class="t-name">PixPin</span><span class="t-desc">截图全家桶·OCR 识别</span></span>
         </a>
-        <a class="tile" href="https://www.immersivetranslate.net" target="_blank" rel="noopener" title="浏览器插件，网页/文档双语对照，看 ChatGPT 与外网资料必备">
+        <a class="tile" href="https://www.immersivetranslate.net" target="_blank" rel="noopener" title="沉浸式翻译：浏览器扩展，网页 / PDF / EPUB 段落双语对照，还覆盖视频字幕与漫画图片；内置 DeepL、DeepSeek 等 10+ 引擎与 100+ 语言，译文不破坏原排版。看外网 AI 资料与论文首选，中国站 www.immersivetranslate.net。">
           <span class="t-ico"><span class="fb">🈯</span></span>
-          <span class="t-body"><span class="t-name">沉浸式翻译</span><span class="t-desc">网页双语对照</span></span>
+          <span class="t-body"><span class="t-name">沉浸式翻译</span><span class="t-desc">双语对照·网页 PDF 字幕</span></span>
         </a>
-        <a class="tile" href="https://getquicker.net" target="_blank" rel="noopener" title="Windows 动作效率库，把重复操作做成一键动作">
+        <a class="tile" href="https://getquicker.net" target="_blank" rel="noopener" title="Quicker：Windows 动作效率库，中键或轮盘呼出，把批量重命名、固定话术、软件联动做成一键动作，还能直接安装别人共享的动作。特色是「动作可分享、可视化编排」，比写脚本门槛低，适合流程固定的日常批处理。">
           <span class="t-ico"><span class="fb">🖱️</span><img src="icons/quicker.png" alt="" loading="lazy" onerror="this.remove()"></span>
-          <span class="t-body"><span class="t-name">Quicker</span><span class="t-desc">一键动作库</span></span>
+          <span class="t-body"><span class="t-name">Quicker</span><span class="t-desc">轮盘动作库·一键批处理</span></span>
         </a>
-        <a class="tile" href="https://www.jianguoyun.com" target="_blank" rel="noopener" title="增量同步盘，工作文件多设备实时同步，免费额度够用">
+        <a class="tile" href="https://www.jianguoyun.com" target="_blank" rel="noopener" title="坚果云：增量同步网盘，只传文件改动部分，本地文件夹与云端实时一致，支持多设备、历史版本回溯与共享。特色是「同步盘」而非「存储盘」，无需手动上传下载，适合电脑↔手机传稿件、多机续写。">
           <span class="t-ico"><span class="fb">🔄</span><img src="icons/jianguoyun.png" alt="" loading="lazy" onerror="this.remove()"></span>
-          <span class="t-body"><span class="t-name">坚果云</span><span class="t-desc">多设备同步</span></span>
+          <span class="t-body"><span class="t-name">坚果云</span><span class="t-desc">增量同步·多端自动流转</span></span>
         </a>
-        <a class="tile" href="https://www.snipaste.com" target="_blank" rel="noopener" title="Snipaste：截图即时贴回屏幕，对照素材写稿、核对参数不用来回切窗">
+        <a class="tile" href="https://www.snipaste.com" target="_blank" rel="noopener" title="Snipaste：F1 截图、F3 把图钉在屏幕最上层，可缩放、透明、取色与标注。特色是「贴图常驻」，对照素材写稿或核对参数时不必反复切窗口，极轻量几乎不占内存；与 PixPin 相比更专注贴图这一件事。">
           <span class="t-ico"><span class="fb">✂️</span><img src="icons/snipaste.png" alt="" loading="lazy" onerror="this.remove()"></span>
-          <span class="t-body"><span class="t-name">Snipaste</span><span class="t-desc">截图贴图神器</span></span>
+          <span class="t-body"><span class="t-name">Snipaste</span><span class="t-desc">F1 截图 F3 贴屏·不切窗</span></span>
         </a>
       </div>
     </section>
@@ -1002,7 +1008,7 @@
       el.setAttribute("data-tid", t.id);
       if (starSet.has(t.id)) el.classList.add("hl");
     }
-    el.title = t.name + (t.desc ? "：" + t.desc : "");
+    el.title = t.tip || (t.name + (t.desc ? "：" + t.desc : ""));
     var ico = (t.icon && t.icon.indexOf("icons/") === 0)
       ? '<img src="' + t.icon + '" alt="" loading="lazy" onerror="this.remove()">'
       : '<span class="fb">' + (t.icon || "🔗") + "</span>";
@@ -1078,6 +1084,7 @@
           id: t.getAttribute("data-tid"),
           name: t.querySelector(".t-name").textContent.trim(),
           desc: t.querySelector(".t-desc").textContent.trim(),
+          tip: t.getAttribute("title") || "",
           href: t.getAttribute("href") || "",
           local: t.getAttribute("data-local") || "",
           web: w ? w.getAttribute("href") : "",
