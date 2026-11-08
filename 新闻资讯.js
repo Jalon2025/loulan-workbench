@@ -1,5 +1,5 @@
 /* 新闻资讯数据 · 个人工作台 —— 本文件由 GitHub Actions 自动生成，请勿手改
- * 生成时间：2026-11-08 21:43（北京时间）· 每 30 分钟更新一次
+ * 生成时间：2026-11-09 02:35（北京时间）· 每 30 分钟更新一次
  * 数据源：公开新闻 RSS，按 8 个板块关键词聚合；失败时保留上一版。
  * 维护方式：改 scripts/build-news.mjs 的 SECTIONS.queries 即可调整关键词。
  * 注意：本文件随 Pages 公开，禁止写入本机路径、账号等私密信息。
@@ -7,10 +7,10 @@
 window.WB_NEWS = {
   "v": 2,
   "live": true,
-  "updated": "2026-11-08 21:43",
-  "generatedAt": "2026-11-08T13:43:25.750Z",
+  "updated": "2026-11-09 02:35",
+  "generatedAt": "2026-11-08T18:35:52.807Z",
   "stale": false,
-  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-08 21:43（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
+  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-09 02:35（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
   "sections": [
     {
       "id": "oem",
@@ -20,16 +20,6 @@ window.WB_NEWS = {
       "desc": "整车厂战略、平台与新车型节奏 —— 决定灯具项目定点与开发周期的上游信号。",
       "fresh": 6,
       "items": [
-        {
-          "title": "XHEART新芯航途这场发布会，带来对智驾公司的灵魂拷问",
-          "summary": "汽车之家 报道 · 11-08 17:16 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-08 09:16",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9UNndyQTdZOGZXM3NVMlhNdGQ4Y01jRjc3Z21CWkN5amNlOHZvdHVJY3VIUGgzbzFUaUJtdXUxV05KQlpzOEZGYXE2OUluWFJ2d0pSVGV0aWFlYzRTckE?oc=5"
-        },
         {
           "title": "全球车企销量前十 中国车企拿下三席",
           "summary": "手机新浪网 报道 · 11-08 14:49 发布 · 由「比亚迪 吉利 奇瑞 销量」关键词自动聚合，点标题看原文全文",
@@ -46,7 +36,7 @@ window.WB_NEWS = {
           "source": "手机新浪网",
           "date": "2026-11-08 06:02",
           "tag": "动态",
-          "hot": false,
+          "hot": true,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13eXZiV3ZDRmxpVHN5S0U1bk5HNG1TUTNsMkZVd1RBTUZxQVJlZExZdTZrWTFWcDFhb1M4N0U4T09RVkR0QzdxdkRvNTlCR0xRekRhc08zU2VwZmZPVHdvWkhNNEs3blpLVThRZmpCUGRZMHM?oc=5"
         },
@@ -59,6 +49,16 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNXRCTGt0SEgxTl9EbUhXVTI0VncwbUJoT1FrMWtKUnk2LS00Ul9yRl9tNUh1SnlaOVNLdUNFdzRmSHhDdDhkNDJJU1pYbmFKYlZHRG1sVHZzeDc0X0tRRWJhUU12VGdLRXlFZEhxRGNXS3FiaHRmeVVSSXpCNTdTdDFPZTN2TTFUM0VidA?oc=5"
+        },
+        {
+          "title": "历史性突破！全球汽车销量前十，国产比亚迪、吉利、奇瑞纷纷上榜",
+          "summary": "搜狐网 报道 · 11-08 10:49 发布 · 由「比亚迪 吉利 奇瑞 销量」关键词自动聚合，点标题看原文全文",
+          "source": "搜狐网",
+          "date": "2026-11-08 02:49",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbThHUEZnTHdqVzdsNzZibGktd3JEOE1SSU93cGk4R053MEFmcnNuWEFuUUtoQzZkSjFQMHRkVmlqaUQxWjRwZTZsM0o2eTNwZUZvTmJGUWdoMllvRkRDVEVXdUhXRndXbXljTzVkeUJFTGdGMjFOX2dXWWlYcHpjSWh3RmhhTFM2RU51WQ?oc=5"
         },
         {
           "title": "2026上半年全球汽车销量前十，比亚迪吉利奇瑞首次同时上榜",
@@ -111,16 +111,6 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "大众最便宜的电车要来了，2万欧的ID. Up能成爆款吗？",
-          "summary": "汽车之家 报道 · 11-08 19:53 发布 · 由「爆款车型 交付量」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-08 11:53",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YcTFWbDBHaHBwTFZtVVNxSHlQX3loRzVER1d2aVhFZEtoT2NSRFBtTVk4REhKdGdZRVRmZEUtT3BCMGZXdXd6YUFyTkFNZkpaVEl6c1dDWURuUVk?oc=5"
-        },
-        {
           "title": "汽车行业周报：汽车行业2026Q3业绩普遍承压结构分化_行业研究_研报",
           "summary": "证券之星 报道 · 11-08 18:51 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
           "source": "证券之星",
@@ -129,6 +119,16 @@ window.WB_NEWS = {
           "hot": true,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBMQzZJbFpxVFhOMEcxWS1FVURHdnY4ck8wNmxRSW5LR090SUNzalFkWFJPbW8ybEpRMC16eUs1Z1NnMXl3SWdWV29mRXBlZmxsajlNd010ZjVMZlFPU2ZQOS1B?oc=5"
+        },
+        {
+          "title": "特斯拉Cybertruck停产！销量只剩目标一成，产线让位于Cybercab",
+          "summary": "汽车之家 报道 · 11-08 16:55 发布 · 由「爆款车型 交付量」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-08 08:55",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nUVl1eVpzalAyQURLVkZTN3hiQjdudHRvSTVzN2Z5eUJWQjRRaXJHb0JCejVrZVpsMEpKVTI3R0pwU0NGLWZibUxLSEZWSlE2MnpUTmM3bm1jUHc?oc=5"
         },
         {
           "title": "汽车及汽车零部件行业周报：车企10月销量快报发布，出口持续高增长_行业研究_研报",
@@ -202,9 +202,9 @@ window.WB_NEWS = {
       "items": [
         {
           "title": "腾势N8值得入手吗？8款车漆配AI大模型座舱，空悬+后轮转向加持",
-          "summary": "汽车之家 报道 · 11-08 12:36 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
+          "summary": "汽车之家 报道 · 11-08 12:38 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
-          "date": "2026-11-08 04:36",
+          "date": "2026-11-08 04:38",
           "tag": "动态",
           "hot": true,
           "live": true,
@@ -242,8 +242,8 @@ window.WB_NEWS = {
         },
         {
           "title": "【网通社快报】全新红旗H9于11月7日开启预售，预售价32.98万-41.98万元",
-          "summary": "凤凰网汽车 报道 · 11-07 19:21 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "凤凰网汽车",
+          "summary": "凤凰网 报道 · 11-07 19:21 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
+          "source": "凤凰网",
           "date": "2026-11-07 11:21",
           "tag": "动态",
           "hot": false,
@@ -291,64 +291,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "苹果计划明年让 Siri 更像一个智能体",
+          "summary": "news.lavx.hu 报道 · 11-09 00:28 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "news.lavx.hu",
+          "date": "2026-11-08 16:28",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbjljZEFUdlllVzFMMzEtNnU5cFVNenRDVHNNU1MzSmx2Q1J4ck54bGFJV1NpZVZKS1I2V1F3QTZsZGUtUWlwUkRrakVteXJ3czZRUTlqRVh5TnZXQXFOd191bUpsQ1BLRVdoYXVkZnctd3dqRVh1c2VuLVRHdE9xV1VfVjV1OGtLZ1NNa0xLVHdMOWVDanlsVHdDYW9sNTRQNG8w?oc=5"
+        },
+        {
+          "title": "Mads Thines 呼吁为 AI 智能体记忆建立共享格式",
+          "summary": "news.lavx.hu 报道 · 11-09 00:26 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "news.lavx.hu",
+          "date": "2026-11-08 16:26",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQR0tfZEdHTUt5NWZUWDAyN0kzVkRJRTRiZnNKdnFpQTluZFdQenNWaGpjMzhlMTM2NEkxZEllUHppWTlfMmNUN2ZHMV9KRW1HV2VXUEc1QnI1ZVFlOWl4Ymd2dXFKU0tHb1BtRmdPX09GTUdNNXVKN1E2Slp0cE4xZmpxenZpaVhfUnhKWFhUaDlDeU52M1R3eVJ5RDVkX21RVEpaRE5scXk?oc=5"
+        },
+        {
+          "title": "Agent 越用越多，企业为何仍不够 AI Native？",
+          "summary": "InfoQ.cn 报道 · 11-09 00:23 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "InfoQ.cn",
+          "date": "2026-11-08 16:23",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xLWJwb3dUakFhaGlTTGZQa3N2NHRUQVlxcFVJTTh3MXNqNlRHdWptVWdId2VPeTFnUDlNU0RMWDdwdEYtY0R1N19UdnhCaWF4dnE3UGVvV09KVHdHUkE?oc=5"
+        },
+        {
+          "title": "MyShell AI 在 Quasa 上的评测：无需编程即可构建并拥有 AI 智能体",
+          "summary": "quasa.io 报道 · 11-09 00:12 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "quasa.io",
+          "date": "2026-11-08 16:12",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRjhkSGRBNGhDU3RVVEprM1NidjNYUm9YbW82emcxNHF6T0RrVURvTFM4Z3o1M2JWUGFnMUxobnNZMG1nbEVPMm1tTWNyaWtPdEhjcmpya2t2b3FqRVJacmJ3YlR4c3lLOGRhc3NoZ1UtYUc2ejFXaWhqY3pVbmp0QUg4SVpTdTVrZG9sSllXVF90VU42cmlGVC0wQXZZWk94VGpaYjNlLXdIYVlNNG9hcnBqYmttZG1NYnNMTWw1bDBVdw?oc=5"
+        },
+        {
+          "title": "一个月73.8亿次提交！GitHub被AI代码挤爆，增配400万核还不够",
+          "summary": "手机新浪网 报道 · 11-08 21:42 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "手机新浪网",
+          "date": "2026-11-08 13:42",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1sYXU5MFZRZkdfRTAtU29KMXBxVTg0d294a2JlYjVTeVFzZDY1R2haOE5qemJONGl0NkFQLXkxWTFINXMyaU1kTnlrM0JDdm1Qc1hzZXphS1ppVnF1RFc4S0hNQlJmRUExcW1ydEF3TDV4UlR1WXE2UDZsTnA3YWc?oc=5"
+        },
+        {
           "title": "Entire 的 Git Forge 重新思考面向编码智能体的 Git 协作",
           "summary": "news.lavx.hu 报道 · 11-08 20:17 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
           "source": "news.lavx.hu",
           "date": "2026-11-08 12:17",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcnBJTzRRaDl3Nm1Nc0ZJTFBIS3ptZ3lmczFmeFFKd3pRMkkzRzN4b0NUaE9jWlpHLVpGdmxsbjlmUV9rV0ZJSHFEMVZFZnhOWUVPTnd0SE1mOHIxYm92VVlvZERXOC1tckJvNGhQMC1hbUM3b2FjOHl5LVBndXZKa05DNTFZUWp1djJ0U1B4Qk55Z2hFdzl6U0VNMnpLbDl6OGI5TGRoWE5sTVZNMzhHbEtnbl96NmNKWlJZ?oc=5"
-        },
-        {
-          "title": "V4全系列模型上线后，DeepSeek Harness开发者预览版开放测试",
-          "summary": "财联社 报道 · 11-08 13:32 发布 · 由「大模型 Agent 发布」关键词自动聚合，点标题看原文全文",
-          "source": "财联社",
-          "date": "2026-11-08 05:32",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE4wd0JWNXNkT3NmUy1UV09ldm1iSXY3dTllQ1o1ZFg5MFZPS1BRY3RCTUJLc05UYWJTb1R6VHhoT0NXM3hJQU5xLQ?oc=5"
-        },
-        {
-          "title": "谷歌：四个AI程序员组队通关Minecraft",
-          "summary": "CSDN博客 报道 · 11-08 08:00 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN博客",
-          "date": "2026-11-08 00:00",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5WZlB1X0Z0RFpNeTFfYzYzMFliVkRreUlydktkS2czSmFjRWNpYnZfZzg4YmJFLUhaU2ZBQUJ2cUJnbzlPY1BPMGVwWW4ydmtCOHpLMHBuSjI4MmNmUkx4RFR2WFoweUJwVW5Qc0UwQW0?oc=5"
-        },
-        {
-          "title": "DeepSeek Harness 0.2.2 发布,可将任务交给 Codex 和 Claude",
-          "summary": "Pasquale Pillitteri 报道 · 11-08 01:29 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "Pasquale Pillitteri",
-          "date": "2026-11-07 17:29",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUm04SlBhT3lFZERwclpJWk1OaG9tc1hLWVFPT3VtNnU2bmVvampvbFZad19tdDZkeXFmWEV3dF9yVmFJaExGclI1RVJ5M29ERWt1WEc5blgtSXFZVW1QbnhjaC1pVWdHcTlyaGNtVzFvQnRzQTZsWU5lNjl3bHRVRzRsTnBSd0xyOGRSdG9FRnBTQQ?oc=5"
-        },
-        {
-          "title": "Harness Leaderboard 发布结果，仅换 harness 就让编程智能体得分相差 24 分",
-          "summary": "Pasquale Pillitteri 报道 · 11-07 22:14 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "Pasquale Pillitteri",
-          "date": "2026-11-07 14:14",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUmw1M0hyZmVfVHRDeE9ZQVRjdmh1MkoyOGttdmtaUnZtRVRKbzlEbng5b2tJLWlnc3luMG5UWTlEQldIMVlpbElyalVoV1BpRHoxOWE1aEVzYnZwZkFVaHhxN2M1RG0zbnB0R3RUaDFpZjgtU1hjYWZjdHQ0N3V2MDVwRVBVSkxiT1hCVWZRcUlzbHIxaVRPbGcwSTI?oc=5"
-        },
-        {
-          "title": "法国Mistral扩展Studio企业级AI智能体平台",
-          "summary": "维度网 报道 · 11-07 10:18 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "维度网",
-          "date": "2026-11-07 02:18",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1nWFV6eDNPMkUxZlZ5dXlBcktNaGxxRFl5UWQwckJKVV9MYXBCSG9NdkE4UG1BcHN5ZTJqWkZzeWxrOXdsZDZiRmtsZjZWd2NkbFo1ZG5MTnk?oc=5"
         },
         {
           "title": "机器之心 · 模型与工程化进展",
@@ -491,6 +491,16 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqV1NpcGRyazhiYXRvbUR6Q0VtdGN5bmRUYktiZXQwVmNHaVA4RzZ0dVVjMlM0b2VuRmR5MWlkb1B3SUppUG1teUdsNXZCLWdrbkJBeW5ySnBhQ1E?oc=5"
         },
         {
+          "title": "智驾小蓝灯的四年：从科技标签到监管红线",
+          "summary": "汽车之家 报道 · 11-07 15:56 发布 · 由「汽车 强制性国家标准 灯光」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-07 07:56",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5abV82TXd1MGlKbnhQcnYyWExyRDV3aURKcjhQNHFfR0draU81NFhjM3RQQ3g4QTBYUUJ0YzZUdVR6dlJoNHkyc3pmNEIyd1ZabWFROWhJQXNxMlE?oc=5"
+        },
+        {
           "title": "从完全自动驾驶改为特斯拉辅助驾驶！特斯拉FSD被迫改名",
           "summary": "汽车之家 报道 · 11-07 04:09 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
@@ -499,16 +509,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96di10VHZkdllBUDh2Zml6RzFLRXcwMF83SEE5UG10djZ6MFpLN09tQlRocGZGQmxHMy00OVZ3WUVFWEgxM3pKWVdnM2ZHS3lYdklVUlNZc3czeW1HdUZjNGJwT2s2Vkh0dWlV?oc=5"
-        },
-        {
-          "title": "【图】2026巴黎车展：问界拟于2027年正式进入欧洲市场 不打价格战",
-          "summary": "汽车之家 报道 · 11-06 04:23 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-05 20:23",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9wR2k3SHZGSFYxLXZlRFQ3R2xySFBueTFma2VpMlpOdmJGUjZubG05cFRIN1VTVW95T2J1T0lJU21RelBYZXA3aXNlX20tdlZWdVY5RUNNdkpYV3VGR3hnX3Vn?oc=5"
         },
         {
           "title": "​智驾身份落地 深蓝SL03小蓝灯“持证上岗”",
@@ -571,22 +571,12 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSGR0OU45cko0OFlYR0kteDlSMXp1VW9iU0E5YlJabGJpOWFkdEtYNUhYamgxYVk2MnZzMzBMQ0ZrVkhNaTVRRzRRWFNJU18yY3dUaC1GUTVwYjVUOTdPVElmemVpNVlQTzlnTEZmOVV5bUl0UWM3QW9HTi1xc3dKY2JFNkkway1kSGd1c2N2SWttTnBCSWFaRVd2ampybTd6NElxLWdGLXI3Rlc4MzBCa1czdl9nLV9XZjdydUNyUGVZVDJuemtmMXF0R1FTWnpfVUNIYlRoaW1zdw?oc=5"
         },
         {
-          "title": "特种胶粘剂与密封剂市场展望2035：电动汽车轻量化驱动增长 - 新闻和统计",
-          "summary": "IndexBox 报道 · 11-08 06:16 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
-          "source": "IndexBox",
-          "date": "2026-11-07 22:16",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVGlGQk1BSEh5RVNJQXZWVlcwT1B0R1p4NU9vZTZUMkpQRGp6aGY0RU1zR01NSlpWMlFaRlN3dldFYTlQdTAyQUpZT3pza1oxTWVTWDB3czBZNW1hbVUyZ2ZvVWZCRzlTSjlnbWd0UFNOclhfdl9ZQldpVmZ0RFJhTlNFRXBHb1YyaVhrUHlqQXhkNXBISU9uOXZoTFRiZ2tvMnMzRlM2VVpKMHQ0RXIwOUhYWExMZlNCLWRkZ1ZHRnY3ZU1nU0hjRmN6Y1YzM2RtOUdhUVhxN2VwVHZYNldORE84d3o?oc=5"
-        },
-        {
           "title": "多轴向织物市场2035年预测：风电叶片需求与轻量化推动增长- 新闻和统计",
           "summary": "IndexBox 报道 · 11-07 20:26 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
           "source": "IndexBox",
           "date": "2026-11-07 12:26",
           "tag": "动态",
-          "hot": false,
+          "hot": true,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZHA0TlgyZ05mZmhzNm5qYk8zU0lPT2FUMU5EalR3cjV4QVJYM0VjMHpRUk9ydlJ3RXNXdkp0MkRINlh6Z0dWZ3FTbXFWUDJ0SWFwQWh3bHlWNzJTOFg0TENGSGVMcTRZVms5a2RoUm9kU2dudHR3am5wMWhWa1BEa29pRzRTUlVIbnI5UXBnQWlLUmxDRi1aWTNLMk5RTVFmLThpZDFSekxFdm4zcFR4QVR1a0xxQXcwLTVVWERfS19RTUV6c25JSUJ1elltYkVES05qdm9sdEE?oc=5"
         },
@@ -619,6 +609,16 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6S0JqSVRkYWphMlA5SkhJVzEzekt1MUhhM2JwYWlJLTdtb0Jhb21KNV9OMnpWR3dNOTJpbEVac2ZqYjdhUnZUbURPbGJIWHo5cUp4c3NOX3E?oc=5"
+        },
+        {
+          "title": "玻纤增强聚酰胺复合材料（PA GF）市场展望至2035年：轻量化与电动化驱动增长 - 新闻和统计",
+          "summary": "IndexBox 报道 · 11-06 22:56 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
+          "source": "IndexBox",
+          "date": "2026-11-06 14:56",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQNmE5NVNIN3RtSEtJZVZKb1lILW9tWUw0bkFZM3pPWW5nMkd4YlpUaWYxN3p0RXIyaEF0VHJDOUUzaklLdTBZSDh0dHB5UXdDY1ZHSmxMbEZWQnRsanNacGM1TmZwSGlVVEphQVBaUWIwNTZmUzVRcEcxSmxlQzRnWG43ZUxIamVtX2ZDa0FBb1JGVjFfRWlZNmZSekVjaEtnNFFja1FQdDZBSkxBNjNiWGgxWUstUm4tN2tvTGtTYXV2eS1SUHNMSkVqbkhKSnZmbVRUdnQ1Ri1JdWlyUVIyWnd5MHJiM2dDNWdreQ?oc=5"
         },
         {
           "title": "光导与面罩材料：PC / PMMA 的耐候、雾度与镀铝",
