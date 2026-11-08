@@ -1,5 +1,5 @@
 /* 新闻资讯数据 · 个人工作台 —— 本文件由 GitHub Actions 自动生成，请勿手改
- * 生成时间：2026-11-09 02:35（北京时间）· 每 30 分钟更新一次
+ * 生成时间：2026-11-09 06:36（北京时间）· 每 30 分钟更新一次
  * 数据源：公开新闻 RSS，按 8 个板块关键词聚合；失败时保留上一版。
  * 维护方式：改 scripts/build-news.mjs 的 SECTIONS.queries 即可调整关键词。
  * 注意：本文件随 Pages 公开，禁止写入本机路径、账号等私密信息。
@@ -7,10 +7,10 @@
 window.WB_NEWS = {
   "v": 2,
   "live": true,
-  "updated": "2026-11-09 02:35",
-  "generatedAt": "2026-11-08T18:35:52.807Z",
+  "updated": "2026-11-09 06:36",
+  "generatedAt": "2026-11-08T22:36:45.219Z",
   "stale": false,
-  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-09 02:35（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
+  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-09 06:36（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
   "sections": [
     {
       "id": "oem",
@@ -20,6 +20,16 @@ window.WB_NEWS = {
       "desc": "整车厂战略、平台与新车型节奏 —— 决定灯具项目定点与开发周期的上游信号。",
       "fresh": 6,
       "items": [
+        {
+          "title": "XHEART新芯航途这场发布会，带来对智驾公司的灵魂拷问",
+          "summary": "汽车之家 报道 · 11-08 17:16 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-08 09:16",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9UNndyQTdZOGZXM3NVMlhNdGQ4Y01jRjc3Z21CWkN5amNlOHZvdHVJY3VIUGgzbzFUaUJtdXUxV05KQlpzOEZGYXE2OUluWFJ2d0pSVGV0aWFlYzRTckE?oc=5"
+        },
         {
           "title": "全球车企销量前十 中国车企拿下三席",
           "summary": "手机新浪网 报道 · 11-08 14:49 发布 · 由「比亚迪 吉利 奇瑞 销量」关键词自动聚合，点标题看原文全文",
@@ -36,7 +46,7 @@ window.WB_NEWS = {
           "source": "手机新浪网",
           "date": "2026-11-08 06:02",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13eXZiV3ZDRmxpVHN5S0U1bk5HNG1TUTNsMkZVd1RBTUZxQVJlZExZdTZrWTFWcDFhb1M4N0U4T09RVkR0QzdxdkRvNTlCR0xRekRhc08zU2VwZmZPVHdvWkhNNEs3blpLVThRZmpCUGRZMHM?oc=5"
         },
@@ -69,16 +79,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNR0J5ZHZsY3ZuMkxLYi1qU1diZzNzZEpJZXZKOVVVaGRIdVBERjlHeS1aOFZZVHFtaGVyUFJvOGlDMGFrVlBtRVVPenJYQUNaUmVWNzNxVTR1dmRVU0xlV09sX0tzNGJnWkhKNGUwWHd4ZDJON293OVE3U0pEbzM4eg?oc=5"
-        },
-        {
-          "title": "新浪网·",
-          "summary": "新浪网 报道 · 11-07 22:00 发布 · 由「比亚迪 吉利 奇瑞 销量」关键词自动聚合，点标题看原文全文",
-          "source": "新浪网",
-          "date": "2026-11-07 14:00",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5TRV9ScEFXb1RXU2RlcHRydW1JOVZyT1hMSGROYTdiM1lpaS11TXF3WDZDbTZ3NzJpX0xUT0hHZm5GdXdyeGprMEpDMlY2M0NvSFFldWNqN3NTeVJ3VWgyLUtudw?oc=5"
         },
         {
           "title": "工信部《道路机动车辆生产企业及产品公告》",
@@ -121,14 +121,14 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBMQzZJbFpxVFhOMEcxWS1FVURHdnY4ck8wNmxRSW5LR090SUNzalFkWFJPbW8ybEpRMC16eUs1Z1NnMXl3SWdWV29mRXBlZmxsajlNd010ZjVMZlFPU2ZQOS1B?oc=5"
         },
         {
-          "title": "特斯拉Cybertruck停产！销量只剩目标一成，产线让位于Cybercab",
-          "summary": "汽车之家 报道 · 11-08 16:55 发布 · 由「爆款车型 交付量」关键词自动聚合，点标题看原文全文",
+          "title": "Model Y重回SUV销冠 特斯拉靠2款车卖爆？",
+          "summary": "汽车之家 报道 · 11-08 14:33 发布 · 由「爆款车型 交付量」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
-          "date": "2026-11-08 08:55",
+          "date": "2026-11-08 06:33",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nUVl1eVpzalAyQURLVkZTN3hiQjdudHRvSTVzN2Z5eUJWQjRRaXJHb0JCejVrZVpsMEpKVTI3R0pwU0NGLWZibUxLSEZWSlE2MnpUTmM3bm1jUHc?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zV2F6NmRvdGhZc0pvYlpoX2dXVXVRX1Y0Z1FaelJEZ0I4OVBwWjAwMzdFRl82YjRFLWlOSHVjS2JHZE5HZ0VyZFNMVlllNW9hMHdycWFrd0Y0TVVuT0E?oc=5"
         },
         {
           "title": "汽车及汽车零部件行业周报：车企10月销量快报发布，出口持续高增长_行业研究_研报",
@@ -151,6 +151,16 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Ud3pBQVpraW8yTWpTVTZMRXFoMU1zdFhKRUl5TWZXVzhZbUlRNUQydzhzZHhDelh6RzIyX3phMExERkFibGZiZVJpc2JHRFFTMkZCRkZBUlhHNW8?oc=5"
         },
         {
+          "title": "车企销量快报：小米 7月累计交付超30000辆，澎程系列将在9月上市",
+          "summary": "汽车之家 报道 · 11-08 07:40 发布 · 由「爆款车型 交付量」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-07 23:40",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jSExMbGxqSDhxNmc2RklZMmFYazNlNmRFUlpnNHRIQklrSGQybUJMdUtYcnZHSGh3TUgtR2xSZTNMNHpkMDVfMnpjTmdTNDFaMEdla3lhWlVKOEw0ZWc?oc=5"
+        },
+        {
           "title": "10月新能源销量榜单出炉，看完这条视频就知道怎么选",
           "summary": "手机新浪网 报道 · 11-08 03:55 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
           "source": "手机新浪网",
@@ -159,16 +169,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9yS3pYMlV0c3J2YlRqdHpTUXNydUxWcUdmQWlQZmc4U280Y3ZlUkVGNHBVUjAwMDduUXFNdEw0andTUVdKVUkxaGNOaDhCeHFqWHY0QjlCaUN2M25RbHdKYnJpUXpCWDNzcVBISGwtaENnLTQ?oc=5"
-        },
-        {
-          "title": "15-20万的轿车怎么选？2026销量榜揭秘：新能源霸榜，燃油车降价4万仍有一席+FAQ",
-          "summary": "手机新浪网 报道 · 11-08 02:23 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
-          "source": "手机新浪网",
-          "date": "2026-11-07 18:23",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZbnhXWklLN1JBakhzdDc3OXBDak80MWtnQk80N0hGb3NtTE5RNlhnVEI5MDM5c0VEemVpbWNYSVVsNHI4Y2w3dUtrNjJtaWdmX01Bal84MkVqQ1dqMkFndkNITjdJZmhqZGNCWmtNc2dDZw?oc=5"
         },
         {
           "title": "懂车帝销量榜 · 按级别 / 能源形式查月度零售",
@@ -291,6 +291,16 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "高盛从大多数交易员和银行家处撤下 Claude Code",
+          "summary": "news.lavx.hu 报道 · 11-09 04:17 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "news.lavx.hu",
+          "date": "2026-11-08 20:17",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY1NyLUpZQnItVTNKaWltMTM4VWNzNTZaRUNpTm1aUkF6V1VCRjlMUGpkZXc0UDZNN3RxZWpFOUQ2dzRUNFp3VnFxY0VPRmFHSWRiTTAtOXE3T2k1NllWYTNYak5US2RxZk45RnFrMkZyTkxrU2tKZS00NDFqcV9HWHEtSGJUYzZPRnEyMmxBUzJQampBd1VfaEFIU3h3ZlRWMTNKS1BPNkNrY21KQmVxV2IyOEdNdw?oc=5"
+        },
+        {
           "title": "苹果计划明年让 Siri 更像一个智能体",
           "summary": "news.lavx.hu 报道 · 11-09 00:28 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
           "source": "news.lavx.hu",
@@ -306,19 +316,9 @@ window.WB_NEWS = {
           "source": "news.lavx.hu",
           "date": "2026-11-08 16:26",
           "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQR0tfZEdHTUt5NWZUWDAyN0kzVkRJRTRiZnNKdnFpQTluZFdQenNWaGpjMzhlMTM2NEkxZEllUHppWTlfMmNUN2ZHMV9KRW1HV2VXUEc1QnI1ZVFlOWl4Ymd2dXFKU0tHb1BtRmdPX09GTUdNNXVKN1E2Slp0cE4xZmpxenZpaVhfUnhKWFhUaDlDeU52M1R3eVJ5RDVkX21RVEpaRE5scXk?oc=5"
-        },
-        {
-          "title": "Agent 越用越多，企业为何仍不够 AI Native？",
-          "summary": "InfoQ.cn 报道 · 11-09 00:23 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "InfoQ.cn",
-          "date": "2026-11-08 16:23",
-          "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xLWJwb3dUakFhaGlTTGZQa3N2NHRUQVlxcFVJTTh3MXNqNlRHdWptVWdId2VPeTFnUDlNU0RMWDdwdEYtY0R1N19UdnhCaWF4dnE3UGVvV09KVHdHUkE?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQR0tfZEdHTUt5NWZUWDAyN0kzVkRJRTRiZnNKdnFpQTluZFdQenNWaGpjMzhlMTM2NEkxZEllUHppWTlfMmNUN2ZHMV9KRW1HV2VXUEc1QnI1ZVFlOWl4Ymd2dXFKU0tHb1BtRmdPX09GTUdNNXVKN1E2Slp0cE4xZmpxenZpaVhfUnhKWFhUaDlDeU52M1R3eVJ5RDVkX21RVEpaRE5scXk?oc=5"
         },
         {
           "title": "MyShell AI 在 Quasa 上的评测：无需编程即可构建并拥有 AI 智能体",
@@ -381,6 +381,16 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "南航科技深耕航空仿真领域，国产高等级飞行模拟机“飞”向市场",
+          "summary": "珠海网 报道 · 11-09 02:01 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "珠海网",
+          "date": "2026-11-08 18:01",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10UWxCMGpVOWRMSTg3TUdsdlVScl9Sem1SVThxQ3JHQV9TSmx3S21FMVJhcUJ1Z3VibXRYbXd5TkdjMS1IdEtVS0FuMzJDMnNGcU81QS0zQjAxOTZ6T3h5MjQ3VGJDcFp2dU42RDRnUXVBZDZ5RlJj?oc=5"
+        },
+        {
           "title": "数字孪生智能制造技能竞赛系列活动绽放产业工人风采",
           "summary": "手机新浪网 报道 · 11-08 12:59 发布 · 由「数字孪生 制造」关键词自动聚合，点标题看原文全文",
           "source": "手机新浪网",
@@ -396,7 +406,7 @@ window.WB_NEWS = {
           "source": "生物通",
           "date": "2026-11-08 00:03",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IN3N2SThtRlplcW5TZndjUEdzTmlFckMxclFrbkUzNzBVNDdxalhDZ3JXdXhQekFRVmQwRGJzb3o3TFhFXzVmclJKd1NLZHE4TGlzN01oQ0pEemIxUGM5MEZYR0l4ZnlSOVY3ZFFB?oc=5"
         },
@@ -429,16 +439,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96bEF5ZXpwVnJfc0w4Ty1Na0o5YnJ2SFBncWVaZGNBNUhPaUJoT1pOa0oyVFRBU2w1NHRlSm5mMVE5ZFdxdUFoMmJlelo1VWNfVHpjdkxFclViSGFVQkxFTTU4bzRfOWpLQXY3cEhxWkNKbnVVMmdRbTRBdGJQNkE?oc=5"
-        },
-        {
-          "title": "2026工业软件创新发展大会在湖南株洲举行",
-          "summary": "央视网 报道 · 11-07 17:48 发布 · 由「仿真 工业软件」关键词自动聚合，点标题看原文全文",
-          "source": "央视网",
-          "date": "2026-11-07 09:48",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1fS0ttYjhKR1RLb211dlpZb2doamRaUG1icG9LRzhnV2w0Z0tTemdzSEZfN0JzOGZFcS13YVQ4dm5NbGJETmNxQ056QzM5ZXo0Snlnekhkck8zeVJjazMtZ19zZ2dkNmxacHlXWnh1cTJ3TTJZM0pzSWNB?oc=5"
         },
         {
           "title": "Autodesk Moldflow · 官方帮助与新功能",
@@ -511,6 +511,16 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96di10VHZkdllBUDh2Zml6RzFLRXcwMF83SEE5UG10djZ6MFpLN09tQlRocGZGQmxHMy00OVZ3WUVFWEgxM3pKWVdnM2ZHS3lYdklVUlNZc3czeW1HdUZjNGJwT2s2Vkh0dWlV?oc=5"
         },
         {
+          "title": "【图】2026巴黎车展：问界拟于2027年正式进入欧洲市场 不打价格战",
+          "summary": "汽车之家 报道 · 11-06 04:23 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-05 20:23",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9wR2k3SHZGSFYxLXZlRFQ3R2xySFBueTFma2VpMlpOdmJGUjZubG05cFRIN1VTVW95T2J1T0lJU21RelBYZXA3aXNlX20tdlZWdVY5RUNNdkpYV3VGR3hnX3Vn?oc=5"
+        },
+        {
           "title": "​智驾身份落地 深蓝SL03小蓝灯“持证上岗”",
           "summary": "汽车之家 报道 · 11-05 19:18 发布 · 由「汽车 强制性国家标准 灯光」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
@@ -519,16 +529,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBqYnBiSHo0QzdyOHRyd3NrLVJueDNJdC1LRXN5cENuOGY3cmxJaFJ3elJiUDI0MVZ6VzBDdkp4LU53R0ZkblM1b0pfSGZodGhaVldZcnNPY1NkdmVMcHc?oc=5"
-        },
-        {
-          "title": "工信部新规：深蓝SL03等两款L3试点",
-          "summary": "汽车之家 报道 · 11-05 16:18 发布 · 由「汽车 强制性国家标准 灯光」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-05 08:18",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QR3JDVmdJTkJwajREMGRidWdvNjB0NVFjQjZmS1Znd1dTLWI5R2tsS0VJa1Nac0tFYXJzRnBsZDNYUDRoYTBKSEtNZkRtbEI1alpTa29oaG0xY28?oc=5"
         },
         {
           "title": "国家标准全文公开系统 · 查现行有效版本",
@@ -661,22 +661,12 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZzFkRW43ak8tanhrQVdjTE9pN2RyZUppT3cyUVlxMmpWZU5oTW5nUDQ0VHFFTTVYczk4Mmh0X3MzallKclMxUXh5Q0hTc2g3OEN0cUQ2d19BSHZZVktFMzZBdkxPWDBLVWVzOWRaSmN2b3F3OWx6czJXVVhHdy0zWnVCQ3RjdVkyUXZFdA?oc=5"
         },
         {
-          "title": "AI影视创作须守住含“人”量 人物情感仍是内容底色",
-          "summary": "中国科技网 报道 · 11-08 17:48 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "中国科技网",
-          "date": "2026-11-08 09:48",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEY1ZJemVOV2M0Rmtib3dtalFxZ3ROekxPbW1weTFzc0MtdVQ2S2djdGx5UkpDdVZEOGdHVjhRVEh6T3ZPVW11Wm8yN0ZXYkwxSHJ2bjJUdDFrZF82b0NFWnZnTFFqUDY2LVV5N2RQQVY?oc=5"
-        },
-        {
           "title": "百度第三次改搜索框- 产业链",
           "summary": "光通信Pro 报道 · 11-08 12:47 发布 · 由「专利 检索 分析」关键词自动聚合，点标题看原文全文",
           "source": "光通信Pro",
           "date": "2026-11-08 04:47",
           "tag": "动态",
-          "hot": false,
+          "hot": true,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NMTBYeE90NTF3dEd5amxYRlk2bExzYlBTcUNnanFDQkw0d3RLQ1BmT24weVBoTVdKMlcwelFjV01YUHMwMWZQckNKaERwYkhQX2JjMWRLdw?oc=5"
         },
@@ -709,6 +699,16 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFByVmxIT0YxaG5qR3Bfd1l0Q1dHbVZhb0RDdVVSZGpSVVlHdVdOdmd6YUJaT1A3clI1dE9sRnAxNUp2MUwtZkE2VFRQei1RNWF5MGZseXRBRWtxaEFjX0FQcFRTMGpaSFVXZnVr?oc=5"
+        },
+        {
+          "title": "蓝电汽车申请车辆投影车灯控制方法、装置和智能车辆专利，提高投影车灯投影驾驶指示的驾驶环境适应能力",
+          "summary": "金融界 报道 · 11-07 11:31 发布 · 由「汽车 车灯 专利 申请」关键词自动聚合，点标题看原文全文",
+          "source": "金融界",
+          "date": "2026-11-07 03:31",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sRnNSM0NJeWhzU2NiS182S2ZyTVc5dGd5eUJRdTNQY3dDVERQWjlNQ2xRWUpiZ0FoYlJXLVQ1LUxTUk1fN2dQcWphbUJNT1dyMnR4ZFdZWmN6YTA3T1lra1FaYUloZw?oc=5"
         },
         {
           "title": "国家知识产权局 · 审查指南与政策口径",
