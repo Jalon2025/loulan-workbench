@@ -1,5 +1,5 @@
 /* 新闻资讯数据 · 个人工作台 —— 本文件由 GitHub Actions 自动生成，请勿手改
- * 生成时间：2026-11-11 19:35（北京时间）· 每 30 分钟更新一次
+ * 生成时间：2026-11-12 03:01（北京时间）· 每 30 分钟更新一次
  * 数据源：公开新闻 RSS，按 8 个板块关键词聚合；失败时保留上一版。
  * 维护方式：改 scripts/build-news.mjs 的 SECTIONS.queries 即可调整关键词。
  * 注意：本文件随 Pages 公开，禁止写入本机路径、账号等私密信息。
@@ -7,10 +7,10 @@
 window.WB_NEWS = {
   "v": 2,
   "live": true,
-  "updated": "2026-11-11 19:35",
-  "generatedAt": "2026-11-11T11:35:33.918Z",
+  "updated": "2026-11-12 03:01",
+  "generatedAt": "2026-11-11T19:01:15.503Z",
   "stale": false,
-  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-11 19:35（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
+  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-12 03:01（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
   "sections": [
     {
       "id": "oem",
@@ -21,12 +21,32 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "郑州车展明日启幕，超50款新车首发",
+          "summary": "汽车之家 报道 · 11-11 23:40 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-11 15:40",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qa3V0WkZyOVNLd080aU5jelFwVHRXQXU1Z0I3OUNMQ2J5WXlLeDNxSFByV3FDbG1SY001ZWNMdmFfQlBUZS1uZnlIckUzWUJGZ2tSc3dKYXFMeFE?oc=5"
+        },
+        {
+          "title": "郑州车展超50款新车首发，比亚迪大汉领衔",
+          "summary": "汽车之家 报道 · 11-11 23:20 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-11 15:20",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ndU12S0MxUzRsenc2RFhzUkp0emRPbEJHYUZNbnZWUFZMR2V2N0NBSHBuVG1Fb291TnN5VEk0bXd3aENhMWVxR1FvdGhETHVWYnRmdEpfZ1lMWlE?oc=5"
+        },
+        {
           "title": "从出海到全球化：中国汽车产业的新征程| 德勤中国",
           "summary": "Deloitte 报道 · 11-11 16:04 发布 · 由「车企 平台 战略 出海」关键词自动聚合，点标题看原文全文",
           "source": "Deloitte",
           "date": "2026-11-11 08:04",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdm5qcmpMMHZVb1JxUmI4VC1kWWNmcE9wbkQ3SW1TQ2ctUlBJQ1ljZHd4RXcydVZ4Q2RkOVJoMTJLSk41MTdMZE1FTktrcDU3MkRwWkxwMEd5VE5uN2F2eE9rajdpVGF1cklRd3NEeGs0Q3g1QU5JMnlUZXJCcW1LRlhnWnVrVE1vYTg5bmxCdFR5S0poWUUzYm5XM2ZHZkVqb3c?oc=5"
         },
@@ -36,49 +56,29 @@ window.WB_NEWS = {
           "source": "汽车之家",
           "date": "2026-11-11 07:57",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBTUGdybWJOMzR0b21yR3pUTnBDTHE2a3dwcHBjeEYxR2lHVzZFZjlBbXRTanJzUmdweWV3YWVsY3VIenZtTkg2WXBJNmNuWk1CakZYYUoyREdzenM?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1UTRzNHlfSE5TdDMySU5sQi1IRWNyWHpYeHNucFZDS3FlZ0VkRzFHRkdfV3JRaGhYX2Q1Rk1yNkNUSkt5MjRZODg3cUxYRFlTTFFOejhHLU1EUkVjdjRkanYwTGkxdmxvbWo4?oc=5"
         },
         {
-          "title": "新款奔驰GLC上市，指导价34.98万起",
-          "summary": "汽车之家 报道 · 11-11 13:34 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
+          "title": "关于轮辋装反，比亚迪发布声明",
+          "summary": "汽车之家 报道 · 11-11 13:39 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
-          "date": "2026-11-11 05:34",
+          "date": "2026-11-11 05:39",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11akpMUFBOSlByTjhFaWxKWFRlclN0dEdqc1NvREI4c3VBWWFkbEpJek5OODRUSHBmU1pyYlFDVW5HTEJHd1pXLWFMY2pHbU05SmpSNHRNU1hPN1k?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PNnhlTGUyclg0cmZ3ZzJzTlprWlJMTzZjdFM2U2hKdVRTZGY4YnQ0N0swZE11V25rUHkxaXVPbGhLNnJvUW5wMkpkX05ySWMyMW1vcjJrZ1BoVm8?oc=5"
         },
         {
-          "title": "2026郑州车展抢先看 这些新车值得蹲",
-          "summary": "汽车之家 报道 · 11-11 13:29 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-11 05:29",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5SnlhSGUtWkdUdlpic1paTHhNNlZXTmd3VzNfWGVVUWRBMVVMeEZWc193Z1lKcUxoaFh4OFlBXzRzS1NtbTVheU85dVhXWTA1NW02Vi1LQl9tMWs?oc=5"
-        },
-        {
-          "title": "郑州车展明日启幕，超50款新车首发",
+          "title": "郑州车展超50款新车首发，新能源占比65%",
           "summary": "汽车之家 报道 · 11-11 11:40 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
           "date": "2026-11-11 03:40",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qa3V0WkZyOVNLd080aU5jelFwVHRXQXU1Z0I3OUNMQ2J5WXlLeDNxSFByV3FDbG1SY001ZWNMdmFfQlBUZS1uZnlIckUzWUJGZ2tSc3dKYXFMeFE?oc=5"
-        },
-        {
-          "title": "“全球车”幻觉，一招吃天下的路走不通？",
-          "summary": "手机新浪网 报道 · 11-11 11:33 发布 · 由「车企 平台 战略 出海」关键词自动聚合，点标题看原文全文",
-          "source": "手机新浪网",
-          "date": "2026-11-11 03:33",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3NUI3clRPZUFTNDc0c0xMTF9KQTN4cUtYUnlZZ0Q2RkNpOG9ZYlBwZ1dydFJSVGNBS3pHTmMwYXlKanhGNzRfVmtVa245Q2hKUDZNamJlTElRX3lLYVZxWS1sNUNISlMtdDdVNnhLcWhxdw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03NjdFZWNESVhIS09EazZHSTBaYldSZHZwbEVjSk5wNU12ZDFJTkk2cW9XVE02YkJ1VkZEUnFRdlhSc0JhdzdPTDI2VS1VLVFvRmpSZ3dYVTVEU3c?oc=5"
         },
         {
           "title": "工信部《道路机动车辆生产企业及产品公告》",
@@ -111,64 +111,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "MG 07火了，MG活了",
-          "summary": "汽车之家 报道 · 11-11 18:36 发布 · 由「爆款车型 交付量」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-11 10:36",
+          "title": "十月新能源细分销量公布：小米四款车型均上榜，特斯拉“无人问津”？",
+          "summary": "新浪网 报道 · 11-11 21:45 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
+          "source": "新浪网",
+          "date": "2026-11-11 13:45",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zYlRkRkcydjVJSnZ1T3E3RzBERjdDM1hmcnFtS2o3UG9iWUdtQUJVY2ZITjNIekQtajE4eGhJMm91R2owcWh6OTFoMEQ3Q1pzR3FGYWYyWXA4QQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9TRThhd1M3bGhwb0t4WXc3VXZKYWt3V1MtY01UYmQ1VVgzYjJhM1RleDg0UXY5Mlc5UmZ1N0FRaDhpdlJCVXFabDlLNWN2elJWTDNxWnhIZ2JBdFZYZUFmWW4yaWQwLW56MzdBcEdrQkFrdw?oc=5"
         },
         {
-          "title": "奇瑞比亚迪出口破16万，新能源退税率将降至9%",
-          "summary": "汽车之家 报道 · 11-11 18:13 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-11 10:13",
+          "title": "10月车市全景：燃油车断崖下滑、新能源渗透率破 67%，2026零售或跌至近6年谷底 - https://www.caiwennews.com/",
+          "summary": "https://www.caiwennews.com/ 报道 · 11-11 21:35 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
+          "source": "https://www.caiwennews.com/",
+          "date": "2026-11-11 13:35",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03ZTJ5MnkwbFREcFNPTVJ4YnNMOTFzUnVydEhUcGtOTUY2b1JQQmZDTlBWZURRREJEMGVjZGp4U05tQVQ3bXFTV1k3TmlqcTkxYTBVeTJmMzBJY1U?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBTMVBnSXlkZ3pKVTRleElyaUlLTnJ2aDBfNU93WmpuMmFsRWVrYUlBbUc0TW0ySDIxZV84NUEyWXJSSlptY0o4aUpoaWZHb1JVUjIwMUxBS1RaZHd0?oc=5"
         },
         {
-          "title": "10月汽车销量出炉，小米果然让很多人失望了",
-          "summary": "汽车之家 报道 · 11-11 17:39 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
+          "title": "太惨了！11月首周乘用车零售降21%，燃油车销量腰斩",
+          "summary": "汽车之家 报道 · 11-11 21:25 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
-          "date": "2026-11-11 09:39",
+          "date": "2026-11-11 13:25",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE05UmpVYW02T3FreHBmbFZ6ejJlcGdwOE5yVDlwcFQ0eHV1VDlTT3p6SkZCTVZmZ3FNcmlJTi1ZYllpT2xCTGtKdWlRdFhXU3diQnVZUWFLSlNsd2c?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qR2xVMk16SEJaUFh5WDE3WHY2bDJZb25RWVRjZEZLRTFPWHRHcDVkWU03UzEzenZYX1ZLTHVlTTZJSVF1N1BmSTgwWml6bFBvNnpJd0hWbVprU28?oc=5"
         },
         {
-          "title": "十月细分销量公布：小米四款车型均上榜，特斯拉“无人问津”？",
-          "summary": "雷科技 报道 · 11-11 17:20 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
-          "source": "雷科技",
-          "date": "2026-11-11 09:20",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LYS1VMU16UzFNNGNrazItSkEycmgwbjgtc3ZhUFNKbnRaamQ4QkpOdHFvRmhwY20yZlkzVndGckJscmVELUdDc2ZpUW95UQ?oc=5"
-        },
-        {
-          "title": "2026年一季度新能源汽车销量成绩单",
-          "summary": "汽车之家 报道 · 11-11 15:53 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
+          "title": "星愿重夺冠军，奔腾小马升19位｜10月汽车车系销量TOP15",
+          "summary": "汽车之家 报道 · 11-11 21:25 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
-          "date": "2026-11-11 07:53",
+          "date": "2026-11-11 13:25",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lb3F3RUlpZEh4U09Mc2dSY3B4RzY1eHR6QXJDOUNicFBSUUdDYVlEQkdGSzI3cVNkczNxNFdOcC1uZEpqQU1SSzl5Qm5BNjRvaDFlc2E0SjByNEU?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12SHZDRVhyandncDNZSnZKVVlqYWNtWVI0Y0E4ZFN6dzlERzFveGEySWxmRVZYd0JqTEsweDdpYXlTRG1qZ2RCUk5TTmZoTUJ6ZWxZZGdUQ25JWmc?oc=5"
         },
         {
-          "title": "订单持续上升，销量追上小米SU7，吉利这款纯电新车终于做到了？",
-          "summary": "汽车之家 报道 · 11-11 15:44 发布 · 由「爆款车型 交付量」关键词自动聚合，点标题看原文全文",
+          "title": "新能源渗透率逼近75% 11月车市零售却下降21% 燃油车市场怎么了？",
+          "summary": "汽车之家 报道 · 11-11 20:56 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
-          "date": "2026-11-11 07:44",
+          "date": "2026-11-11 12:56",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1sZXRsUXlYbFkyU19BVnFtX294ZzlET3JMYkJHNW9MUTR1UGl6Y2tiVTA2Mkdwd1hQSkE1UVF4N2xpNEt5SHlPVXlXdlJRV2gwaUxQcUtzUDBYaHdaelhXM21hT09ZZVI1Z2hr?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4yWi1LdktPUC0xQ2pHc1hmMllFQ095cXlVZzlYUm1GT1duRFBrSE8wYzBCeHN1Y084YUpKeURmUlVWZ2ZWNU1aam42OWltTmt4ZHZMSHFlSzk4YXM?oc=5"
+        },
+        {
+          "title": "改写TOP5阵营格局：上汽乘用车逆势跻身自主品牌第一梯队",
+          "summary": "汽车之家 报道 · 11-11 20:43 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-11 12:43",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Tei12QlZOMFpHamVCOVd4VVU3ZzRyR3BSMDRudVFQeHJ1Nm00YXBEeGh1bUJCQTVxcERtaGN4cGNlbGxaTG8tQ0ZqWWJDWngxejM3WmhQS05zWEk?oc=5"
         },
         {
           "title": "懂车帝销量榜 · 按级别 / 能源形式查月度零售",
@@ -201,12 +201,32 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "奥迪Q4 e-tron贯穿式尾灯到底值不值？3个维度说透灯厂功底+FAQ",
+          "summary": "手机新浪网 报道 · 11-11 17:18 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
+          "source": "手机新浪网",
+          "date": "2026-11-11 09:18",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9PYS03bzU5MnBRd2JNbXE2SVRxdkRRd08xTnBMRHZjaVdTdVo5VU5GTUI1aG5ZX2doUzFjNWpzM0xGUlhHTFF5OExaRi1sdDB1dEpTZ3hXWV9vdzVtS3RfbzJDNzNzUDZybVhZc1BkTWdlUQ?oc=5"
+        },
+        {
+          "title": "安全的SUV可以看看这三款，省油耐用，空间大舒适性如高铁",
+          "summary": "汽车之家 报道 · 11-10 23:38 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-10 15:38",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5qcThkeEhieXhYdFlZSkl2STctQldpY2hBSVM0VkZ0MkhGVlc0X3N4Mm1uMXFQcXpHazhNbkNoMEZkMHZKSnZBNktwc2ZsSS1XUEJEMFdXckktZnM?oc=5"
+        },
+        {
           "title": "2027款丰田皇冠上市，3米轴距配双色车身",
           "summary": "汽车之家 报道 · 11-10 19:34 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
           "date": "2026-11-10 11:34",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CcGV3M3JhaVMyZUF1LXpvNHF3X19OS0QyalJNT1ptNy12aGxxN1FENVRSU2ljVGczMzNscDR3WnNBQXljakpLd0FKTXlHSnhTRGNEWGhObWM3bTg?oc=5"
         },
@@ -216,7 +236,7 @@ window.WB_NEWS = {
           "source": "汽车之家",
           "date": "2026-11-10 11:30",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5fc1Nudnp4RUhtRTZtbnpqVGdvZ1F2YW1zYVMyZVlzdFBQLUc4MDhaY1kwZmpQYVNyT2VjUU9vSDNCV1Y0Mll4RFFHTWZmMGtHaW1mRmV4M1ZBRkk?oc=5"
         },
@@ -239,26 +259,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BX3VXVm1XYmJ5ckZPc3owNlZ1MmVuT09faVJqeDIzcGxJS19rd0prOFp3Rno2S24yWkZjb3FRR2pwM25BZ05EYXdBdS1nekdEaEdzTzhzbm1pT3daVWpTXw?oc=5"
-        },
-        {
-          "title": "2026款蒙迪欧试驾，192kW动力+骁龙8155芯片",
-          "summary": "汽车之家 报道 · 11-10 10:39 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-10 02:39",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EdGZTMm01YlU3S3dyVTc4MTBUS081VUZzVHhjc0RiaU5hVEtqWGYwZmlaVHNxeGo0YmhVaFp1R0RUZmkyMmNIZFZMcy1Vb0JDdFp0NkwzbWZFTlE?oc=5"
-        },
-        {
-          "title": "智能交互的自我进化 试驾2026款福特蒙迪欧",
-          "summary": "手机新浪网 报道 · 11-10 09:32 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "手机新浪网",
-          "date": "2026-11-10 01:32",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Zc25tU1JiSy1IRmxjd0hMRDh4OEw0dmh0VWJkZVBZa2ItSWY0T1VvRnA3c2hRVlVsN1ZqdTU5UTB6blhITE94anB3Q1BLaXZIaUVBQ2RPT2FIYUxkS2tZSXdWVkZVLVFHQ2NSNDlpWkU?oc=5"
         },
         {
           "title": "中汽研 · 灯具检测、认证与评价口径",
@@ -291,12 +291,42 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "Databricks 为四款 AI 智能体推出原生 Genie 插件",
+          "summary": "Unite.AI 报道 · 11-11 23:59 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "Unite.AI",
+          "date": "2026-11-11 15:59",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQVNmSXMwdW5EdDV1OUYyOGowQmFfS0tvNWh2TUp3LWRoeE9vc2lyU3NWaE1vWEptWWlsbWM2eGs3dGRPVW1JWVFzbm91VFVPSnRqZXdtdkhyMHg1ckJ2UXNPeTdleG5wakxweU0wU1ktV24wV05XeV9GTlBoSDdPemx1YzFYQ3lHMkpUOXU5Mzg?oc=5"
+        },
+        {
+          "title": "AgentSWE：当你把编程交给AI，它交出的那个\"智能体\"真的是你要的那个吗？",
+          "summary": "科技行者 报道 · 11-11 20:15 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
+          "source": "科技行者",
+          "date": "2026-11-11 12:15",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9OUHRHdWg0aElhQ0xKWmN1bld3czlydXYxd2QwOHFxZHNDZmIzcXdUX3RreXJxNGdaZlZid1BreXRFdFQ0czJvQ1dZckJ0c2hfR3RYTXpKbkRVSDcyaU1z?oc=5"
+        },
+        {
+          "title": "Chainalysis：绕开美国出口管制，中国 AI 大模型“蒸馏潮”背后的链上影子市场",
+          "summary": "PANews 报道 · 11-11 16:50 发布 · 由「大模型 Agent 发布」关键词自动聚合，点标题看原文全文",
+          "source": "PANews",
+          "date": "2026-11-11 08:50",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9XM3ZZb3VrS3pnamY0d0tPSHRvTjM3QkFQVUxhWG1BME01RmhiYXR3SmFydU5jNklKXzFxTlZ1M29JWkYtY2xscDVOOU5TQnNxMjNxbkRxeTl0UjgxcmZaQWloUzhRU3k3RUFWdk0yX0hSZ0NSMXRtWGdYNjQ1TEU?oc=5"
+        },
+        {
           "title": "当AI给自己出考题：SWE-Duel如何让编程智能体互相\"决斗\"",
           "summary": "科技行者 报道 · 11-11 13:23 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
           "source": "科技行者",
           "date": "2026-11-11 05:23",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE95djZzLUpPSmNaRjlDUVZwR2c4OFVTRGprOTNjaUx5R0R4ckZxRG9fbTlRYjdhZm04OUVfYmZQWHFWeVFsbzRJeV9MeXVXang3QXA1VHF5eS1LeXN2b1hZ?oc=5"
         },
@@ -306,7 +336,7 @@ window.WB_NEWS = {
           "source": "CSDN博客",
           "date": "2026-11-11 03:36",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tWDN1RmpoMExvU3AyYVpSZ00wS2dlWHhGUVJIVWNlVG9raWpMUTZyZEtoVFJydkYtOGlqRjlHbWc2TUNaUlg1N3BKa3E0dDlVTWVib2s4LWFCN1BhN0tBdVlCdUlZWHlNakc0T1pB?oc=5"
         },
@@ -319,36 +349,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4tTlZiaHR2ZjY1Z1E0V0RQX1NtOVU4ZmU2M3hjWDZYODRReW1oWTFkVm16SDd5b2k5VTRoVFhaU09IVUlsWENXU21aQmJLcDJuQ2c?oc=5"
-        },
-        {
-          "title": "阿里发布Qwen4-Max预览版，世界感知、Agent及3D建模能力进一步升级",
-          "summary": "VR陀螺 报道 · 11-11 10:54 发布 · 由「大模型 Agent 发布」关键词自动聚合，点标题看原文全文",
-          "source": "VR陀螺",
-          "date": "2026-11-11 02:54",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE55emJLajZTaGttajBjVDBianY4Z2l0a0QzMi1MdjN6dHIyZnhRS2xvajlBNGFoNUxLUHo5amtyblFGWlF0aDNkd2h0MA?oc=5"
-        },
-        {
-          "title": "AMD 发布 Zen 6 EPYC 处理器，助力部署更高密度的 AI 智能体",
-          "summary": "Unite.AI 报道 · 11-11 10:47 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "Unite.AI",
-          "date": "2026-11-11 02:47",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdlRXUzJyODNhdTZDUkU3Y3BhbG4ybUN2ZlROLUJXZTB5bnBqaGNrSWVFTGR2aVZHNGpjTmQzRER0VGd0aUFzUE4yS0gwM09LVXRvbl9UVGZLcVJaWS1xT0R5QnNVYUVZWjN5X0ZtaXpMM19vbFFuaHZxSk56ZVZVWUFQZGd5Y2RUdkJhY2lIMi1wZGc?oc=5"
-        },
-        {
-          "title": "Arm AGI CPU成熟软件生态，赋能智能体AI落地",
-          "summary": "驱动中国 报道 · 11-11 09:39 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "驱动中国",
-          "date": "2026-11-11 01:39",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JOFp3eW1PajFpaWY4S2VBRW5EbGpDaU43aGlhUDl4X0xQcHlBT29wQ0JzT3F0clBNYU9FcXcyQkNyZ0JqQllsdVI5cThjUm1MSkE?oc=5"
         },
         {
           "title": "机器之心 · 模型与工程化进展",
@@ -381,64 +381,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "国电南瑞新注册《信息-物理-社会系统仿真平台V3.0》项目的软件著作权_公司新闻",
+          "summary": "证券之星 报道 · 11-12 02:29 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "证券之星",
+          "date": "2026-11-11 18:29",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1MS04LVFxMVZ4akx1SDMwNmtqUVpLX3RydEx4dGV2QkpDZXhhdFc4Smw0LVJjakoweVd6SUQ3WkF5OHgxcmhmc0JWaFNkY0Jtbzg0TnIyaXplS0lEOXNhUA?oc=5"
+        },
+        {
+          "title": "Plurai 融资 1,300 万美元种子轮，并推出 AI 智能体仿真平台",
+          "summary": "Unite.AI 报道 · 11-11 23:45 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "Unite.AI",
+          "date": "2026-11-11 15:45",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObmNaYzdxNDJsWGhfQ202UG1QSmtkenNDYzJqb3N3TjBNMldfWlVGRk5HOHF2aGhiVklzdXlURzlUOVRkbWVTNVkydzdrRm1Gd19BVk5xWXBSdXBXLVpYbHctcjIyaFo2RUxGbElqelB3aDAxUjJXRU05OW1ZTzJNZWZpZHhrT29BN09OVWp5SkpXQ1k?oc=5"
+        },
+        {
+          "title": "港首个大型成人展取消！广州国际性文化博览已连办28届卖仿真娃娃",
+          "summary": "香港01 报道 · 11-11 22:53 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "香港01",
+          "date": "2026-11-11 14:53",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMizgNBVV95cUxNc1dhNjdUYm80cS1rX0Q0a0MtVks0bkIzdjdwLXJVdnBCbjZvWC1RSVF5eWhYUXJTN1doaGcwNXNyVlNlQllTWmwzZHM2UlpJRDYzYzAzMkQ1N01lU1NtRGJHLUxmd1pYTWVzWGFRazAtOWFUbl9wck5kQVhVQTByYjB6akNsallwVXBzNjhpa3FxQm9FTzVrMmYycjV0OW42dTZFanREWU1xdG1kRlRiakJycFJMQ1llQmxVaUdPdjc5UjZpcFk2YzJ2NG03S3BHRE8xelQxYzV1elhaaFlHa3IzMnhZY1YwbFVpV09YOVB4bWw0NG1ub1NZeWZBT3pDWF92bzVmUzM2WTYzdy1JRTlxQVRyZlc5UkFnTXAxcW1scjVWdlczQ1hrdE5qUkhvNEZva1B1ZmJmMF9KUDdMVldZdjhhRkV1Z0E5MmZzTkZxQ0JxWS13MThob1JyUm50dkJOWGhDOTVnY0xJdzJIbGYtZElnZWlSTjdZby1Pekd2dUI5VTdpeWlZTVVJZ01XT1RYTTk2V1pNTDYxTEFhTnN0OGEwaUZRT1R1dm9MRzBzNXpVNWZ1V3puLXA5UFhaZ3NfcHdiYS04M0F2VkE?oc=5"
+        },
+        {
+          "title": "计算机行业周报：Palantir企业端收入首超政府业务，世界模型加速迈向交互仿真_行业研究_研报",
+          "summary": "证券之星 报道 · 11-11 20:28 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
+          "source": "证券之星",
+          "date": "2026-11-11 12:28",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE56THllSURnVUpJMUExaDhQSkpaakNGeEo1NVBLb0VXbzkwS2RZcEpjY0g4Ui04QjNGdXd2NWQ0UVppbUZHbTBMQnY4OUg1Wk12NVBMdXFsYktBTFRrd1MtcmZn?oc=5"
+        },
+        {
+          "title": "ANSYS Workbench 2025 R1仿真实战：几何适配、物理驱动网格与结果可信度",
+          "summary": "CSDN 报道 · 11-11 19:18 发布 · 由「Ansys 仿真 新版本」关键词自动聚合，点标题看原文全文",
+          "source": "CSDN",
+          "date": "2026-11-11 11:18",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1sQ3FQUk41a25xZFg1cnZhQlBieEdEaHcteHpHTHpnLVgyV0VFTkozMXQzRXJydU5Ja3dJRjNJU0JOOGJyU1ZTNWFkbjRCXzVSMkhyWU1SLTNYdU1NZlZ2NA?oc=5"
+        },
+        {
           "title": "NVIDIA 与合作伙伴在 CoRL 展示机器人如何在仿真中演练精细作业",
           "summary": "Sohu 报道 · 11-11 19:00 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
           "source": "Sohu",
           "date": "2026-11-11 11:00",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMFhIWGZzSGFBVXItVHZNRmtlQW9fV2VxZnFnNi1HSjM5Mk92T0owTmllRnRKTEJIM2Y4RkxTUHVtYkVzR3hjYUE1VXpDYWdRaWFsVjR6bGg2YXBvYzlOMldsSllYd19Fa3BLeFNNQ2hoTnRKeUJ0ak4zcldwUlpmWFlGSjdJN2Zl?oc=5"
-        },
-        {
-          "title": "我国光伏发电系统多物理场耦合仿真技术研究取得进展",
-          "summary": "Sohu 报道 · 11-11 17:10 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
-          "source": "Sohu",
-          "date": "2026-11-11 09:10",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWkZUNklQZEF1ajEwT2s1cUhJSmxpRXRBSmFyRk5rSmJxZWFmWHNKQ1pCSVVnY3pHWkpHYnZ6Zk1GNDY3N1BDbVZFRFhvNEkxWk5MdmJJZ094bkY5THdMaWR4d3ZEd0QzTDEtNDh0eFpLdUtUb3V0S1JGTEU5cjB6VnNmSFUtaE1HaXNJ?oc=5"
-        },
-        {
-          "title": "押注物理AI仿真，蜂巢互联启动IPO辅导",
-          "summary": "Sohu 报道 · 11-11 16:28 发布 · 由「仿真 工业软件」关键词自动聚合，点标题看原文全文",
-          "source": "Sohu",
-          "date": "2026-11-11 08:28",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZXNNRTVMc2ZVaGZZS0lHNE04WTB4dUdxb2FlaFFPSnZlQ0Zma2hIbVQ2WjFKVENweVEzQ0Z5YnBDcTVLSTZtdFYtZ2J2aEVZaS1wTGtwcTVXeDI0cFVYU21mS29PNkVmeEI0Y1BkV2s3Vmp0SDZYeG11OXY1bEpKaXM5bVRTWWRV?oc=5"
-        },
-        {
-          "title": "国产高端仿真软件与算力芯片替代的系统性攻坚路径",
-          "summary": "CSDN 报道 · 11-11 14:32 发布 · 由「仿真 工业软件」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN",
-          "date": "2026-11-11 06:32",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01d29LcUoycnFQY1FJU080YzJUT0xGQVFJeVdtUUtISDVuXzBkeWw1S1JWd0VTelVGV1RZcnNtQnJxcm5Yb0ZhNXRDbm5jc3g5TnBpdXpPVWtKRWp6SXhidg?oc=5"
-        },
-        {
-          "title": "生成式AI与机器人仿真：CoRL大会展示操作训练新进展",
-          "summary": "至顶网 报道 · 11-11 12:22 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
-          "source": "至顶网",
-          "date": "2026-11-11 04:22",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE92ZTVnUWtkQTdUOHdDUUpXanI0T3FKV0t0VWtERE5tVlVBbjB0UER0Y2xaV1JaYzBPM01tRzhwMDBocEtLUVc2NTRjcXBiYkpfSWRfMGdXTTVLOE9vRXhaX1RFRzN1TlN0SkE?oc=5"
-        },
-        {
-          "title": "央卫视密集上新AI仿真人短剧：一场从“小屏”到“大屏”的上星运动",
-          "summary": "中广互联 报道 · 11-11 10:31 发布 · 由「仿真」关键词自动聚合，点标题看原文全文",
-          "source": "中广互联",
-          "date": "2026-11-11 02:31",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1BYnpYNWxZZHJuSE54RWIzS0lfOGhtbVdXdjhNTjRoaEhZOXNUdWRMS3hUVnRaQUg0MmNtb1dPZ2NwSWpJeDM5UXNSVQ?oc=5"
         },
         {
           "title": "Autodesk Moldflow · 官方帮助与新功能",
@@ -501,6 +501,16 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE94cUNkSzhOWXdKOHhLMmJlZmRYaWphRklueGU3d3NFOEhNVzB5RUY4ZHg4VHYzdmVPTFdzYWIzTWs3UUIxNXhSSXBuWlRpMHdEbHp4Tk5IMVFCSGV2THZUTFF0VVhPTWJHR0Y5aTlyZ3JfVzQ0MkNMY25FNUNpUQ?oc=5"
         },
         {
+          "title": "官方确认！智驾小蓝灯被禁：曾被吐槽亮瞎眼，多家车企已紧急应对",
+          "summary": "汽车之家 报道 · 11-10 15:41 发布 · 由「汽车 强制性国家标准 灯光」关键词自动聚合，点标题看原文全文",
+          "source": "汽车之家",
+          "date": "2026-11-10 07:41",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5zZWtsSjZYQm5tZ3pvNC01MXpZVUgzcmd6UHkyRWZjNFQ4eDBDTFh6ZGtsQWF0QmRVWF92ZnowRm8wVTQySlFtcVVFZFpTejIwTXMyYm0yVHVyUDA?oc=5"
+        },
+        {
           "title": "问界官宣2027秋进军欧洲，首要目标Euro NCAP五星",
           "summary": "汽车之家 报道 · 11-10 12:37 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
           "source": "汽车之家",
@@ -519,16 +529,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IM04zdXczYVQ1ckRGR3hBU3F0SjJETWRMZm56REprUy1semIwd2tqWnZxMW9kNm5xSjBlY2JKUjd0SFVfODJndjlwbVhacVZ2dTZBVzF5ekpteFp6dzhkN01ueFNvaDJHMXJj?oc=5"
-        },
-        {
-          "title": "欧7新规11月29日生效，电动车刹车粉尘限值更严",
-          "summary": "汽车之家 报道 · 11-10 08:34 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-10 00:34",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KQU5oYzNSdkZHTWI0MktXLXBwd2hPX2N3RlN4RlRFYW1LTnlLVzNCeDlTVHVlXzJ6cjY4Q1dFRTg4NU9FUGYwbFlzMlVLeXRrV216WG5HZ1lKVzBFaXZKVVBfY0JNT3dTZTJZ?oc=5"
         },
         {
           "title": "国家标准全文公开系统 · 查现行有效版本",
@@ -571,12 +571,22 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMTB5cEJhSHY1WDZfeUNiNHlBNWV3ajNWaDd5Sl92ejZsX3d5bFBaRVF3RHkxYlZFMzdFaGhSNDFZLXF4ZGNlcUdOWnoyUndyNl9fRGdweDFlY3pLbjJyMFpRWmRyX1NRY0xqTFhNWkZrSFlWNmx5cVVBdzBQU1RBdGhqYmtlb28tNVh6NA?oc=5"
         },
         {
+          "title": "富印新材申请一种高粘降噪双面胶及其制备方法和应用专利，对汽车配件用双面压敏胶的综合性能进行改性",
+          "summary": "金融界 报道 · 11-11 14:02 发布 · 由「改性塑料 汽车」关键词自动聚合，点标题看原文全文",
+          "source": "金融界",
+          "date": "2026-11-11 06:02",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9qcUE0bm5UWU1LR1JUNHJKbTZvNTdzclBkOVlYZEtoRElnNHZULXpSWklTVW9aYm1kLUF2RFpXRC1rQzRWU1g5ajNjdWtBY195OG1SVi1GNmk3YWtldGFoeVNNN0Jidw?oc=5"
+        },
+        {
           "title": "聚丙烯化合物市场展望2035：汽车轻量化支撑增长 - 新闻和统计",
           "summary": "IndexBox 报道 · 11-11 12:21 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
           "source": "IndexBox",
           "date": "2026-11-11 04:21",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTTJ6VFRkX1FaeDBDTXRZTnhaN0RKTmMtdzY2NHhYWDBnakNHaHVjelBSUXd5ZjB6cF9YaTlXMGZQWmptWlNTelpMTnRvbTVkTFlNMkF6UTM5aDBkQ3R0QUw5M2FiVjJfVVRvdkkwemk3LU9rZzI0cG9GRWlhNWJsVUxUMGYzVXY2bmJwSzl5aUVnb0ZUZHV1aGJZbm9VeHI0SmhKLW5DaDhIOHhMZEpSTEpfQmdzVDBXcFB4clJwc1Q4TXFJa0lmdzFPa1o?oc=5"
         },
@@ -611,16 +621,6 @@ window.WB_NEWS = {
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9JdldIb19WS3BMeE41MHc0VEg4WHV2dndVeF91QmxyQjdQUmxIQ2ZVZVhHWUJ5aWo0WUFhbmRwQUJjTXJWNy1rWkZiWFluZi0wblNLWmR6azRXNEZfRzRmUWdUdl9uZjhoQmxmeWlzbjVzZ1Jq?oc=5"
         },
         {
-          "title": "【深度报道】材铸根基：汽车新材料的协同突围",
-          "summary": "手机新浪网 报道 · 11-10 15:22 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
-          "source": "手机新浪网",
-          "date": "2026-11-10 07:22",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0wU3J6NFVMNHg3OUNYNmFZV2EzY2ZQdkQ4SUxUbTI1c0lsS21SYWN0c0JmUEZwNDhlQUEzUGcxcnVhcDkyd3dSNGZ0ZkFfYkhxWm1iWU5xd2dyckJyNmFVRFlJRFc4dmtHVUs1b29EZ1o?oc=5"
-        },
-        {
           "title": "光导与面罩材料：PC / PMMA 的耐候、雾度与镀铝",
           "summary": "车灯透明件的三条老问题：紫外老化黄变、注塑残余应力导致开裂、镀铝层与基材附着失效。做材料替换或供应商变更时，先把耐候、透光率、雾度与热变形温度的试验条件对齐，再谈成本。可在知网按主题检索对应失效研究。",
           "source": "中国知网 · 文献检索",
@@ -651,12 +651,32 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "来画LAiPIC入选国家级重点“小巨人”企业",
+          "summary": "中华网 报道 · 11-11 20:38 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
+          "source": "中华网",
+          "date": "2026-11-11 12:38",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE85TnBadjBGNGVyRXY3cGxpN3ZlRjJMNlY4Y0JjLUVJdkxOMnJFQ3FvdTlFMzhqWGcweEhsQUF0T3BtSTJKSGtEZ0hYTW5pRU52T2s5WDNlaFZnQ1lTeXd0Z0pnenhMNEx1WkxVNA?oc=5"
+        },
+        {
+          "title": "AI短剧竞争升级：平台争夺创作者，产业链迎来洗牌_财经报道_财经",
+          "summary": "证券之星 报道 · 11-11 19:03 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
+          "source": "证券之星",
+          "date": "2026-11-11 11:03",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mNDZXY2Z5NHUwZF9ENU1qcldsbTV1T0JjTnJ5T3VyS3F6SHNhWTVJemFOeDl1Vjh1SmEtaWhtNWhvZ0lpdVJKSndJWkFDc0R2TnRXLXc1UG1KaGFZN1M0aw?oc=5"
+        },
+        {
           "title": "燎旺车灯取得车灯焊接部位密封件及汽车灯具专利，有效分散内应力以降低开裂风险",
           "summary": "金融界 报道 · 11-11 18:22 发布 · 由「汽车 车灯 专利 申请」关键词自动聚合，点标题看原文全文",
           "source": "金融界",
           "date": "2026-11-11 10:22",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1sZzRyMzVjRUlYWVFrejhma0ZyVlEwbTd1RVNyanM0YVRHUEozUmVZWEdPSXRZcDV4Q0JlYTNVVUtaUzJkZHExRWljQWRkLTl3LWI3MldFVjlKaUh2ODdyTkNlTDMxZw?oc=5"
         },
@@ -666,7 +686,7 @@ window.WB_NEWS = {
           "source": "手机新浪网",
           "date": "2026-11-11 02:12",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4wMmg0UFpTM0dLZGNHemRTRnhQRm8zaGF6TThGYkhYTk4yT3psN2hCZUFBNXpSbzVWcW1RaEhQQzhMMkkwcF9LUHBKWEpxSnBXZm13UzkzdUQ1VmRBOFFHNzkyZ0hoZmpNYU51S2dNZEZCZw?oc=5"
         },
@@ -689,26 +709,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CV0tOeWE2MVBuSGxLbG5SWVZTZEN2RnFGS2tSZ0NQd1JCWHNtZnJrVkttU1dqUlp2R20ycmJ0bkkyZXlfQTFodmw5N0h2OXp4ZzBQblJxRVdqdnZmYUUwWGtXZ0UyUFdOU1Y0?oc=5"
-        },
-        {
-          "title": "长视频拥抱AI，但真正的难题在技术之外",
-          "summary": "创业邦 报道 · 11-10 14:47 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "创业邦",
-          "date": "2026-11-10 06:47",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9iSVVoUmZVcGZyQmMwLXFKWlVMSjBYV2NBT2I1X2hNS3A4LWxHbVJDMGFpdDFXRXZ1aWdsX1pRdlN0bFEycmhqMG01V01Xd2Fp?oc=5"
-        },
-        {
-          "title": "鲸锐AI创作大赛大咖对谈：AI时代好故事仍是核心竞争力",
-          "summary": "搜狐网 报道 · 11-10 13:51 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "搜狐网",
-          "date": "2026-11-10 05:51",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQmlwM1hEVkpaUjFaOVZHWG1ETFpNTTh2QUxOcFlHTGVvcC0yOWZyci1sWno3RTFfZUVSdGtJenZLRXZKb1ZYM3FVRkdpeFpYWkVZR0twRHhTUk9GdHR6Q3JISmRsZVJQSC1ZQ0dIQmluOGtrV2hMMko0ZUVFWTN3Vy04MHVlcGxFQ2d6cg?oc=5"
         },
         {
           "title": "国家知识产权局 · 审查指南与政策口径",
