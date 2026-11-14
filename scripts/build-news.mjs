@@ -70,10 +70,24 @@ const SECTIONS = [
 ];
 
 const KR_RSS = 'https://www.36kr.com/feed-newsflash';   // 辅源：有真实摘要的科技快讯
+// 主源：国内可直访的公开 RSS，link 就是真实原文 URL。
+// 不再用 Google 新闻 RSS —— 它的 link 是 news.google.com/rss/articles/CBMi...，
+// 国内不可达，导致页面「阅读原文」点了没反应；且新版是内部 ID，无法本地解码。
+const CN_FEEDS = [
+  { name: 'IT之家',   url: 'https://www.ithome.com/rss/' },
+  { name: '36氪',     url: 'https://www.36kr.com/feed-newsflash' },
+  { name: '雷锋网',   url: 'https://www.leiphone.com/feed' },
+  { name: '钛媒体',   url: 'https://www.tmtpost.com/rss.xml' },
+  { name: '少数派',   url: 'https://sspai.com/feed' },
+  { name: 'Solidot',  url: 'https://www.solidot.org/index.rss' }
+];
 const GOOGLE = 'https://news.google.com/rss/search';
-// 拼接写避免本脚本自身包含完整的私密串（本文件也随 Pages 公开）
-const SECRETS = ['楼兰' + '的AI实战笔记', 'WorkBuddy' + '_Project', 'C:\\Users\\' + 'lylof'];
-const hasSecret = s => SECRETS.some(x => s.includes(x));
+// 私密串不写进本文件（它随 Pages 公开、也会上传到仓库 scripts/）；
+// 需要启用时用环境变量 WB_NEWS_SECRETS 注入，多个用 | 分隔。
+// 部署脚本在上传前另有敏感串检查兜底，公开内容不会泄漏。
+const SECRETS = String(process.env.WB_NEWS_SECRETS || '').split('|')
+  .map(x => x.trim()).filter(Boolean);
+const hasSecret = s => SECRETS.length > 0 && SECRETS.some(x => s.includes(x));
 
 /* ------------------------------ 通用工具 ------------------------------ */
 const decode = s => String(s || '')
@@ -194,6 +208,36 @@ async function fetch36kr() {
   return parseRss(xml).map(x => ({ ...x, kw: '科技快讯' }));
 }
 
+/* 把板块的 queries / fallback 短语拆成关键词，用于国内源的本地分发。
+ * 国内 RSS 没有「按关键词搜索」能力，所以改成一次拉全量、本地打分归板块。 */
+function kwTokens(cfg) {
+  const set = new Set();
+  (cfg.queries || []).concat(cfg.fallback || []).forEach(q => {
+    String(q).split(/\s+/).forEach(w => { if (w.length >= 2) set.add(w.toLowerCase()); });
+  });
+  return [...set];
+}
+async function fetchDomestic() {
+  const results = await Promise.all(CN_FEEDS.map(async f => {
+    const xml = await get(f.url, f.name);
+    return parseRss(xml).map(x => ({ ...x, source: x.source || f.name, kw: f.name }));
+  }));
+  const all = results.flat();
+  console.log('国内源合计: ' + all.length + ' 条');
+  const toks = Object.fromEntries(SECTIONS.map(c => [c.id, kwTokens(c)]));
+  const by = Object.fromEntries(SECTIONS.map(c => [c.id, []]));
+  all.forEach(it => {
+    // 只收真实原文链接，杜绝任何 Google 新闻跳转页混入生成结果
+    if (/news\.google\.com|\/rss\/articles\//i.test(it.url || '')) return;
+    const hay = (String(it.title || '') + ' ' + String(it.desc || '')).toLowerCase();
+    SECTIONS.map(c => ({ id: c.id, n: toks[c.id].reduce((n, w) => n + (hay.includes(w) ? 1 : 0), 0) }))
+      .filter(x => x.n > 0).sort((a, b) => b.n - a.n).slice(0, 2)
+      .forEach(x => by[x.id].push(it));   // 一条最多进 2 个板块
+  });
+  SECTIONS.forEach(c => { by[c.id] = merge(by[c.id]).filter(x => gate(c, x)); });
+  return by;
+}
+
 function merge(list) {
   const seen = new Set();
   return list
@@ -311,25 +355,9 @@ async function main() {
   const kr = await fetch36kr();
   console.log('辅源 36氪快讯:', kr.length, '条');
 
-  const freshBySection = {};
-  for (const cfg of SECTIONS) {
-    // 1) 精准主词（近 7 天）
-    let list = await fetchGoogle(cfg, cfg.queries, '7d');
-    let usable = () => merge(list).filter(x => gate(cfg, x)).length;
-
-    // 2) 命中不足 3 条 → 宽泛兜底词，仍限定 7 天，并逐词打印命中量供诊断
-    if (usable() < 3 && (cfg.fallback || []).length) {
-      console.log('    ↳ ' + cfg.id + ' 主词命中不足，启用宽泛兜底（' + cfg.fallback.length + ' 组）');
-      list = list.concat(await fetchGoogle(cfg, cfg.fallback, '7d'));
-    }
-    // 3) 仍为 0 条 → 用最宽的 3 组词放宽到 30 天，前端会如实标「近期/回顾」
-    if (usable() < 1 && (cfg.fallback || []).length) {
-      console.log('    ↳ ' + cfg.id + ' 7 天内无命中，放宽到 30 天');
-      list = list.concat(await fetchGoogle(cfg, cfg.fallback.slice(0, 3), '30d'));
-    }
-    freshBySection[cfg.id] = merge(list).filter(x => gate(cfg, x));
-    console.log('  → ' + cfg.id + ' 有效 ' + freshBySection[cfg.id].length + ' 条');
-  }
+  // 一次拉全部国内源，本地按板块关键词打分分发（不再逐板块打 Google 新闻 RSS）
+  const freshBySection = await fetchDomestic();
+  SECTIONS.forEach(cfg => console.log('  → ' + cfg.id + ' 有效 ' + freshBySection[cfg.id].length + ' 条'));
 
   const { meta, data } = build(seed, freshBySection, kr);
   console.log('\n实时条目合计: ' + meta.totalFresh + ' | 降级板块: ' +
