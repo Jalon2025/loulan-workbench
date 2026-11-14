@@ -1,5 +1,5 @@
 /* 新闻资讯数据 · 个人工作台 —— 本文件由 GitHub Actions 自动生成，请勿手改
- * 生成时间：2026-11-14 08:04（北京时间）· 每 30 分钟更新一次
+ * 生成时间：2026-11-14 14:49（北京时间）· 每 30 分钟更新一次
  * 数据源：公开新闻 RSS，按 8 个板块关键词聚合；失败时保留上一版。
  * 维护方式：改 scripts/build-news.mjs 的 SECTIONS.queries 即可调整关键词。
  * 注意：本文件随 Pages 公开，禁止写入本机路径、账号等私密信息。
@@ -7,10 +7,10 @@
 window.WB_NEWS = {
   "v": 2,
   "live": true,
-  "updated": "2026-11-14 08:04",
-  "generatedAt": "2026-11-14T00:04:04.452Z",
+  "updated": "2026-11-14 14:49",
+  "generatedAt": "2026-11-14T06:49:06.502Z",
   "stale": false,
-  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-14 08:04（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
+  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-14 14:49（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
   "sections": [
     {
       "id": "oem",
@@ -21,64 +21,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "中东｜Hassad Food：卡塔尔农业食品产业的战略投资平台",
-          "summary": "36氪出海 报道 · 11-13 19:40 发布 · 由「车企 平台 战略 出海」关键词自动聚合，点标题看原文全文",
-          "source": "36氪出海",
-          "date": "2026-11-13 11:40",
+          "title": "出海非洲：从农机到油脂加工，中国企业如何打通农业产业链？",
+          "summary": "原料组织、价格波动与成本控制，成为产业链投资的重要考验。",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:32",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE11Ulk5WUw3Q05VQ1g0MXBleTZWTk9IZExvbHB5UF9JNjZuOUo3YWtHek9EMWgtVXNsbkZHYldCanVVcEttOWc?oc=5"
+          "url": "https://www.tmtpost.com/8204229.html"
         },
         {
-          "title": "二天超11款新车！车市打响年末“收官大战”",
-          "summary": "财联社 报道 · 11-13 16:46 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
-          "source": "财联社",
-          "date": "2026-11-13 08:46",
+          "title": "奔赴工业沃土：中国半导体企业齐聚欧洲",
+          "summary": "11-14 14:32 发布 · 由「钛媒体」关键词自动聚合，点标题看原文全文",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:32",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1lZmlZYWt6SzJ2RG94QVB1d19HLURnZXpyX1MtY0tyMFdGRzZKWlJKV2Jfd29vaFJHSmJ6NEFSMkxRR0s1Ukw5eQ?oc=5"
+          "url": "https://www.tmtpost.com/8205203.html"
         },
         {
-          "title": "车企出海，供应商不能只供货",
-          "summary": "汽车之家 报道 · 11-13 15:02 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 07:02",
+          "title": "全球储能第一的比亚迪，把欧洲第一家电芯工厂选在了葡萄牙",
+          "summary": "比亚迪洽谈葡萄牙棕地建厂，若落地将是其欧洲首座电芯厂，适配储能本地化需求，项目尚未官宣。",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:27",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wbHlyWGpnMkdDekFsOUZWcHB0bDdxeVBmZU5kNGdZX2tqMjR0WFFyYURhek04NnBacVQwTjRyY0MwN2k4WlB6MS00MFlndlZMQmRzcENtcGtRLTg?oc=5"
+          "url": "https://www.tmtpost.com/8205217.html"
         },
         {
-          "title": "奔驰CEO康林松宣布产品规划围绕中国消费者喜好展开，全新纯电E级轿车计划2027年上市，海外品牌本地化战略再升级",
-          "summary": "网通社 报道 · 11-13 11:45 发布 · 由「车企 平台 战略 出海」关键词自动聚合，点标题看原文全文",
-          "source": "网通社",
-          "date": "2026-11-13 03:45",
+          "title": "特斯拉：开始面向个人销售Cybercab",
+          "summary": "特斯拉表示，已向一小部分客户开放Cybercab预订，意味着该公司准备向普通消费者推出这款无人驾驶汽车。这款两座车型没有方向盘和脚踏板，此前已作为特斯拉自动驾驶出租车服务的一部分在奥斯汀上线。特斯拉自动驾驶出租车官方账号周五在X平台发文称，如今Cybercab将对服务覆盖区域内的“选定客户”开放购买",
+          "source": "36氪",
+          "date": "2026-11-14 06:24",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBjWW5wblFwb1hWVHF2SF9hakFRYUpzSEVOVXVla2h2ckNuOUtLbkxFTUk2UmdnQ1lqdDIxYm9VNzY4MVNFVWRLRExyTGR2MGs3NUswc1l3Z1hHWFk?oc=5"
+          "url": "https://36kr.com/newsflashes/4069071474480002?f=rss"
         },
         {
-          "title": "国盛证券：内外因素重塑出海格局 头部车企优势凸显",
-          "summary": "Moomoo 报道 · 11-13 09:24 发布 · 由「车企 平台 战略 出海」关键词自动聚合，点标题看原文全文",
-          "source": "Moomoo",
-          "date": "2026-11-13 01:24",
+          "title": "路透社：黄仁勋被指就婚外情误导英伟达高层，董事会已启动独立调查",
+          "summary": "IT之家 11 月 14 日消息，路透社今天（11 月 14 日）发布博文，在查阅英伟达公司内部邮件，并从两名知情人士处获悉，黄仁勋在婚外情信息方面， 误导了包括总法律顾问蒂姆 · 泰特（Tim Teter）、首席营销官艾莉森 · 瓦贡菲尔德（Alison Wagonfeld）在内的公司高层。 IT",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:24",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYWs5MmRjZFdPcmZCX2tfd2JoWlZSSjF1ZWI0aG1JaTFlQTlYOGg5N21PRFdNOXNNRFA2Q2dwVWZFN0YtRkhrRHRIdk10cTRuWUFyUUY0RjZJR2NKQTFteVdQOHpQVlhOUV9HbVktbVUxa0FhNG5DQzhKSWFXclR6dHk3aVoyRGJldXFVSlFvazlHRmNhZzdfVF9CRDNVY2wwQmtqdnNlSGRIY0Vqd2JvM2pfMXY2UFM1dWpYTnNOMkZNNDQwSUhvbXdYcFNveEMzX1hyaTczYw?oc=5"
+          "url": "https://www.ithome.com/1/027/123.htm"
         },
         {
-          "title": "南方财经全媒体集团",
-          "summary": "南方财经 报道 · 11-12 19:19 发布 · 由「汽车 主机厂 新车 发布」关键词自动聚合，点标题看原文全文",
-          "source": "南方财经",
-          "date": "2026-11-12 11:19",
+          "title": "Nothing 手机阵容明年翻倍至少 6 款，A036 等 3 款机型已现踪迹",
+          "summary": "IT之家 11 月 14 日消息，科技媒体 Smartprix 昨日（11 月 13 日）发布博文， 报道称 Nothing 的手机阵容在 2027 年将扩至 6 款，目前已出现 A006、A010 以及 A036 三款机型。 IT之家援引博文介绍，Nothing 联合创始人、印度区总裁 Akis ",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:09",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBb2xsWnJIT0lDb2lYZmJfbzVFcUJHc1R3bkV6cXZITjRYcDBLNXlKMGthdjk4ak5ibUp6VjNfYy1oVWIwemlxQXNUUmQ2VUt2aDhTc3hBbHhXYldPaDBmWV8tM0dtS3c?oc=5"
+          "url": "https://www.ithome.com/1/027/122.htm"
         },
         {
           "title": "工信部《道路机动车辆生产企业及产品公告》",
@@ -111,64 +111,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "路透社报道：中国乘用车连续12个月销量下滑",
-          "summary": "汽车之家 报道 · 11-14 00:00 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 16:00",
+          "title": "特斯拉：开始面向个人销售Cybercab",
+          "summary": "特斯拉表示，已向一小部分客户开放Cybercab预订，意味着该公司准备向普通消费者推出这款无人驾驶汽车。这款两座车型没有方向盘和脚踏板，此前已作为特斯拉自动驾驶出租车服务的一部分在奥斯汀上线。特斯拉自动驾驶出租车官方账号周五在X平台发文称，如今Cybercab将对服务覆盖区域内的“选定客户”开放购买",
+          "source": "36氪",
+          "date": "2026-11-14 06:24",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4yRzhuZWRnMEZsWUhfNFpJN21Nbm0wLTFaVXVuZXQyX3h5c2FBVHlvYUd2YW1CWnVUdjI2S1AybzM2TmRZaFRVT00wVFFiXzNaZXREMW1leU0yQQ?oc=5"
+          "url": "https://36kr.com/newsflashes/4069071474480002?f=rss"
         },
         {
-          "title": "大型SUV周报丨澎程N90“截胡”销冠，问界新M8升级再战",
-          "summary": "汽车之家 报道 · 11-13 23:03 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 15:03",
+          "title": "南方五省区新能源汽车产业链前10月贡献全网用电增量超三成",
+          "summary": "36氪获悉，据中国南方电网有限责任公司消息，今年1至10月，南方五省区新能源汽车产业链售电量占全网售电量的17.1%，同比增长14.8%，对全网用电增量的贡献率达到34.1%。每新增3度电，就有1度多流向新能源汽车产业链。",
+          "source": "36氪",
+          "date": "2026-11-14 03:28",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iWmEtQXRqa2hLVE9XdU14THA3dlNxOEw4RnZYNER5eHk3Rk50XzVZX3pzQ25TWTI2c2ZmNm1MZzJ5NnQxaGtmRzJGdk5NUEdzVS12NjlybjBCMG8?oc=5"
+          "url": "https://36kr.com/newsflashes/4068951501837186?f=rss"
         },
         {
-          "title": "纯电动车卖得火！5月销量榜出炉 17款销量过万 零跑A10第四",
-          "summary": "汽车之家 报道 · 11-13 22:08 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 14:08",
+          "title": "汽车芯片再次告急，这次是晶圆厂不想生产了",
+          "summary": "汽车每年买这么多芯片，晶圆厂为什么还嫌订单小？",
+          "source": "公开新闻源",
+          "date": "2026-11-14 02:02",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LQ2hXWkFYSVJNa1dQMWlUVndRVnVUTkNMTktLbE5jUEo1ejlWeDhwTXd6blpjVnFSbzNLaGVfZFRLLWRlLWowaFlSWVdKR0VaTkdqMUtHdENvcUE?oc=5"
+          "url": "https://www.tmtpost.com/8204916.html"
         },
         {
-          "title": "硬派越野车型销量盘点（10月）",
-          "summary": "汽车之家 报道 · 11-13 13:46 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 05:46",
+          "title": "南方电网：南方五省区新能源汽车产业链前 10 月贡献全网用电增量超三成",
+          "summary": "IT之家 11 月 14 日消息，据中国南方电网有限责任公司消息，今年 1 至 10 月，南方五省区新能源汽车产业链售电量占全网售电量的 17.1%，同比增长 14.8%，对全网用电增量的贡献率达到 34.1%。每新增 3 度电，就有 1 度多流向新能源汽车产业链。 IT之家从报告获悉，2026 年",
+          "source": "公开新闻源",
+          "date": "2026-11-14 01:40",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxTmZoNXhqbGlMUC00cVltYmQyNF9FaklzMWdpNThTSGRBdEJ2aUp0MjQyRk10MGRFdmlxeGo1MXRGYmoxX3c2cU9MUmpJVnB0ampEZldxNE5lVWs?oc=5"
+          "url": "https://www.ithome.com/1/027/045.htm"
         },
         {
-          "title": "26年10月新能源车销量排行榜！比亚迪稳居第一，特斯拉滑落第八",
-          "summary": "汽车之家 报道 · 11-13 13:28 发布 · 由「新能源汽车 销量 榜单」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 05:28",
+          "title": "特斯拉 Cybercab 面向个人用户开放销售：售 29990 美元，每月还需支付 299 美元自动驾驶订阅费用",
+          "summary": "IT之家 11 月 14 日消息，特斯拉宣布开始向部分个人用户开放 Cybercab 无人驾驶汽车购买渠道，起售价为 29,990 美元 （IT之家注：现汇率约合 20 万元人民币） ，首批车辆预计将于 2026 年 12 月交付。 不过，目前特斯拉 Cybercab 个人购买资格仅向特定受邀客户开",
+          "source": "公开新闻源",
+          "date": "2026-11-14 00:59",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwUHBEcWtIbFNNM3h3eFdnbk01WjNWdGFDYmJiQW12aHgtbXdYbzVtUTVzekFHdk5EVG1RRTY5WDFkWl9IejJRNmJyUXNsNlprY25OM0NzSXU4Q3cxdFE?oc=5"
+          "url": "https://www.ithome.com/1/027/034.htm"
         },
         {
-          "title": "两份车市数据“打架”，真正震撼的那一笔，是出口",
-          "summary": "汽车之家 报道 · 11-13 12:32 发布 · 由「乘用车 销量 乘联会」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 04:32",
+          "title": "日产 Z NISMO 硬顶跑车国内首发：售价 66 万元，半年内全国仅 9 台配额",
+          "summary": "11-14 08:21 发布 · 由「IT之家」关键词自动聚合，点标题看原文全文",
+          "source": "公开新闻源",
+          "date": "2026-11-14 00:21",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE81RThFY0hmNy05WDZsQ2ppc28yU29yRE9yWkFxeUtFMm5tbHJmcE5rVldGVW1xSlhUbXJxZHRDMlhxT2VBYWxtQk1aYUM0X2tnZU4zWnQxYk01MUU?oc=5"
+          "url": "https://www.ithome.com/1/027/024.htm"
         },
         {
           "title": "懂车帝销量榜 · 按级别 / 能源形式查月度零售",
@@ -201,64 +201,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "这才是遥遥领先！全新红旗H9，搭载华为乾崑ADS5，续航达1300km",
-          "summary": "汽车之家 报道 · 11-14 07:49 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 23:49",
+          "title": "预计到 2030 年，我国新增清洁能源电量将覆盖新增用电量",
+          "summary": "IT之家 11 月 14 日消息，据央视新闻报道，中国宏观经济研究院昨天（13 日）发布《中国能源转型展望 2026》。报告显示，目前，我国风电、光伏等清洁能源发电已成为新增装机的主体，并正在逐步成为发电主力。 今年前三季度，全国可再生能源发电量超过 3 万亿千瓦时，占全部发电量的比重超过四成， 预",
+          "source": "公开新闻源",
+          "date": "2026-11-14 03:52",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9SUGRNSGJKTVotbDZ6Q01rRVhfbzdzYUtUa2k4a0U1WmltNXgyOGhVZGltZC1hTk1tRXJHRlJtVFpPekd0Qlk3X3BDSnNwNThZZC1xcjdWdVNrX2c?oc=5"
+          "url": "https://www.ithome.com/1/027/074.htm"
         },
         {
-          "title": "更有气质、更稳重！限时权益价13.38万元起，全新亚洲龙成都上市",
-          "summary": "汽车之家 报道 · 11-14 07:46 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 23:46",
+          "title": "全球最大业载无人货运飞机：白鲸航线 W5000 成功完成技术验证试飞",
+          "summary": "IT之家 11 月 14 日消息，白鲸航线今日宣布，W5000 大型无人货运飞机在内蒙古鄂尔多斯鄂托克前旗成功完成技术验证试飞。据悉，该机型为 全球最大业载无人货运飞机 。 爬升、平飞、转弯、下降、进近着陆……W5000 按照既定计划，一气呵成完成全部飞行科目。动力、飞控、航电、地面测控保障系统协同",
+          "source": "公开新闻源",
+          "date": "2026-11-14 03:09",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE13WjR4bWE5aFUteWZGRktuVEQ5UXZfLWxUa3ppZ0ZRdXpUb2JfZUdIZGRhLXlvU2JBaFZ4OGZfSHYyS2NWbDIxbWI1UmRBNmJNVDNmT3U3UlpweVk?oc=5"
+          "url": "https://www.ithome.com/1/027/068.htm"
         },
         {
-          "title": "12.99万元起 东风日产NX7开启预售 纯电320km/支持城市NOA",
-          "summary": "太平洋汽车 报道 · 11-14 06:32 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "太平洋汽车",
-          "date": "2026-11-13 22:32",
+          "title": "荣耀被曝测试多款豪威影像传感器，“最顶”主摄为 2 亿像素 OVB0D",
+          "summary": "IT之家 11 月 14 日消息，据博主 @数码闲聊站 今日爆料，荣耀手机正在测试多款豪威旗下的影像传感器。 据其透露，目前测试“最顶”的主摄为 200Mp 1/1.12\" OVB0D LOFIC 1X-2X ，中高端主摄为 200Mp 1/1.55\" OV52F，中高端潜望长焦为 64Mp 1/2",
+          "source": "公开新闻源",
+          "date": "2026-11-14 03:03",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Ca3U5S2R4ektLRUlocVl6ZDdjSHBvUGNnRDRRbG41YUxFRW54RTNwQl9zRHRMTFVrMmJ3X2xkOU5iRzE0MUJNbGRiNERwZWVOaGRZalhONkFEMFVVR1dwZw?oc=5"
+          "url": "https://www.ithome.com/1/027/067.htm"
         },
         {
-          "title": "极狐贝塔T1换电版上市 租电售5.2万起 99秒完成补能",
-          "summary": "太平洋汽车 报道 · 11-14 05:03 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "太平洋汽车",
-          "date": "2026-11-13 21:03",
+          "title": "格罗方德美国新晶圆厂动工：日本提供资金支持，首座 2029 年投产",
+          "summary": "IT之家 11 月 14 日消息，GlobalFoundries（格罗方德）当地时间昨日宣布， 其计划根据美日合作协议建设的两座晶圆厂中的首座于其美国纽约州马耳他市厂区动工 ，预计 2029 年投产。 根据此前宣布的协议， 这两座晶圆厂将采取日本提供资金、格罗方德提供技术的模式 ，投资总额可达 21",
+          "source": "公开新闻源",
+          "date": "2026-11-14 02:42",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ia1NwTkx4ZlFSWTNhSU5VWHI0LThMR01MbzUxSFJGTlVsamR6LXFqR3Bma1RmZjhrOUtjYkJ0empTUncyT080QUo4WnBaaEhnc1lhSEs5UF9VeU1va3pMcQ?oc=5"
+          "url": "https://www.ithome.com/1/027/062.htm"
         },
         {
-          "title": "22.5万元起 比亚迪第三代唐开启预售/850km纯电续航",
-          "summary": "太平洋汽车 报道 · 11-14 03:24 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "太平洋汽车",
-          "date": "2026-11-13 19:24",
+          "title": "上汽大通 27 款大拿 V1 上市：标配宁德时代天行电池，8.88 万元起",
+          "summary": "IT之家 11 月 14 日消息，11 月 13 日，上汽大通 27 款大拿 V1 在国内正式上市，售价 8.88 万元起。 IT之家从官方数据获悉，该车长宽高分别为 4800mm、1870mm、1960mm，内部空间 7m³。多功能版提供 2+3、3+3、3+2 三种座椅布局，营运版提供 7/8/",
+          "source": "公开新闻源",
+          "date": "2026-11-14 02:20",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1wcXBJYW1ERzdvTGdvMFliT3NrYUdSZVlOTzEyUXl6V3U5ODJTblV2V0E0Q2xEazZUYXgyc2ZMMlZxMWhxdl9TY3pteDYwS3htNlJ2QlFaZHktTzl0dnFqVA?oc=5"
+          "url": "https://www.ithome.com/1/027/054.htm"
         },
         {
-          "title": "腾势N8上市26.99万起，大五座配空悬与天神之眼5.0",
-          "summary": "汽车之家 报道 · 11-14 01:28 发布 · 由「智能车灯 贯穿式 尾灯」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 17:28",
+          "title": "美“星舰”第15次试飞，助推器未能按计划返回发射场",
+          "summary": "美国太空探索技术公司重型运载火箭“星舰”于美国中部时间13日下午实施第15次试飞，原计划首次尝试助推器和飞船均返回发射场，由发射塔机械臂实施“捕获”回收，但助推器未能按计划返回发射场。美国中部时间13日16时48分许（北京时间14日6时48分许），“星舰”从位于得克萨斯州南部的发射基地升空。此后，火",
+          "source": "36氪",
+          "date": "2026-11-14 02:03",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8zLU11eU9nQ2RWRlNsejY1UTJETjdkSDROeld3RmRsQms0N1diMk9CV0lWeVd3ZkFvbjQxVExoWUZyWnN1SnJTdkpiaEVTelduWlVrM0JfYXZkVWs?oc=5"
+          "url": "https://36kr.com/newsflashes/4068939134588037?f=rss"
         },
         {
           "title": "中汽研 · 灯具检测、认证与评价口径",
@@ -291,64 +291,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "Paperclip AI 是什么，如何管理 AI 智能体团队",
-          "summary": "Pasquale Pillitteri 报道 · 11-14 02:46 发布 · 由「AI 编程 智能体」关键词自动聚合，点标题看原文全文",
-          "source": "Pasquale Pillitteri",
-          "date": "2026-11-13 18:46",
+          "title": "想用AI造芯片？芯片工程师笑了",
+          "summary": "11-14 14:33 发布 · 由「钛媒体」关键词自动聚合，点标题看原文全文",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:33",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0zUGY0S2pxWlpRQnE1ekthYmoyYmM2aDE3bG5zWUJ0Znc4dWs2RmpmOG9UakVTRUxReXNHZU56SlBRYmxxS1NZMEtqTDlEellITUQzRmZfcWVkZlIzOXNzOExuTXZFZlRNXzJqazdRZHhPQXp6WUE?oc=5"
+          "url": "https://www.tmtpost.com/8205198.html"
         },
         {
-          "title": "多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛",
-          "summary": "智源社区 报道 · 11-13 20:00 发布 · 由「多模态 模型 开源」关键词自动聚合，点标题看原文全文",
-          "source": "智源社区",
-          "date": "2026-11-13 12:00",
+          "title": "路透社：黄仁勋被指就婚外情误导英伟达高层，董事会已启动独立调查",
+          "summary": "IT之家 11 月 14 日消息，路透社今天（11 月 14 日）发布博文，在查阅英伟达公司内部邮件，并从两名知情人士处获悉，黄仁勋在婚外情信息方面， 误导了包括总法律顾问蒂姆 · 泰特（Tim Teter）、首席营销官艾莉森 · 瓦贡菲尔德（Alison Wagonfeld）在内的公司高层。 IT",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:24",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBlX2ZzNlRCdmc0YTFSMDd4bWhUUHBXZW9QbDB1Z2lZR1RMQTRYeUpVdkNJUXBhM1pOeS1FeUJoU2daSEpkUzlOLQ?oc=5"
+          "url": "https://www.ithome.com/1/027/123.htm"
         },
         {
-          "title": "企业级Agent竞争转向稳定交付，网易智企以四大技术底座托住AI落地",
-          "summary": "砍柴网 报道 · 11-13 18:15 发布 · 由「大模型 Agent 发布」关键词自动聚合，点标题看原文全文",
-          "source": "砍柴网",
-          "date": "2026-11-13 10:15",
+          "title": "Nothing 手机阵容明年翻倍至少 6 款，A036 等 3 款机型已现踪迹",
+          "summary": "IT之家 11 月 14 日消息，科技媒体 Smartprix 昨日（11 月 13 日）发布博文， 报道称 Nothing 的手机阵容在 2027 年将扩至 6 款，目前已出现 A006、A010 以及 A036 三款机型。 IT之家援引博文介绍，Nothing 联合创始人、印度区总裁 Akis ",
+          "source": "公开新闻源",
+          "date": "2026-11-14 06:09",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81eWJQN0NZbzM3Qm5vdEFLZ2I4ZWxmR0NRV1FlZlBwakFMbHUwNmhKY1Zfd0dEdi02TVdOTklUaHNuRUJGY0lId2pzTjR6SUlLXzZJRk5GNWJRNnRi?oc=5"
+          "url": "https://www.ithome.com/1/027/122.htm"
         },
         {
-          "title": "昇腾Jev开源决策模型适配与调优大赛启动招募-yeeyi",
-          "summary": "yeeyi 报道 · 11-13 17:15 发布 · 由「多模态 模型 开源」关键词自动聚合，点标题看原文全文",
-          "source": "yeeyi",
-          "date": "2026-11-13 09:15",
+          "title": "谷歌高管借 Gemini AI 成功让苹果 iPhone Duo 运行微软 Win11",
+          "summary": "IT之家 11 月 14 日消息，谷歌 AI Studio 产品与设计负责人阿马尔 · 雷希（Ammaar Reshi）于 11 月 12 日在 X 平台发布推文，分享了一段视频， 演示在苹果首款折叠手机 iPhone Duo 上运行 Windows 11 系统，并在 GitHub 上开源 Wind",
+          "source": "公开新闻源",
+          "date": "2026-11-14 05:31",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9NQmZ6R3Z3NWlSWkozRllCOGFkLW5PWkNFcV93YmczSURfaFh2SGs3enRGY0lFZjdtY2xZZktlV3F3WlZudXJPdUxLdGN6bEFxal8xWVN3?oc=5"
+          "url": "https://www.ithome.com/1/027/118.htm"
         },
         {
-          "title": "腾讯混元发布Hy Realtime语音模型！AI不仅能聊天 还能唱歌和执行任务",
-          "summary": "驱动之家 报道 · 11-13 17:15 发布 · 由「大模型 Agent 发布」关键词自动聚合，点标题看原文全文",
-          "source": "驱动之家",
-          "date": "2026-11-13 09:15",
+          "title": "中证协启动券商财务数智化应用调研，五阶段坐标勾勒智能财务路径",
+          "summary": "中国证券业协会日前向各证券公司下发通知，开展财务数智化应用调研，旨在系统了解行业财务数智化应用现状，总结先进经验、剖析问题挑战，为行业深化财务数智化建设、提升财务核算质效和推动财务职能升级提供参考。值得注意的是，券商数智化转型正从财富管理、投资研究等前台业务，向财务、合规、风控、运营等中后台部门纵深",
+          "source": "36氪",
+          "date": "2026-11-14 05:29",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9FTS0wNmFlSUhVZ0prMFhMbmhVNzdoQ1prRkVhbkdyMlkxTmVuQ3pELVBqUmQ1VHVOMnZ4eVYyaHV3NnVSNnBtdkNreGlXcS1tVmJfbFgzSlk?oc=5"
+          "url": "https://36kr.com/newsflashes/4069069479826307?f=rss"
         },
         {
-          "title": "先搞懂上下文，再来谈Agent",
-          "summary": "手机新浪网 报道 · 11-13 15:49 发布 · 由「大模型 Agent 发布」关键词自动聚合，点标题看原文全文",
-          "source": "手机新浪网",
-          "date": "2026-11-13 07:49",
+          "title": "微软承认 10 月 Win10/Win11 更新导致数据库连接异常，部分服务器可能越跑越慢",
+          "summary": "IT之家 11 月 14 日消息，科技媒体 BornCity 今天（11 月 14 日）发布博文，报道称微软已承认部分 Windows 11、Windows 10 系统安装 10 月 13 日发布的累积更新后， 部分使用 SQL Server 的环境可能出现数据库连接无法正常关闭的问题，且 11 月",
+          "source": "公开新闻源",
+          "date": "2026-11-14 05:14",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1KR2dXN1dyR1lOaU9QcGxkMkt1aVJZNnpEWlJYbjRzN2tEejJUU0Z3ZXhtYkx0LUsyZ2J0Mkp2NVZreW5jUnVLcEQ2aURZMVM2Z3ZxOXFNZGo2UmtOUjNxM3lrS245d05OODJKVjZaNzFrX1lmMXFndVItUkpuOHM?oc=5"
+          "url": "https://www.ithome.com/1/027/097.htm"
         },
         {
           "title": "机器之心 · 模型与工程化进展",
@@ -378,67 +378,27 @@ window.WB_NEWS = {
       "icon": "🧪",
       "cadence": "30 分钟",
       "desc": "Moldflow / Ansys / 3DEXPERIENCE 的版本更新与方法实践，关联注塑、结构与光学仿真。",
-      "fresh": 6,
+      "fresh": 2,
       "items": [
         {
-          "title": "ANSYS Workbench工程实践：安装、建模与求解器避坑指南",
-          "summary": "CSDN 报道 · 11-13 10:34 发布 · 由「Ansys 仿真 新版本」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN",
-          "date": "2026-11-13 02:34",
+          "title": "工信部：将筹备成立工业操作系统标准工作组",
+          "summary": "IT之家 11 月 14 日消息，据央视新闻今日报道，记者从工业和信息化部了解到，工业软件标准化技术委员会正 加快推进工业操作系统标准工作组筹建 ，同步推进重点标准研制与验证应用，为工业操作系统规模化应用提供支撑。 据悉，工业操作系统是联接装备、贯通数据、融合智能的关键底座，是人工智能赋能工业的“关",
+          "source": "公开新闻源",
+          "date": "2026-11-13 23:47",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtNjdmZzBRNUs4MkstSVhsNlFaRk9CZUkyREtmbHdIUUh2TURMZW1mV2gtOXM0U3l3QVZDdEQ3bUczbWp1Z09HM2V5RUdUZWtSdWV3eW8tYUpTcl9SU0VFSQ?oc=5"
+          "url": "https://www.ithome.com/1/027/011.htm"
         },
         {
-          "title": "仿真软件采购前必看：用真实使用数据驱动决策",
-          "summary": "CSDN 报道 · 11-12 15:03 发布 · 由「Ansys 仿真 新版本」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN",
-          "date": "2026-11-12 07:03",
+          "title": "英伟达博客发声：她不一样，她懂显卡 ( bushi )，她懂端到端！",
+          "summary": "她叫Alpamayo 2 Edge，因果推理结合扩散动作，端到端输出闭环表现提升 48.9%。 作者丨 郑佳美 编辑丨岑 峰 点开前，你以为老黄家的惊天大瓜又有了什么后续； 点开后才发现：这个“她”连人都不是。 她叫 Alpamayo 2 Edge。 英伟达11月10日刚发布出来的一款端到端自动驾驶",
+          "source": "公开新闻源",
+          "date": "2026-11-13 07:49",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9fUEp2V3AxbzlFeWNTMHEtci1CakVSYnNla0ktem53N0JjWjZidlAyNVl6bFFYZ1FsSndfUEF1cGlMdng0dm9MVGRWM3kyMFVYZm9Bd0NDUGVZSFdCM08yZQ?oc=5"
-        },
-        {
-          "title": "ANSYS Workbench 2025中文版五大底层断层解析",
-          "summary": "CSDN 报道 · 11-12 14:57 发布 · 由「Ansys 仿真 新版本」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN",
-          "date": "2026-11-12 06:57",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE05WlpZT2hNZ1MyaGJrYzBnQkdkRlZGQWNkSGZINnE2a3pHblBSQmJSZGpuNDZSb3V4M3FfRzlXSWNGMndQeEE0aWFBSTFDNnVCTDkzYzQ5ZW5pQjdDeUMwdw?oc=5"
-        },
-        {
-          "title": "Ansys Fluent耦合Chemkin进行CVD仿真全流程指南",
-          "summary": "CSDN 报道 · 11-12 14:42 发布 · 由「Ansys 仿真 新版本」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN",
-          "date": "2026-11-12 06:42",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RNmJvLXBSaGphWHdBMzJjSG5FVzRoQXFUZnQ3bmJTLUVPZ2VJWS1oNEZmNUgzb0JuZHNCdWZLd2VtMWZab0ZoUFRnVFpFRFpDRTNoTFpGcVZFVElQM2ZJZA?oc=5"
-        },
-        {
-          "title": "Ansys 2024技术演进：MBSE与Python化仿真工作流深度解析",
-          "summary": "CSDN 报道 · 11-12 12:57 发布 · 由「Ansys 仿真 新版本」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN",
-          "date": "2026-11-12 04:57",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE82MnFUOXBDa0dmODYwVS1pQzJmdTVfT1FOaG1vRHRQMTlvSmVBUzRyU0dzZnlnYXNmbE5ValhJbS1XQ3NxaUNhUGhVYWk5djZUaTl5XzUwNVQwZWEzUkozZQ?oc=5"
-        },
-        {
-          "title": "ANSYS Fluent 2025中文版进阶实战：网格、湍流与收敛的硬核避坑指南",
-          "summary": "CSDN 报道 · 11-12 12:48 发布 · 由「Ansys 仿真 新版本」关键词自动聚合，点标题看原文全文",
-          "source": "CSDN",
-          "date": "2026-11-12 04:48",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13OTdrTWYzY254VDBOUG5lb2tfS01DV2lKWkttMWdIOEdJSzRlRHYzVzNaM0oySldFN0ZDME40YU85cFMxMjQ2VUpDU3I4Z0F0SlhtWDFMQ1dwMTY0MUtPbg?oc=5"
+          "url": "https://www.leiphone.com/category/ai/1jG5k34DSlHSSJE9.html"
         },
         {
           "title": "Autodesk Moldflow · 官方帮助与新功能",
@@ -468,67 +428,47 @@ window.WB_NEWS = {
       "icon": "📐",
       "cadence": "30 分钟",
       "desc": "强标与型式认证是车灯方案的硬边界，冻结设计前必查。",
-      "fresh": 6,
+      "fresh": 4,
       "items": [
         {
-          "title": "多品牌车型被曝行驶中可语音关闭大灯，汽车智能安全边界引发关注",
-          "summary": "汽车之家 报道 · 11-13 09:09 发布 · 由「汽车 强制性国家标准 灯光」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-13 01:09",
+          "title": "吴清：科学把握节奏的同时加强对科技企业发行上市的制度适配性研究",
+          "summary": "证监会主席吴清在参加2026中国资本市场学术年会时表示，进一步深化制度包容性适应性研究。资本市场作为市场化资源配置的重要平台，要进一步研究深化投融资综合改革，加快构建适应创新规律、产业规律的直接融资体系，统筹发挥私募市场与公开市场、股票市场与债券市场的协同功能，尤其是要在科学把握节奏的同时，加强对大",
+          "source": "36氪",
+          "date": "2026-11-14 03:56",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRV055NVlUbXVvRk5mQVB1TDE1ck9rNE9raEtkRmpJZ2RBSDE4QUJuVW9hclFhOXhxNmRXUTJkTV9Pd0VGQmk0b2FKOFptNEdiTHFUTThzNHRkMEprQmc?oc=5"
+          "url": "https://36kr.com/newsflashes/4069074198303622?f=rss"
         },
         {
-          "title": "电动自行车新规已落地，对于消费者和车主而言会带来哪些变化呢？",
-          "summary": "汽车之家 报道 · 11-13 00:41 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-12 16:41",
+          "title": "雷蛇辉月神专业版电竞椅发布：六马达多区域触觉反馈、THX 扬声器、RGB 灯效，7999 元",
+          "summary": "IT之家 11 月 14 日消息，雷蛇今日发布了辉月神专业版电竞椅，中国区定价 7999 元。这款产品的思路是把游戏中的震动、声音和灯光整合进座椅本身，而非仅在外设层面做叠加。 京东 雷蛇（Razer）辉月神专业版电竞椅 触觉反馈 内置无线扬声器 人体工学腰弓 RGB 7999 元 直达链接 辉月神",
+          "source": "公开新闻源",
+          "date": "2026-11-14 00:18",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzWHQ2UjBJYXBYd3ZONkxUZWlxbTRlV1Fib0xEOHJ2WVQ4MXcwNnNSWElYQUxIaHN0SzFCdkdneUVwZkxVSFBCWXlxSEZDZUdYenRjdGdEZE9XTWM?oc=5"
+          "url": "https://www.ithome.com/1/027/022.htm"
         },
         {
-          "title": "国内内卷之外，问界押注全球高端赛道",
-          "summary": "汽车之家 报道 · 11-12 14:36 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-12 06:36",
+          "title": "台积电内部员工数据泄露",
+          "summary": "台积电在递交到 SEC 的一份声明中称，部分现任及前任员工的个人数据在未经授权的情况下出现在了一个外网上。相关信息与存储在某云服务提供商系统服务中的数据相吻合。台积电表示，目前尚未发现其自身系统遭到入侵的证据，且这些数据与其业务运营或客户信息无关。公司正通知受影响的员工，与该云服务商、相关调查机构以",
+          "source": "公开新闻源",
+          "date": "2026-11-13 10:37",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84SzVVNEtRa2EwN3RHUFRBZ0VqM1FkdWV2eEpvVURMMXU0ZWswSTJ1dWFHS3FuMkgtQjZJcXExcWtFUWhEYmVwenpubjUyZ1BtMFRldkhidk02MTA?oc=5"
+          "url": "https://www.solidot.org/story?sid=85881"
         },
         {
-          "title": "成为欧洲车企核心供应商，吉利i-HEV靠的不只是价格",
-          "summary": "汽车之家 报道 · 11-12 04:55 发布 · 由「汽车 型式认证 新规」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-11 20:55",
+          "title": "让老音箱焕发新生：Home Assistant Connect AUX-2 首发体验",
+          "summary": "玩智能家居这几年，灯光、传感器和开关基本已经靠着Matter和HomeAssistant打通了，唯独多房间音频（Multi-roomAudio）还停留在各自为战的阶段。想让客厅的HomePod、书房的 ... 查看全文",
+          "source": "公开新闻源",
+          "date": "2026-11-12 03:12",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5zcmViRktGZVFtMGRUbUF2NEtwN2hhOGtHbHd4aWFqQ3dmQ0V4S2FvMjctOEphQlhFTWdmbDJGMU1fbnBHOEFocTZYMmNFRGVVOTkwcFVBSjBxWlk?oc=5"
-        },
-        {
-          "title": "智驾状态灯被管起来了：5项强标征求意见，你的智驾宣传还能信？",
-          "summary": "汽车之家 报道 · 11-11 12:23 发布 · 由「汽车 强制性国家标准 灯光」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-11 04:23",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JZWs4cjNNYTlVcHk1TWJjRllac2dkSTQtREJCbGxYRG8wUVhNcnVRamZGUnJwMVdrRlZBYWdsN1pyZE5VeHpsVG9DUkI0cm5kRTFHZ2tSYXVmcEE?oc=5"
-        },
-        {
-          "title": "【图】小蓝灯颜色规范纳入国标 工信部公开征求五项强制性国家标准意见",
-          "summary": "汽车之家 报道 · 11-11 11:37 发布 · 由「汽车 强制性国家标准 灯光」关键词自动聚合，点标题看原文全文",
-          "source": "汽车之家",
-          "date": "2026-11-11 03:37",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91YkxUTzJ6b0xvS0RJaDV1Rm5EdmR5VzhNS0dZbF9pWmFaRUVtZlVxYy02ZEM4Y2xOWUR1eFdqZ3pYOXg2Q0VxcVI5b0Y3aVhFLWZnNEJPX0U3RWhxckJoeURn?oc=5"
+          "url": "https://sspai.com/post/118921"
         },
         {
           "title": "国家标准全文公开系统 · 查现行有效版本",
@@ -558,67 +498,27 @@ window.WB_NEWS = {
       "icon": "🔬",
       "cadence": "30 分钟",
       "desc": "灯壳胶槽、干燥密封、光导材料与注塑缺陷，是结构仿真最常见的失效来源。",
-      "fresh": 6,
+      "fresh": 2,
       "items": [
         {
-          "title": "“十五五” 开局看邹平丨山东宏衍汽车有限公司：深耕轻量化智能制造 解锁铝产业向整车延伸新路径",
-          "summary": "齐鲁网 报道 · 11-13 20:27 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
-          "source": "齐鲁网",
-          "date": "2026-11-13 12:27",
+          "title": "百万级CAR-T抗癌药首次纳入基本医保，患者自付降至10万元以内",
+          "summary": "在2026创新药高质量发展大会上，最新版国家医保药品目录及商保创新药目录同步公布。据记者获悉，新版基本医保目录中，有2款创新药由此前首版商保创新药目录转入基本医保，体现“医保+商保”双目录协同衔接的进一步深化。其中，百万级CAR-T抗癌疗法迎来历史性突破，药明巨诺瑞基奥仑赛注射液（商品名：倍诺达®）",
+          "source": "36氪",
+          "date": "2026-11-14 03:07",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LR0FuZVhLZHdMRUZLRWQ3MGlIV2Q1dExNRjF3cUJyelBUc1hSa3dPX2kwS2RQeF8xcTNTc2cwTHNhR2VxSmR3NFpTaUNTV0VYaVp6WC02TGM3YzJ5Sl9zSEVlN2xBT0VfdzktVA?oc=5"
+          "url": "https://36kr.com/newsflashes/4069026187154307?f=rss"
         },
         {
-          "title": "金属螺钉紧固件市场2035年展望：建筑与汽车轻量化驱动增长 - 新闻和统计",
-          "summary": "IndexBox 报道 · 11-13 02:41 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
-          "source": "IndexBox",
-          "date": "2026-11-12 18:41",
+          "title": "福伦达 NOKTON 35mm F1.2 全画幅镜头发布，提供索尼 E 、尼康 Z 卡口",
+          "summary": "11-14 08:29 发布 · 由「IT之家」关键词自动聚合，点标题看原文全文",
+          "source": "公开新闻源",
+          "date": "2026-11-14 00:29",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOFJEZ09CRnhzUHJ2Z00tcnhRSjF1Z3gzZi1fQVFqM09mRTlZSXRyN1RaN1k3Y1lCUURNeUpzUGhlZF9TNVVSTTROUHQ3b2hseHpUMkVDa0VCNWVsMFZlVmtndUlUSlIzUWNMUXluTVEtcG5mV2EwUmREbzIxZjRQT1lmbVdLTWhMejlHblhnYU5uSGlTTVNqTm5vWnJJdm0yUnA1Z2NxQWZ3ZmtoUHpsV2lBeFMtLWlZMTlJTWRMNDA4V3Z3NThyYmttSjZmbkdQTkJfMGFsc2RsZnM?oc=5"
-        },
-        {
-          "title": "2035年光学胶粘剂市场展望：电子小型化与光学模组复杂化推动需求加速 - 新闻和统计",
-          "summary": "IndexBox 报道 · 11-12 22:11 发布 · 由「光学 材料 车灯」关键词自动聚合，点标题看原文全文",
-          "source": "IndexBox",
-          "date": "2026-11-12 14:11",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOV05UQUtrdzhnQWxYSTdYX0h1T2w5SUlUYUd1SzB1TlBieDV1SXFzTENUM1M2bldXOW1pd3RhZFdrNlhzc21nY3FJRHJMNE5jQ29HLTVzMml0M19oS1E4dHFiUXRTX3BiSTZzM2hkRGRUNHVuTzJhMWZqeXVHdEdZbTByNkpQMk1uTTIxU3RmNk1EYmF1UGVVaW9RRTdpRmZYMjhuZnZhUzJENFJFVGlfTl85dTVkamNoNjhubERKcmcxQUlPYUk2WDh3Zko5MEVENTlTLXplZ3ZIdVk?oc=5"
-        },
-        {
-          "title": "2026年11月重庆脚踏垃圾桶厂家需求沟通指南：模具工装投入与合作条件参考",
-          "summary": "中国工控网 报道 · 11-12 10:50 发布 · 由「注塑 模具 工艺」关键词自动聚合，点标题看原文全文",
-          "source": "中国工控网",
-          "date": "2026-11-12 02:50",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9mRG9MQ3d1VzJ2RExud3VnRjNJcUY4Uk84TG0zNnY2X3hMTWFaaEFITzYwbm5pWURwM1lwN2JvOTd1WXd0UFJreFJlcVlwTEI0T1FXUlNnM2hXUzE4UU44cDNWb1UxUQ?oc=5"
-        },
-        {
-          "title": "从刹车踏板断裂看气相纳米材料如何筑牢汽车安全底层防线",
-          "summary": "新浪财经 报道 · 11-11 18:40 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
-          "source": "新浪财经",
-          "date": "2026-11-11 10:40",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41X0oyeVFvYU9Ral91TjlCeXlnczZuQ3dmTmZMU3g5bVB0eVNJS1RoLUIzTHUtTTRQRVRNMU42Q3c5dTcwYTBpQVh6eE51YmYwMDRJREdKRk11R2N1SFVlbENfU052NkxlWE5iUWw5b0Z5RFZ1WHdNdQ?oc=5"
-        },
-        {
-          "title": "数字化重构铝焊材服务：贝肯霍夫以智能化应对汽车轻量化焊接挑战",
-          "summary": "Sohu 报道 · 11-11 16:22 发布 · 由「汽车 材料 轻量化」关键词自动聚合，点标题看原文全文",
-          "source": "Sohu",
-          "date": "2026-11-11 08:22",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQVZRRkJmbHR6Tm5iak11eE9JUDVjSmhmZ2JsTExUUHUzaU1IVHNoZkk2ekE5YTJSRklZTUkxdGJqN1gydC1YRm1WcWp6VENsNE1iaGxvZm1VYjNHaThWWWRySW9rSkIzUzVPdndpbW15Vmc2UDlpX1pZd2JNaDFHSWR1NE5fVXY2?oc=5"
+          "url": "https://www.ithome.com/1/027/026.htm"
         },
         {
           "title": "光导与面罩材料：PC / PMMA 的耐候、雾度与镀铝",
@@ -651,64 +551,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "“版权守门人”阜博“左右开弓”",
-          "summary": "温州新闻 报道 · 11-14 06:29 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "温州新闻",
-          "date": "2026-11-13 22:29",
+          "title": "浙大彭思达：从元宇宙到具身智能，一个三维视觉研究者的八年 | 世界模型50人",
+          "summary": "八年研究，两个落地系统，超六万GitHub Stars。 作者丨 李秋悦 编辑丨 吴 彤 一支女团跳舞，镜头不必再听导演安排，观众甚至能看到拍摄时不存在的机位。 传统MV拍摄，摄影机架在哪里，观众看到的就是哪个角度。现在用多台摄像机同时记录舞者动作，再重建出一个三维动态场景，镜头可以任意调换位置；从",
+          "source": "公开新闻源",
+          "date": "2026-11-13 16:50",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5BcUhzM28yVlJHOG16LVl2MS0xQ0RPTkx3T0tzbDRRWkw2bVRITnl1MnZ4X1JWa2tmSDFNb0xGU2hiY1RMN29GdVQtX3Q1alFHaXI4bVRQd0dmdEtFZHpSd3ZHWERkLURCa29N?oc=5"
+          "url": "https://www.leiphone.com/category/ai/lpK3LQWqmpZP8jcG.html"
         },
         {
-          "title": "DRESSX – 时尚 AI Suite、虚拟试穿与电商内容创作",
-          "summary": "quasa.io 报道 · 11-14 06:01 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "quasa.io",
-          "date": "2026-11-13 22:01",
+          "title": "地球冰冻圈不再处于安全运行空间内",
+          "summary": "地球上的冰冻部分——包括冰盖、冰川、海冰、积雪和永久冻土——在调节地球气候、水资源供应和碳循环等诸多生态系统服务中发挥着至关重要的作用。但根据中外研究人员的一项新分析，冰冻圈的基本功能已不再处于安全运行空间（SOS）之内；其被推越界限的程度将给地球人口带来长期挑战。作为地球界限（planetary ",
+          "source": "公开新闻源",
+          "date": "2026-11-13 09:52",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONlkyeVJYTFNuQ3FIMkU3b1dpcGNFZno3Vzc4WmctWFg2aXJKOHlvMnYxUlo0ZW5aRENnM1ZEZ1d4M3I5VF9GaW1CeS01YS11Q1d2RnJFYkpNaWlqVGZFel9sTkhPbE9fakZ6ZjdXcDBUeUFjTm40bzdQc2xQWG5hbEVXaWFSWDNmdnJES2dOVHN0UXZaY2w5djlsRXlLWFVDRmxn?oc=5"
+          "url": "https://www.solidot.org/story?sid=85880"
         },
         {
-          "title": "TwoShot – AI 创意套件、音乐生成与自然语言采样搜索",
-          "summary": "quasa.io 报道 · 11-14 01:03 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "quasa.io",
-          "date": "2026-11-13 17:03",
+          "title": "独家丨港大孵化的半导体材料公司，融资数千万",
+          "summary": "一个发表于《Nature》的技术，能在三步剥出晶圆级薄膜，公司获耀途独家投资。 作者丨陈玘凡 编辑 丨吴优 雷峰网 ·鲸犀独家获悉， 半导体材料公司钻耐科思科技（DiamNEX）已完成 数千万元 新一轮融资，由耀途资本独家投资。 钻耐科思（DiamNEX）成立于2025年，由 香港大学孵化 ，专注于",
+          "source": "公开新闻源",
+          "date": "2026-11-13 09:22",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeUxieUNWdGttSldYRmlvQk9DV2M2cFdKeHc4a3BwWlFQbEx1TXV2VklxTkZDM3lhY1MzWFhNa1UtWkl3SWNsa2djMXIzVU5LdWZnQzBHanUtMGlGQVZpcHhEMF9WemVnMDVPNXpOWUM4U1VyZW55RTlUWGFtLXNweHRyRWprV2NMcXRhMUU1cThONHNuWkE0aHhxV0VGblJKSGRhV1ZvWTBTbUFP?oc=5"
+          "url": "https://www.leiphone.com/category/weiwu/DewyIGiyxQl09nUM.html"
         },
         {
-          "title": "乐星汽车电子取得汽车氛围灯多样化照明结构专利，实现了智能化控制",
-          "summary": "金融界 报道 · 11-13 13:31 发布 · 由「汽车 车灯 专利 申请」关键词自动聚合，点标题看原文全文",
-          "source": "金融界",
-          "date": "2026-11-13 05:31",
+          "title": "解读丨不插电的宠物梳毛器，凭什么拿下三千家海外门店？",
+          "summary": "用专利，PawSwing 在宠物梳毛器品类画了一个大圈。 作者丨陈玘凡 编辑丨吴优 雷峰网·鲸犀获悉，宠物智能硬件公司「橘猫宇宙」近日完成数千万元Pre-A轮融资，高秉强教授及旗下高锋耐心基金、前海创新投资、常垒创投等持续加注， 并同步开启新一轮融资 。资金将主要用于技术创新、产品迭代、专利体系建设",
+          "source": "公开新闻源",
+          "date": "2026-11-13 08:29",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE56QWlkdlM1a3VnZ1JjZjBYVkYyMUNBMS1vMGZoZjY2U0tJakIzQkQ2V0xMX3VNNEdYN2g2a2FkNDVNWjZtUjhoNno0M1lpd3RiSWF5ZVhBdjNIWFNVWTg5Y2xjdW1HQQ?oc=5"
+          "url": "https://www.leiphone.com/category/weiwu/Hxr2CvehePVKjS4m.html"
         },
         {
-          "title": "Adobe谈AI内容创作：提效明显，最终把关仍在人",
-          "summary": "디지털투데이 报道 · 11-13 13:03 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "디지털투데이",
-          "date": "2026-11-13 05:03",
+          "title": "京博控股集团与千问办公达成战略合作，共创化工行业AI Native标杆",
+          "summary": "11-13 15:27 发布 · 由「雷锋网」关键词自动聚合，点标题看原文全文",
+          "source": "公开新闻源",
+          "date": "2026-11-13 07:27",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdEZBRDNjYW8wcUZIT3pvTXhxd2ZMb2JmbldpV2NsczZSWHZtOTVyV3hQc2cyVWNPTVJ6U0JWYllUSmJWMlFiOUdNdl91X3EyandQRkNGVmttVGwzU2F3ZlVMVUpDRVVtbW41Z0xXR2ctei1vS3ByNFhyOTVleFBaX2hDNjVnVk1HUmVNdldVc2JISmlZdTJTa2J1YnhsWXhDSDl2N1p3?oc=5"
+          "url": "https://www.leiphone.com/category/industrynews/TVkq6K4xkcX9zKSN.html"
         },
         {
-          "title": "鲁商集团上线“鲁商映像”AI智能创作平台AIGC创作大赛同步启动- 政经",
-          "summary": "速豹新闻网 报道 · 11-13 11:32 发布 · 由「AI 内容创作 工具」关键词自动聚合，点标题看原文全文",
-          "source": "速豹新闻网",
-          "date": "2026-11-13 03:32",
+          "title": "研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验",
+          "summary": "AI 改变的不是科研写作本身，而是我们完成科研写作时的工作方式。 查看全文",
+          "source": "公开新闻源",
+          "date": "2026-11-13 07:00",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8yVjcwNVNOc3F1d3BQZWU2VG9qRDItWnBFcmo1em84MHktRVh4U2NNMk9aM19YVndKUExPN0RQQ2xSWEJVSGF3T1hIdG1EZ0FtamdqTi1Ub2dvQQ?oc=5"
+          "url": "https://sspai.com/post/118153"
         },
         {
           "title": "国家知识产权局 · 审查指南与政策口径",
