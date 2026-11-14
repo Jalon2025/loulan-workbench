@@ -984,7 +984,7 @@
           <input id="newsSearch" type="search" placeholder="筛选标题 / 概要 / 来源…" autocomplete="off" spellcheck="false" aria-label="筛选资讯">
           <button class="tbtn" id="newsHotBtn" type="button" title="只看标记为「重点」的条目">仅看重点</button>
           <button class="tbtn" id="newsExpandBtn" type="button" title="展开或收起各板块的其余条目">展开全部</button>
-          <button class="tbtn" id="newsRefreshBtn" type="button" title="立即重新读取 新闻资讯.js（跳过浏览器与 CDN 缓存）">↻ 刷新</button>
+          <button class="tbtn" id="newsRefreshBtn" type="button" title="立即重新抓取实时新闻（本机服务），手机端读取部署快照">↻ 刷新</button>
         </div>
       </div>
       <p class="news-lead" id="newsLead"></p>
@@ -3105,9 +3105,12 @@
   });
 
   // ===== 📰 新闻资讯：8 板块实时新闻 + 分区块概要预览 =====
-  // 切入本页 / 回前台 / 点「↻ 刷新」时，由浏览器现场抓取公开新闻（带 CORS 的
-  // RSS 代理 → Google 新闻中文索引）。本地 新闻资讯.js 只作常设入口与离线兜底，
-  // 因此断网、代理限流时也不会白屏。
+  // 实时抓取由本机服务 /api/news 完成：服务端直拉国内可直访的 RSS，
+  // 按关键词分发到 8 个板块，返回的 link 就是真实原文 URL。
+  // 不再用 Google 新闻 RSS —— 它的 link 是 news.google.com/rss/articles/CBMi...，
+  // 国内不可达，点「阅读原文」必然打不开；境外 CORS 代理也已限流。
+  // 手机端 Pages / file:// 无本机服务时，先读部署快照 新闻快照.json，
+  // 再退到本地 新闻资讯.js 的常设清单（链接同样可直访），保证不白屏。
   (function initNews() {
     var root = document.getElementById("news");
     var body = document.getElementById("newsBody");
@@ -3122,24 +3125,16 @@
     var updatedEl = document.getElementById("newsUpdated");
     var leadEl = document.getElementById("newsLead");
     var SRC = "新闻资讯.js";
+    var SNAPSHOT = "新闻快照.json";
     var PREVIEW = 3;
     var TAG_CLS = { "动态": "dyn", "标准": "std", "方法": "how", "关注": "src" };
 
-    // 8 个板块的实时关键词。URL 固定，便于代理侧缓存；改这里即可调整情报方向。
-    var LIVE_Q = [
-      { id: "oem",   q: "汽车 主机厂 新车 发布" },
-      { id: "sales", q: "乘用车 销量 乘联会" },
-      { id: "lamp",  q: "车灯 ADB 智能大灯" },
-      { id: "ai",    q: "大模型 Agent 发布" },
-      { id: "cae",   q: "Moldflow Ansys 仿真" },
-      { id: "reg",   q: "汽车 灯光 国家标准" },
-      { id: "mat",   q: "车灯 材料 注塑 光学" },
-      { id: "ip",    q: "汽车 车灯 专利" }
+    // 8 个板块，与服务端 NEWS_SECTIONS 的 id 一一对应（关键词在服务端维护）。
+    var SECS = [
+      { id: "oem" }, { id: "sales" }, { id: "lamp" }, { id: "ai" },
+      { id: "cae" }, { id: "reg" }, { id: "mat" }, { id: "ip" }
     ];
-    var GN = "https://news.google.com/rss/search?q=";
-    var GN_TAIL = "&hl=zh-CN&gl=CN&ceid=CN:zh-Hans";
-    var RSS2JSON = "https://api.rss2json.com/v1/api.json?rss_url=";
-    var ALLORIGINS = "https://api.allorigins.win/get?url=";
+    var SEC_COUNT = SECS.length;
 
     var st = { q: "", hot: false, focus: "", all: false, expanded: {} };
     var data = window.WB_NEWS || null;
@@ -3150,10 +3145,23 @@
     // 该文件足够新时直接渲染云端 8 板块，不再打免费 RSS 代理；过旧 / 不存在时
     // 自动回退到浏览器现场抓取 + 常设清单，保证 workflow 未启用时行为不变。
     var cloudMode = false, CLOUD_MAX_AGE = 90 * 60 * 1000;
+    // 云端数据体检：旧版 Actions 生成过 news.google.com 跳转链接（国内不可达）。
+    // 只要还有一条坏链接，就判定这份云端数据不可信，改走本机服务 / 部署快照。
+    function cloudSafe(d) {
+      if (!valid(d)) return false;
+      for (var i = 0; i < d.sections.length; i++) {
+        var items = d.sections[i].items || [];
+        for (var j = 0; j < items.length; j++) {
+          if (items[j] && items[j].live && !safeUrl(items[j].url)) return false;
+        }
+      }
+      return true;
+    }
     function cloudFresh(d) {
       if (!valid(d) || d.live !== true || !d.generatedAt) return false;
       var t = Date.parse(d.generatedAt);
-      return !isNaN(t) && (Date.now() - t) < CLOUD_MAX_AGE && (Date.now() - t) > -10 * 60 * 1000;
+      return !isNaN(t) && (Date.now() - t) < CLOUD_MAX_AGE &&
+             (Date.now() - t) > -10 * 60 * 1000 && cloudSafe(d);
     }
     function enterCloud() {
       cloudMode = true; liveBy = {}; liveOK = 0; liveTotal = 0;
@@ -3166,6 +3174,12 @@
     }
     function srcWord() { return cloudMode ? "云端抓取" : "本次抓取"; }
 
+    // 统一链接防线：无论数据来自本机服务 / 部署快照 / 云端 / 常设清单，
+    // 只接受可直访的真实原文 URL，拒收 Google 新闻之类的跳转页。
+    function safeUrl(u) {
+      u = String(u || "");
+      return /^https?:\/\//.test(u) && !/news\.google\.com|\/rss\/articles\//i.test(u);
+    }
     function esc(v) {
       return String(v == null ? "" : v).replace(/[&<>"']/g, function (c) {
         return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
@@ -3219,9 +3233,12 @@
 
     // 实时条目置顶；有实时数据时，旧的「动态」背景条目让位，只保留常设入口
     function sectionItems(sec) {
-      var live = liveBy[sec.id] || [];
-      var base = (sec.items || []).filter(function (x) { return !x.live; });
-      if (!live.length) return sec.items || [];
+      var clean = function (list) {
+        return (list || []).filter(function (x) { return x && safeUrl(x.url); });
+      };
+      var live = clean(liveBy[sec.id] || []);
+      var base = clean((sec.items || []).filter(function (x) { return !x.live; }));
+      if (!live.length) return clean(sec.items || []);
       var statics = base.filter(function (x) { return x.tag === "关注" || x.tag === "方法"; }).slice(0, 2);
       return live.concat(statics);
     }
@@ -3270,7 +3287,7 @@
         ? "每 30 分钟由云端按板块关键词聚合公开新闻（最近生成 " + (data.updated || "-") +
           "）：「实时」= 7 天内，「近期」= 30 天内，「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。"
         : (liveOK
-          ? "切入本页现场抓取公开新闻（Google 新闻中文索引，按 8 个板块关键词聚合）：「实时」= 7 天内，「近期」= 30 天内，「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。"
+          ? "本机服务直拉国内公开 RSS，按 8 个板块关键词分发，链接即原文页：「实时」= 7 天内，「近期」= 30 天内，「回顾」= 更早；「关注」是长期有效的情报入口。"
           : (data.lead || ""));
       if (st.focus && !data.sections.some(function (s) { return s.id === st.focus; })) st.focus = "";
       renderChips();
@@ -3327,127 +3344,50 @@
       render();
     });
 
-    /* ---------------- 实时抓取 ---------------- */
-    function rssUrl(q) { return GN + encodeURIComponent(q) + GN_TAIL; }
+    /* ---------------- 实时抓取（本机服务 /api/news） ---------------- */
     function getJson(url, ms) {
       return new Promise(function (resolve, reject) {
         var done = false;
-        var timer = setTimeout(function () { if (!done) { done = true; reject(new Error("timeout")); } }, ms || 9000);
+        var timer = setTimeout(function () { if (!done) { done = true; reject(new Error("timeout")); } }, ms || 12000);
         fetch(url, { cache: "no-store" })
           .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
           .then(function (d) { if (!done) { done = true; clearTimeout(timer); resolve(d); } })
           .catch(function (e) { if (!done) { done = true; clearTimeout(timer); reject(e); } });
       });
     }
-    function dedup(list) {
-      var seen = {}, out = [];
-      list.forEach(function (x) {
-        var k = plain(x.title);
-        if (!k || seen[k]) return;
-        seen[k] = 1; out.push(x);
+    function liveItems(d) {
+      var by = {}, ok = 0, total = 0;
+      if (!d || !d.ok || !d.sections) throw new Error("bad payload");
+      Object.keys(d.sections).forEach(function (id) {
+        var list = (d.sections[id] || []).filter(function (x) { return x && safeUrl(x.url); });
+        if (!list.length) return;
+        by[id] = list.map(function (x, i) {
+          return { title: x.title, url: x.url, summary: x.summary, source: x.source,
+                   date: x.date, tag: "实时", live: true, hot: i < 2 };
+        });
+        ok++; total += by[id].length;
       });
-      return out;
-    }
-    function freshSort(list) {
-      var cutoff = Date.now() - 90 * 24 * 3600 * 1000;
-      return list.filter(function (x) {
-        var m = String(x.date || "").match(/(\d{4})-(\d{2})-(\d{2})/);
-        if (!m) return false;
-        return Date.UTC(+m[1], +m[2] - 1, +m[3]) >= cutoff;
-      }).sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
-    }
-    function summarize(s, title, kw, src) {
-      var d = String(s || "").replace(/<[^>]*>/g, " ")
-        .replace(/&nbsp;|&#160;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
-      var t = plain(title).slice(0, 12);
-      // Google 新闻的 description 常只是「标题 + 来源」，不能当摘要用
-      if (d.length < 18 || (t && plain(d).indexOf(t) >= 0)) {
-        return "「" + kw + "」关键词命中 · " + (src || "公开新闻源") + " 报道 · 点标题查看原文全文。";
-      }
-      return d.slice(0, 150);
-    }
-    function fromJson(d, kw) {
-      if (!d || d.status !== "ok" || !d.items) return [];
-      return d.items.map(function (x) {
-        var raw = String(x.title || "");
-        var m = raw.match(/^(.*?)\s*-\s*([^-]{2,24})$/);
-        var title = m ? m[1].trim() : raw;
-        var src = m ? m[2].trim() : "公开新闻源";
-        return {
-          title: title, url: String(x.link || ""),
-          summary: summarize(x.description, title, kw, src),
-          source: src, date: String(x.pubDate || "").slice(0, 16).replace("T", " "),
-          tag: "实时", live: true, hot: false
-        };
-      }).filter(function (x) { return x.title && /^https?:/.test(x.url); });
-    }
-    function fromXml(text, kw) {
-      var doc = new DOMParser().parseFromString(text, "text/xml");
-      if (doc.getElementsByTagName("parsererror").length) return [];
-      var out = [], nodes = doc.getElementsByTagName("item");
-      for (var i = 0; i < nodes.length && out.length < 8; i++) {
-        var tx = function (n) {
-          var el = nodes[i].getElementsByTagName(n)[0];
-          return el ? (el.textContent || "").trim() : "";
-        };
-        var raw = tx("title"), m = raw.match(/^(.*?)\s*-\s*([^-]{2,24})$/);
-        var title = m ? m[1].trim() : raw;
-        var src = m ? m[2].trim() : (tx("source") || "公开新闻源");
-        var dt = new Date(tx("pubDate"));
-        var date = isNaN(dt.getTime()) ? "" : dt.toISOString().slice(0, 16).replace("T", " ");
-        var link = tx("link");
-        if (!title || !/^https?:/.test(link)) continue;
-        out.push({ title: title, url: link, summary: summarize(tx("description"), title, kw, src),
-                   source: src, date: date, tag: "实时", live: true, hot: false });
-      }
-      return out;
-    }
-    function fetchSection(cfg) {
-      var rss = rssUrl(cfg.q);
-      var u1 = RSS2JSON + encodeURIComponent(rss) + "&count=8";
-      return getJson(u1, 9000)
-        .then(function (d) {
-          var items = fromJson(d, cfg.q);
-          if (!items.length) throw new Error("限流或空结果");
-          return items;
-        })
-        .catch(function () {
-          // 主通道限流 / 失败 → 换通用 CORS 代理取原始 RSS
-          return getJson(ALLORIGINS + encodeURIComponent(rss), 6000)
-            .then(function (d) {
-              var items = fromXml(String(d.contents || ""), cfg.q);
-              if (!items.length) throw new Error("空结果");
-              return items;
-            });
-        })
-        .then(function (items) {
-          var list = freshSort(dedup(items)).slice(0, 5).map(function (x, i) { x.hot = i < 2; return x; });
-          if (list.length) {
-            liveBy[cfg.id] = list;
-            liveOK = Object.keys(liveBy).length;
-            liveTotal = 0;
-            Object.keys(liveBy).forEach(function (k) { liveTotal += liveBy[k].length; });
-            setState("正在获取实时新闻 " + liveOK + "/" + LIVE_Q.length + "…", "loading");
-            render();                       // 先到的板块立刻可见，不必等其余请求
-          }
-          return { id: cfg.id, items: list };
-        })
-        .catch(function () { return { id: cfg.id, items: [] }; });
+      return { by: by, ok: ok, total: total };
     }
     function fetchLive(force) {
       if (!force && liveOK && liveAt && Date.now() - liveAt < 120000) {
         return Promise.resolve({ ok: liveOK, total: liveTotal, cached: true });
       }
-      liveBy = {}; liveOK = 0; liveTotal = 0;
-      return Promise.all(LIVE_Q.map(fetchSection)).then(function (res) {
-        var ok = 0, total = 0;
-        res.forEach(function (r) {
-          if (r.items.length) { ok++; total += r.items.length; }
+      // 手机端 Pages / file:// 无本机服务 → 读部署时生成的新闻快照；再退回常设清单
+      return getJson("/api/news" + (force ? "?force=1" : ""), 15000)
+        .catch(function () { return getJson(SNAPSHOT + "?_=" + Date.now(), 8000); })
+        .then(function (d) {
+          var r = liveItems(d);
+          liveBy = r.by; liveOK = r.ok; liveTotal = r.total;
+          if (r.ok) liveAt = Date.now();
+          else setState("实时新闻暂不可用 · 显示常设清单", "warn");
+          render();
+          return { ok: r.ok, total: r.total, failed: !r.ok };
+        })
+        .catch(function () {
+          liveBy = {}; liveOK = 0; liveTotal = 0;
+          return { ok: 0, total: 0, failed: true };
         });
-        liveOK = ok; liveTotal = total;
-        if (ok) liveAt = Date.now();
-        return { ok: ok, total: total, failed: !ok };
-      });
     }
 
     /* ---------------- 本地常设清单（no-store 强刷 + 离线兜底） ---------------- */
@@ -3491,9 +3431,9 @@
       if (refreshBtn) refreshBtn.classList.remove("busy");
       loadedAt = hhmmss(new Date());
       var ok = live && live.ok ? live.ok : 0;
-      if (cloudMode) setState("云端 " + ok + "/" + LIVE_Q.length + " 块 · " + (data.updated || "").slice(11, 16), "ok");
-      else if (ok >= LIVE_Q.length) setState("实时 " + LIVE_Q.length + " 块 · " + live.total + " 条 · " + loadedAt, "ok");
-      else if (ok > 0) setState("实时 " + ok + "/" + LIVE_Q.length + " 块 · " + loadedAt, "ok");
+      if (cloudMode) setState("云端 " + ok + "/" + SEC_COUNT + " 块 · " + (data.updated || "").slice(11, 16), "ok");
+      else if (ok >= SEC_COUNT) setState("实时 " + SEC_COUNT + " 块 · " + live.total + " 条 · " + loadedAt, "ok");
+      else if (ok > 0) setState("实时 " + ok + "/" + SEC_COUNT + " 块 · " + loadedAt, "ok");
       else setState(valid(data) ? "实时暂不可用 · 显示常设清单" : "数据未加载", "warn");
       render();
     }
