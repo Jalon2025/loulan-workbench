@@ -1,5 +1,5 @@
 /* 新闻资讯数据 · 个人工作台 —— 本文件由 GitHub Actions 自动生成，请勿手改
- * 生成时间：2026-11-17 02:44（北京时间）· 每 30 分钟更新一次
+ * 生成时间：2026-11-17 10:13（北京时间）· 每 30 分钟更新一次
  * 数据源：公开新闻 RSS，按 8 个板块关键词聚合；失败时保留上一版。
  * 维护方式：改 scripts/build-news.mjs 的 SECTIONS.queries 即可调整关键词。
  * 注意：本文件随 Pages 公开，禁止写入本机路径、账号等私密信息。
@@ -7,10 +7,10 @@
 window.WB_NEWS = {
   "v": 2,
   "live": true,
-  "updated": "2026-11-17 02:44",
-  "generatedAt": "2026-11-16T18:44:39.910Z",
+  "updated": "2026-11-17 10:13",
+  "generatedAt": "2026-11-17T02:13:19.607Z",
   "stale": false,
-  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-17 02:44（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
+  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-17 10:13（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
   "sections": [
     {
       "id": "oem",
@@ -21,64 +21,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "消息人士称 360 市场负责人卜思南涉嫌职务侵占已被警方带走调查",
-          "summary": "IT之家 11 月 17 日消息，综合第一财经、鞭牛士报道，多位消息人士透露， 360 副总裁、市场部负责人卜思南因涉嫌职务侵占等案件已在上周一被警方带走调查 。截至发稿，360 方面暂未回应。 今年 8 月，360 集团宣布，为推进“安全 +AI”战略，对集团市场与传播中心进行组织调整，设立公关部",
-          "source": "公开新闻源",
-          "date": "2026-11-16 17:16",
+          "title": "TOP500、HPCG双榜第一，“灵晟”蝉联全球超算榜首",
+          "summary": "当地时间11月17日，在美国芝加哥举行的SC26国际超级计算大会期间，新一期全球超算TOP500榜单正式发布：国家超级计算深圳中心“灵晟”E级超算以2.198EFlops（每秒219.8亿亿次）的Linpack双精度实测性能蝉联世界第一，领先第二名美国“El Capitan”（1.809EFlops",
+          "source": "36氪",
+          "date": "2026-11-17 02:09",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/028/009.htm"
+          "url": "https://36kr.com/newsflashes/4073209157899137?f=rss"
         },
         {
-          "title": "华为全新子品牌星芒 OSTA O1 Pro 真机紫色款外观曝光：后置双摄，预计搭载麒麟 9030S 处理器",
-          "summary": "IT之家 11 月 17 日消息，本月早些时候，华为官宣，鸿蒙智行享界 V8 及星芒品牌发布会定档 2026 年 11 月 20 日 14:30。随着发布会临近，华为全新子品牌 —— 星芒首款机型越来越多的配置信息曝光。目前，OSTA O1 Pro 真机谍照已流出。 IT之家注意到，除了此次曝光了黑",
-          "source": "公开新闻源",
-          "date": "2026-11-16 16:50",
+          "title": "“酉术量子”完成天使轮融资",
+          "summary": "36氪获悉，近日，“酉术量子”宣布完成天使轮融资。本轮新增投资方为云启资本、嘉铭浩春，老股东菡源资产、小苗朗程、启高资本持续加码。多维资本长期担任独家财务顾问。融资资金将主要用于原创量子算法研发、UnitaryLab量子科学计算平台及UnitarySpark异构计算产品迭代、AI与Agent驱动能力",
+          "source": "36氪",
+          "date": "2026-11-17 01:55",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/028/006.htm"
+          "url": "https://36kr.com/newsflashes/4073192573817734?f=rss"
         },
         {
-          "title": "徐直军：华为早在 2009 年就启动 5G 研究，最终成为标准主要贡献者和全球最大专利持有者之一",
-          "summary": "IT之家 11 月 17 日消息，华为官方 X 账号分享了副董事长、轮值董事长徐直军发表在美国《时代》杂志的文章《亲历华为创新之路：看见、亲历、引领》（《Inside Huawei's innovation journey:Seeing it,living it,leading it》）。徐直军在文",
-          "source": "公开新闻源",
-          "date": "2026-11-16 16:37",
+          "title": "国家邮政局：10月中国快递发展指数同比提升0.5%",
+          "summary": "36氪获悉，国家邮政局发布2026年10月中国快递发展指数报告，经测算，2026年10月中国快递发展指数为477.8，同比提升0.5%。10月，行业运行稳中有进，服务品质持续提升，综合运能与专业化保障能力不断增强，为产业协同发展、消费潜力释放提供流通保障。",
+          "source": "36氪",
+          "date": "2026-11-17 01:47",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/028/005.htm"
+          "url": "https://36kr.com/newsflashes/4073193967735686?f=rss"
         },
         {
-          "title": "徐直军：分布式基站和 SingleRAN 两个开创性方案，确立了华为在移动通信领域全球领先地位",
-          "summary": "IT之家 11 月 17 日消息，华为官方 X 账号分享了副董事长、轮值董事长徐直军发表在美国《时代》杂志的文章《亲历华为创新之路：看见、亲历、引领》（《Inside Huawei's innovation journey:Seeing it,living it,leading it》）。徐直军在文",
+          "title": "谷歌第七代自研 Ironwood TPU 交卷：8192 颗集群约 102 秒达标 DeepSeek-V3 预训练",
+          "summary": "IT之家 11 月 17 日消息，谷歌云（Google Cloud）昨日（11 月 16 日）发布博文， 在 MLPerf Training v6.1 基准测试第一轮中，提交了覆盖第七代 Ironwood TPU 与英伟达 Grace Blackwell GPU 的 10 项结果 ，涉及模型预训练，",
           "source": "公开新闻源",
-          "date": "2026-11-16 16:23",
+          "date": "2026-11-17 01:46",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/028/004.htm"
+          "url": "https://www.ithome.com/1/028/065.htm"
         },
         {
-          "title": "26.99万元起，腾势N8正式上市：首搭易三方Evo，纯电续航1003公里",
-          "summary": "11月12日，腾势汽车旗下全新大五座SUV腾势N8正式上市，共推出纯电、插混两种动力版本、六款车型，官方指导价为26.99万—32.99万元。 雷峰网了解到，作为腾势面向中高端家庭SUV市场推出的新产品，N8搭载了多项比亚迪最新技术，包括易三方Evo、第二代刀片电池及闪充技术、天神之眼5.0辅助驾驶",
-          "source": "公开新闻源",
-          "date": "2026-11-16 15:21",
+          "title": "我国北斗终端设备应用数量近4200万",
+          "summary": "在北京举办的北斗时空产业发展论坛上，中国卫星导航定位协会发布的《2026中国北斗产业发展指数报告》显示，截至2026年上半年，我国各种类型的北斗终端设备（不含消费类电子）应用数量接近4200万台/套，较去年同期增加近900万台/套，同比增长约27%，北斗综合应用渗透率超过90%。大众消费领域，202",
+          "source": "36氪",
+          "date": "2026-11-17 01:43",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.leiphone.com/category/transportation/9YeGaaNjyBi0zkQ4.html"
+          "url": "https://36kr.com/newsflashes/4073190250189701?f=rss"
         },
         {
-          "title": "奇瑞捷途全新旅行者 7 C-DM 华为乾崑智驾版上市：搭载舱内激光 Limera，焕新价 18.49 万元起",
-          "summary": "11-16 22:44 发布 · 由「IT之家」关键词自动聚合，点标题看原文全文",
-          "source": "公开新闻源",
-          "date": "2026-11-16 14:44",
+          "title": "美联航解决FAA叫停后爆发的系统故障",
+          "summary": "美国联合航空控股公司表示，已解决影响其离港航班的大规模系统故障。这是近期美国航空业遭遇的最新一起技术故障事件。美联航在一份声明中表示：“虽然部分航班出现延误，但正在飞行中的航班以及美联航快运（United Express）航班均未受到影响。”美联航表示，目前没有迹象表明此次中断与网络安全问题有关。该",
+          "source": "36氪",
+          "date": "2026-11-17 01:39",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/027/974.htm"
+          "url": "https://36kr.com/newsflashes/4073149730296708?f=rss"
         },
         {
           "title": "工信部《道路机动车辆生产企业及产品公告》",
@@ -111,64 +111,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "26.99万元起，腾势N8正式上市：首搭易三方Evo，纯电续航1003公里",
-          "summary": "11月12日，腾势汽车旗下全新大五座SUV腾势N8正式上市，共推出纯电、插混两种动力版本、六款车型，官方指导价为26.99万—32.99万元。 雷峰网了解到，作为腾势面向中高端家庭SUV市场推出的新产品，N8搭载了多项比亚迪最新技术，包括易三方Evo、第二代刀片电池及闪充技术、天神之眼5.0辅助驾驶",
-          "source": "公开新闻源",
-          "date": "2026-11-16 15:21",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://www.leiphone.com/category/transportation/9YeGaaNjyBi0zkQ4.html"
-        },
-        {
-          "title": "当充电像加油一样快，租车自驾的边界被拓宽",
-          "summary": "服务自驾生态，成为租车平台下一个增长点。 作者 | 郑浩钧 编辑 | 王瑞昊 傍晚，济南机场的还车点，一家四口把两个大箱子从后备箱里搬下来，这趟山东租车自驾游算是收尾了。 车该还了，可电量已经不多，还车点旁边就是闪充站，插上充电枪，妈妈带着孩子去便利店买零食，买完回来，不到十分钟，电量已经接近充满。",
-          "source": "公开新闻源",
-          "date": "2026-11-16 14:17",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://www.leiphone.com/category/industrynews/kfphRdgYwSdN13Nv.html"
-        },
-        {
-          "title": "无方向盘的特斯拉 Cybercab 支持触屏手动驾驶，仅限低速应急场景",
-          "summary": "IT之家 11 月 16 日消息，特斯拉已将 Cybercab 无人驾驶出租车的私人使用版售价定为 2.999 万美元 （IT之家注：现汇率约合 20 万元人民币） ，并计划很快向用户发出购车邀请。这将使其成为特斯拉有史以来最便宜的车型。不过，与入门版 Model 3 后轮驱动版相比，Cyberca",
-          "source": "公开新闻源",
-          "date": "2026-11-16 14:10",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/967.htm"
-        },
-        {
-          "title": "华为徐直军回忆分布式基站诞生：2003 年余承东发现痛点，最终成为今天 3G、4G、5G 基站标准形态",
-          "summary": "IT之家 11 月 16 日消息，华为官方 X 账号 11 月 11 日分享了轮值董事长徐直军发表在美国《时代》杂志的文章《亲历华为创新之路：看见、亲历、引领》（《Inside Huawei's innovation journey: Seeing it,living it,leading it》）",
-          "source": "公开新闻源",
-          "date": "2026-11-16 13:51",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/965.htm"
-        },
-        {
-          "title": "布加迪车主平均年龄降至 42 岁，有藏家坐拥 14 台",
-          "summary": "IT之家 11 月 16 日消息，布加迪（Bugatti）通常与老钱家族、奢华生活方式以及收藏多年豪车的富豪联系在一起。不过，这家法国超豪华汽车品牌的客户群体正在变得年轻化。数据显示，布加迪客户的平均年龄已经从 52 岁降至约 42 岁。 这一数据来自布加迪美洲公司首席执行官萨沙 · 多林（Sasc",
-          "source": "公开新闻源",
-          "date": "2026-11-16 13:01",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/960.htm"
-        },
-        {
-          "title": "何小鹏：四季度小鹏汽车海外销量目标超4万台，全年将首次突破10万台",
-          "summary": "小鹏集团董事长、CEO何小鹏表示，国际业务是小鹏汽车最强劲的增长和盈利驱动力。今年10月，随着MONA L03开启海外交付，海外销量达到1.3万台，同比增长166%，刷新历史纪录。四季度国际业务销量目标超过4万台，2026全年的海外销量将首次突破10万台大关。展望2027年，在海外市场的销售网络预计",
+          "title": "TOP500、HPCG双榜第一，“灵晟”蝉联全球超算榜首",
+          "summary": "当地时间11月17日，在美国芝加哥举行的SC26国际超级计算大会期间，新一期全球超算TOP500榜单正式发布：国家超级计算深圳中心“灵晟”E级超算以2.198EFlops（每秒219.8亿亿次）的Linpack双精度实测性能蝉联世界第一，领先第二名美国“El Capitan”（1.809EFlops",
           "source": "36氪",
-          "date": "2026-11-16 12:59",
+          "date": "2026-11-17 02:09",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://36kr.com/newsflashes/4073209157899137?f=rss"
+        },
+        {
+          "title": "乘联分会崔东树：全国乘用车行业10月末库存334万辆、库存60天",
+          "summary": "36氪获悉，乘联分会秘书长崔东树发文称，2026年10月末全国乘用车行业库存334万辆，环比上月增13万辆，同比2025年10月下降7万辆，形成9-10月库存持续回升的特征。预测团队2025年对市场预测很乐观，2025年10月开始满意度持续暴跌到低位。2026年10月乐观度23%，11月初的10月月",
+          "source": "36氪",
+          "date": "2026-11-17 02:07",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://36kr.com/newsflashes/4073204077991043?f=rss"
+        },
+        {
+          "title": "我国北斗终端设备应用数量近4200万",
+          "summary": "在北京举办的北斗时空产业发展论坛上，中国卫星导航定位协会发布的《2026中国北斗产业发展指数报告》显示，截至2026年上半年，我国各种类型的北斗终端设备（不含消费类电子）应用数量接近4200万台/套，较去年同期增加近900万台/套，同比增长约27%，北斗综合应用渗透率超过90%。大众消费领域，202",
+          "source": "36氪",
+          "date": "2026-11-17 01:43",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://36kr.com/newsflashes/4072438857667713?f=rss"
+          "url": "https://36kr.com/newsflashes/4073190250189701?f=rss"
+        },
+        {
+          "title": "没有什么宁王了",
+          "summary": "宁德时代凭借优质电池赢得行业地位，但新能源汽车市场利润下滑，车企利润微薄，宁德时代仍保持强大。",
+          "source": "公开新闻源",
+          "date": "2026-11-17 01:33",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.tmtpost.com/8207837.html"
+        },
+        {
+          "title": "2026 年 11 月期 TOP500 超算出炉：中国“灵晟”蝉联第一，新系统数量创历史新低",
+          "summary": "IT之家 11 月 17 日消息，最新一期 TOP500 全球超级计算机榜单已于美国当地时间昨日在 SC26 大会上公布， 来自中国的“灵晟”(LineShine) 系统 2.198 Exaflop/s 的成绩继续保持第一 。 2026 年 11 月期的 TOP500 是该榜单创立以来变化最少的一次",
+          "source": "公开新闻源",
+          "date": "2026-11-17 01:01",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/050.htm"
+        },
+        {
+          "title": "苹果为 Apple TV 引入“短视频”竖屏格式和视频播客功能：无需订阅即可观看播客，覆盖 iPhone、iPad、Mac 等设备",
+          "summary": "IT之家 11 月 17 日消息，据 9to5mac 今日报道，苹果在最新的 iOS 27.3 Beta 2 中为 Apple TV 应用新增了两种新特性：“短视频”竖屏格式和视频播客功能。 正如字面意思，竖屏格式的加入可以让用户通过类似 TikTok 等短视频平台的界面来体验 Apple TV 内",
+          "source": "公开新闻源",
+          "date": "2026-11-17 00:20",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/042.htm"
         },
         {
           "title": "懂车帝销量榜 · 按级别 / 能源形式查月度零售",
@@ -201,64 +201,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "徐直军：华为早在 2009 年就启动 5G 研究，最终成为标准主要贡献者和全球最大专利持有者之一",
-          "summary": "IT之家 11 月 17 日消息，华为官方 X 账号分享了副董事长、轮值董事长徐直军发表在美国《时代》杂志的文章《亲历华为创新之路：看见、亲历、引领》（《Inside Huawei's innovation journey:Seeing it,living it,leading it》）。徐直军在文",
-          "source": "公开新闻源",
-          "date": "2026-11-16 16:37",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://www.ithome.com/1/028/005.htm"
-        },
-        {
-          "title": "中国成功连任国际电信联盟理事国",
-          "summary": "IT之家 11 月 16 日消息，据工信微报消息，11 月 16 日，国际电信联盟 2026 年全权代表大会完成国际电联理事国和无线电规则委员会委员选举工作， 中国成功连任国际电联理事国（2027—2030 年） ，中国候选人、国家数据集团有限公司董事程建军成功连任无线电规则委员会委员（2027—2",
-          "source": "公开新闻源",
-          "date": "2026-11-16 14:29",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/973.htm"
-        },
-        {
-          "title": "5499 → 4499 元：苹果 iPad mini（A20 Pro）国补后立减 1000 元",
-          "summary": "苹果 iPad mini（A20 Pro）搭载 8.5 英寸 OLED 屏幕，比上一代薄了 14%，采用 A20 Pro 芯片，今年 11 月 6 日发售，定价 5499 元起。 京东即日起发放 500 元叠加券，国补后低至 4499 元起： 点此领券 （每日限量） 京东 iPad mini A20",
-          "source": "公开新闻源",
-          "date": "2026-11-16 14:07",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/966.htm"
-        },
-        {
-          "title": "华为徐直军回忆分布式基站诞生：2003 年余承东发现痛点，最终成为今天 3G、4G、5G 基站标准形态",
-          "summary": "IT之家 11 月 16 日消息，华为官方 X 账号 11 月 11 日分享了轮值董事长徐直军发表在美国《时代》杂志的文章《亲历华为创新之路：看见、亲历、引领》（《Inside Huawei's innovation journey: Seeing it,living it,leading it》）",
-          "source": "公开新闻源",
-          "date": "2026-11-16 13:51",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/965.htm"
-        },
-        {
-          "title": "杉杉股份：未来两到三年资本开支以负极材料为主",
-          "summary": "11月16日，杉杉股份在2026年第三季度业绩说明会上表示，未来两到三年，公司资本开支以负极材料为主，重点投向云南、四川等一体化基地及海外配套项目，夯实规模与成本优势；偏光片则以高端产品技改和产能优化为主，投资体量相对可控。研发投入方面，两条业务线均保持必要强度：负极围绕硅基、硬碳、快充及固态电池材",
+          "title": "美联航解决FAA叫停后爆发的系统故障",
+          "summary": "美国联合航空控股公司表示，已解决影响其离港航班的大规模系统故障。这是近期美国航空业遭遇的最新一起技术故障事件。美联航在一份声明中表示：“虽然部分航班出现延误，但正在飞行中的航班以及美联航快运（United Express）航班均未受到影响。”美联航表示，目前没有迹象表明此次中断与网络安全问题有关。该",
           "source": "36氪",
-          "date": "2026-11-16 11:53",
+          "date": "2026-11-17 01:39",
           "tag": "动态",
-          "hot": false,
+          "hot": true,
           "live": true,
-          "url": "https://36kr.com/newsflashes/4072374048248707?f=rss"
+          "url": "https://36kr.com/newsflashes/4073149730296708?f=rss"
         },
         {
-          "title": "拼多多推出“申诉优赔”服务：平台主动介入异常投诉，为商家损失兜底补偿",
-          "summary": "IT之家 11 月 16 日消息，拼多多宣布持续优化平台商家服务体系，对商家售后申诉服务进行了专项升级，推出了“申诉优赔”服务。平台主动识别异常投诉、异常退款等订单，经核实后，由平台对商家货款、运费损失等进行补偿。 据拼多多商家服务团队相关负责人介绍，此前，商家遭遇不合理客诉，需自行发起申诉，再由平",
+          "title": "刷新水深纪录，我国“梦想”号大洋钻探船完成重大装备海试任务",
+          "summary": "IT之家 11 月 17 日消息，据央视新闻今日报道，我国“梦想”号大洋钻探船近日圆满完成开路泥浆循环系统的海试任务， 刷新了同类系统国际最大作业水深纪录 。 “梦想”号是全球唯一具备 11000 米钻探能力的大洋钻探船，具备大洋钻探、深海油气勘探等多种作业能力。 本次海试任务历时 33 天，搭载的",
           "source": "公开新闻源",
-          "date": "2026-11-16 11:17",
+          "date": "2026-11-17 00:47",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/048.htm"
+        },
+        {
+          "title": "R 星跨界联动天气频道公布《GTA6》全新截图，展示雷奥奈达州的动态天气效果",
+          "summary": "IT之家 11 月 17 日消息，天气频道（The Weather Channel）今日在 X 平台发文，与 Rockstar 共同公布一批《GTA6》游戏新截图，旨在展示雷奥奈达州的动态天气效果。 Rockstar Games 美术副总裁（光照与渲染）欧文 · 谢泼德表示，《GTA6》拥有 GTA",
+          "source": "公开新闻源",
+          "date": "2026-11-17 00:43",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/027/923.htm"
+          "url": "https://www.ithome.com/1/028/047.htm"
+        },
+        {
+          "title": "AMD FSR 4.1 超分 +4 代帧生成技术首次落地 Vulkan 引擎：《毁灭战士：黑暗时代》游戏 5 号更新上线",
+          "summary": "IT之家 11 月 17 日消息，《毁灭战士：黑暗时代》（DOOM: The Dark Ages）昨日（11 月 16 日）推出 5 号更新，主要为 PC 版游戏加入 AMD FSR Upscaling 4.1 超分辨率技术和 Frame Generation 4 帧生成技术。 AMD 高管 Jac",
+          "source": "公开新闻源",
+          "date": "2026-11-16 23:54",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/034.htm"
+        },
+        {
+          "title": "美联航遭遇大范围系统故障，航班起飞受影响",
+          "summary": "IT之家 11 月 17 日消息，据科技媒体 Engadget 今天报道，美国联合航空如今遭遇大范围系统故障，今天乘飞机出行的旅客可能会遇到延误。 美联航在 X 平台表示，公司已获悉大范围系统中断情况，团队正在全力以赴，争取尽快恢复正常运行。 IT之家从原报道获悉，该公司发言人对此回应称：“ 我们正",
+          "source": "公开新闻源",
+          "date": "2026-11-16 23:17",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/026.htm"
+        },
+        {
+          "title": "苹果宣布 iPhone Duo 适配优化 App 突破 20 万款，十天左右数量翻倍",
+          "summary": "IT之家 11 月 17 日消息，苹果全球营销高级副总裁格雷格 · 乔斯维亚克（Greg Joswiak）宣布，目前已有超过 20 万款应用针对 iPhone Duo 完成优化，较本月早些时候公布的 10 万款增长一倍。 他表示，开发者对 iPhone Duo 的支持速度超出预期，优化应用数量在一周",
+          "source": "公开新闻源",
+          "date": "2026-11-16 22:51",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/021.htm"
         },
         {
           "title": "中汽研 · 灯具检测、认证与评价口径",
@@ -291,64 +291,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "消息人士称 360 市场负责人卜思南涉嫌职务侵占已被警方带走调查",
-          "summary": "IT之家 11 月 17 日消息，综合第一财经、鞭牛士报道，多位消息人士透露， 360 副总裁、市场部负责人卜思南因涉嫌职务侵占等案件已在上周一被警方带走调查 。截至发稿，360 方面暂未回应。 今年 8 月，360 集团宣布，为推进“安全 +AI”战略，对集团市场与传播中心进行组织调整，设立公关部",
+          "title": "Seedance 正杀死爱奇艺们",
+          "summary": "2016 年，《如懿传》开机，总投资 3 亿，六百人的剧组，五地转场，264 个拍摄日。2026 年，一个宝妈，哄睡完孩子，坐回电脑前，手搓她的 AI 短剧。",
           "source": "公开新闻源",
-          "date": "2026-11-16 17:16",
+          "date": "2026-11-17 02:05",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/028/009.htm"
+          "url": "https://www.tmtpost.com/8207907.html"
         },
         {
-          "title": "华为 Mate 90 系列手机 HarmonyOS 7 小艺 AI 快捷栏适配效果公开",
-          "summary": "IT之家 11 月 17 日消息，在今年 9 月 7 日的 HarmonyOS 7 | HUAWEI Mate XT 2 及全场景新品发布会上，鸿蒙 7 操作系统正式发布。在发布会现场，华为还剧透了全新功能 —— 小艺 AI 快捷栏。官方 PPT 页面显示，该功能开启后，小艺将在手机桌面底部的 Do",
-          "source": "公开新闻源",
-          "date": "2026-11-16 17:05",
+          "title": "“酉术量子”完成天使轮融资",
+          "summary": "36氪获悉，近日，“酉术量子”宣布完成天使轮融资。本轮新增投资方为云启资本、嘉铭浩春，老股东菡源资产、小苗朗程、启高资本持续加码。多维资本长期担任独家财务顾问。融资资金将主要用于原创量子算法研发、UnitaryLab量子科学计算平台及UnitarySpark异构计算产品迭代、AI与Agent驱动能力",
+          "source": "36氪",
+          "date": "2026-11-17 01:55",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/028/007.htm"
+          "url": "https://36kr.com/newsflashes/4073192573817734?f=rss"
         },
         {
-          "title": "华为全新子品牌星芒 OSTA O1 Pro 真机紫色款外观曝光：后置双摄，预计搭载麒麟 9030S 处理器",
-          "summary": "IT之家 11 月 17 日消息，本月早些时候，华为官宣，鸿蒙智行享界 V8 及星芒品牌发布会定档 2026 年 11 月 20 日 14:30。随着发布会临近，华为全新子品牌 —— 星芒首款机型越来越多的配置信息曝光。目前，OSTA O1 Pro 真机谍照已流出。 IT之家注意到，除了此次曝光了黑",
+          "title": "Huang Leaves Nvidia. Chinese AI Buyers and Suppliers Feel It Next",
+          "summary": "Jensen Huang has resigned as Nvidia’s CEO amid personal scandals, rattling a company long identified with one leader. For Chinese firms, the shock run",
           "source": "公开新闻源",
-          "date": "2026-11-16 16:50",
+          "date": "2026-11-17 01:54",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/028/006.htm"
+          "url": "https://www.tmtpost.com/8207932.html"
         },
         {
-          "title": "徐直军：分布式基站和 SingleRAN 两个开创性方案，确立了华为在移动通信领域全球领先地位",
-          "summary": "IT之家 11 月 17 日消息，华为官方 X 账号分享了副董事长、轮值董事长徐直军发表在美国《时代》杂志的文章《亲历华为创新之路：看见、亲历、引领》（《Inside Huawei's innovation journey:Seeing it,living it,leading it》）。徐直军在文",
-          "source": "公开新闻源",
-          "date": "2026-11-16 16:23",
+          "title": "三星电子和SK海力士现金持有量过去一年增加一倍多",
+          "summary": "周二公布的公司文件显示，在全球人工智能（AI）繁荣期间芯片需求强劲的推动下，韩国芯片公司三星电子和SK海力士的现金持有量在过去一年中增加了一倍多。根据季度报告，截至9月底，这两家芯片制造商的现金、现金等价物和短期金融工具合计达到329.23万亿韩元（2463.3 亿美元），远高于去年同期的136.3",
+          "source": "36氪",
+          "date": "2026-11-17 01:49",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/028/004.htm"
+          "url": "https://36kr.com/newsflashes/4073190012965769?f=rss"
         },
         {
-          "title": "Robert Pattinson 成为第七任 007",
-          "summary": "11-17 00:18 发布 · 由「Solidot」关键词自动聚合，点标题看原文全文",
-          "source": "公开新闻源",
-          "date": "2026-11-16 16:18",
+          "title": "国家邮政局：10月中国快递发展指数同比提升0.5%",
+          "summary": "36氪获悉，国家邮政局发布2026年10月中国快递发展指数报告，经测算，2026年10月中国快递发展指数为477.8，同比提升0.5%。10月，行业运行稳中有进，服务品质持续提升，综合运能与专业化保障能力不断增强，为产业协同发展、消费潜力释放提供流通保障。",
+          "source": "36氪",
+          "date": "2026-11-17 01:47",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.solidot.org/story?sid=85905"
+          "url": "https://36kr.com/newsflashes/4073193967735686?f=rss"
         },
         {
-          "title": "华为 WATCH Air 新款智能手表外观曝光：圆润机身 + 超轻薄设计，预装鸿蒙 HarmonyOS 系统",
-          "summary": "IT之家 11 月 16 日消息，博主 @鹏鹏君驾到 今日曝光了一款华为穿戴新品 —— HUAWEI WATCH Air 智能手表。 从画面可以看到，华为 WATCH Air 采用超轻薄设计，拥有圆润的弧面机身，侧边配有一枚旋转表冠按钮和一枚多功能按键。此外， 这款手表还预装了鸿蒙 HarmonyO",
+          "title": "谷歌第七代自研 Ironwood TPU 交卷：8192 颗集群约 102 秒达标 DeepSeek-V3 预训练",
+          "summary": "IT之家 11 月 17 日消息，谷歌云（Google Cloud）昨日（11 月 16 日）发布博文， 在 MLPerf Training v6.1 基准测试第一轮中，提交了覆盖第七代 Ironwood TPU 与英伟达 Grace Blackwell GPU 的 10 项结果 ，涉及模型预训练，",
           "source": "公开新闻源",
-          "date": "2026-11-16 14:57",
+          "date": "2026-11-17 01:46",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/027/992.htm"
+          "url": "https://www.ithome.com/1/028/065.htm"
         },
         {
           "title": "机器之心 · 模型与工程化进展",
@@ -381,14 +381,14 @@ window.WB_NEWS = {
       "fresh": 2,
       "items": [
         {
-          "title": "EPOMAKER 推出 Bamboo75 三模机械键盘：竹质机身 + 竹纹键帽",
-          "summary": "IT之家 11 月 16 日消息，EPOMAKER 上周公布了三模机械键盘 Bamboo75。该系列的 每件产品都拥有纹理独一无二的手工抛光竹材机身 ，搭配原厂 (CHERRY) 高度的 PBT + ABS 混合注塑染料热升华工艺 竹纹侧透键帽 。 Bamboo75 键盘采用 75% 配列，内部为 ",
+          "title": "英伟达发布 Rubin HPC GPU：单卡超 5 万 CUDA 核心创纪录，预计 2028 年上市",
+          "summary": "IT之家 11 月 17 日消息，英伟达今日在 SC26 大会发布 Rubin HPC GPU，基于 Vera Rubin 平台打造，专为科学研究、工程设计、数据分析仿真计算等工作设计。 IT之家从英伟达新闻稿获悉， Rubin HPC GPU 配备创纪录的 CUDA 核心 ， 单 GPU 的 CU",
           "source": "公开新闻源",
-          "date": "2026-11-16 09:36",
+          "date": "2026-11-16 16:06",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/027/862.htm"
+          "url": "https://www.ithome.com/1/027/998.htm"
         },
         {
           "title": "李飞飞最新 CoRL2026 演讲实录：从「橱柜模型」到世界模型，机器人需要什么样的 AI ？",
@@ -431,12 +431,42 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "GAMDIAS 推出 ATLAS P7 机箱：四面环绕式玻璃 + 悬浮上下分舱",
+          "summary": "IT之家 11 月 17 日消息，中国台湾地区 PC 组件企业 GAMDIAS 昨日宣布推出机箱新品 ATLAS P7。这一型号 采用四面环绕式玻璃 + 悬浮上下分舱设计 ，配备多条 ARGB LED 灯带，还在主舱右前方设置了包含聚光灯的手办台。 ATLAS P7 三维 518×240×440 (",
+          "source": "公开新闻源",
+          "date": "2026-11-17 01:25",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/060.htm"
+        },
+        {
+          "title": "苹果 iOS 27.3 测试版新增 Siri AI 每日限额，付费订阅 iCloud+ 可提升 2~20 倍",
+          "summary": "IT之家 11 月 17 日消息，据 MacRumors 今日报道，苹果正在测试为 Siri AI 和 Apple Intelligence 引入每日免费使用额度，并允许用户通过订阅 iCloud+ 获得更高的使用限额。 苹果已在 iOS 27.3、iPadOS 27.3 和 macOS 27.3 ",
+          "source": "公开新闻源",
+          "date": "2026-11-16 23:50",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/033.htm"
+        },
+        {
+          "title": "让你随时欣赏 Game Boy 卡带里的游戏原声音乐，Retro Song Bird 音箱现身众筹",
+          "summary": "IT之家 11 月 17 日消息，一款名为 Retro Song Bird 的音箱近日现身 Kickstarter 众筹平台，售价 79 美元 （IT之家注：现汇率约合 527.6 元人民币） 。这款产品顶部带有一个 Game Boy 游戏卡带槽，可以让玩家随时欣赏《宝可梦红／绿》《牧场物语 GB》",
+          "source": "公开新闻源",
+          "date": "2026-11-16 23:34",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/030.htm"
+        },
+        {
           "title": "华为 Mate 90 系列手机 HarmonyOS 7 小艺 AI 快捷栏适配效果公开",
           "summary": "IT之家 11 月 17 日消息，在今年 9 月 7 日的 HarmonyOS 7 | HUAWEI Mate XT 2 及全场景新品发布会上，鸿蒙 7 操作系统正式发布。在发布会现场，华为还剧透了全新功能 —— 小艺 AI 快捷栏。官方 PPT 页面显示，该功能开启后，小艺将在手机桌面底部的 Do",
           "source": "公开新闻源",
           "date": "2026-11-16 17:05",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://www.ithome.com/1/028/007.htm"
         },
@@ -446,7 +476,7 @@ window.WB_NEWS = {
           "source": "公开新闻源",
           "date": "2026-11-16 14:29",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://www.ithome.com/1/027/973.htm"
         },
@@ -459,36 +489,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://www.ithome.com/1/027/968.htm"
-        },
-        {
-          "title": "5499 → 4499 元：苹果 iPad mini（A20 Pro）国补后立减 1000 元",
-          "summary": "苹果 iPad mini（A20 Pro）搭载 8.5 英寸 OLED 屏幕，比上一代薄了 14%，采用 A20 Pro 芯片，今年 11 月 6 日发售，定价 5499 元起。 京东即日起发放 500 元叠加券，国补后低至 4499 元起： 点此领券 （每日限量） 京东 iPad mini A20",
-          "source": "公开新闻源",
-          "date": "2026-11-16 14:07",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/966.htm"
-        },
-        {
-          "title": "华硕“VY249HG3”23.8 英寸显示器发售：1080P 180Hz，599 元",
-          "summary": "IT之家 11 月 16 日消息，华硕旗下“VY249HG3”23.8 英寸显示器现已在京东发售，该机主打 1080P 180Hz，定价为 599 元。 京东 华硕“VY249HG3”显示器 599 元 直达链接 该机配备一块 1920x1080 分辨率 180Hz 超频 IPS 面板，亮度 300",
-          "source": "公开新闻源",
-          "date": "2026-11-16 12:37",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/956.htm"
-        },
-        {
-          "title": "OPPO Pad Air6 平板电脑发布：2.8K 120Hz 柔光屏，国补后 2209.15 元起",
-          "summary": "IT之家 11 月 16 日现场消息，OPPO Pad Air6 已发布，新品面向学习与影音场景，售价 3099 元起（限时 2599 元起，国补后 2209.15 元起），11 月 20 日开售。 IT之家注意到，OPPO Pad Air6 延续轻薄化设计路线，整机重量约 603g，厚度约 6.8",
-          "source": "公开新闻源",
-          "date": "2026-11-16 12:16",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/950.htm"
         },
         {
           "title": "国家标准全文公开系统 · 查现行有效版本",
@@ -518,67 +518,47 @@ window.WB_NEWS = {
       "icon": "🔬",
       "cadence": "30 分钟",
       "desc": "灯壳胶槽、干燥密封、光导材料与注塑缺陷，是结构仿真最常见的失效来源。",
-      "fresh": 6,
+      "fresh": 4,
       "items": [
+        {
+          "title": "TCL中环收购中环领先65.8%股权，强化半导体材料核心主业布局",
+          "summary": "36氪获悉，11月16日，TCL中环就发行股份收购控股子公司中环领先少数股权相关事项举行媒体沟通会。公司对中环领先的持股比例将从32.72%提升至98.52%，进一步强化半导体材料核心主业布局。",
+          "source": "36氪",
+          "date": "2026-11-17 01:44",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://36kr.com/newsflashes/4073153764299648?f=rss"
+        },
+        {
+          "title": "“里程碑式设计”：苹果 iPhone 20 Pro 屏幕盖板再曝，让边框淡出视野",
+          "summary": "IT之家 11 月 17 日消息，@数码大叔 于昨日（11 月 16 日）在小红书上发布视频，展示了苹果 iPhone 20 Pro 的四曲面玻璃屏幕盖板。数码博主 @i冰宇宙 随后在 X 平台转发该视频， 并表示“苹果 iPhone 20 Pro 将采用一个里程碑式设计”。 IT之家附上相关视频如",
+          "source": "公开新闻源",
+          "date": "2026-11-16 23:13",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/028/025.htm"
+        },
         {
           "title": "平均年龄25岁，00后小伙带队拿下首届蚂蚁灵波具身大模型挑战赛最高分",
           "summary": "11月16日，蚂蚁灵波首届具身大模型挑战赛总决赛结果出炉。 来自福田实验室、西北工业大学、普渡机器人、天津大学的五位选手组成的“TARS”战队获得一等奖；华中科技大学、清华大学深圳研究院、湖北元一智能的三位选手组成的“EVA”战队，以及天津大学、北京大学、中国科学院自动化研究所三位选手组成的“SST",
           "source": "公开新闻源",
           "date": "2026-11-16 14:56",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://www.leiphone.com/category/industrynews/LTOeijdeWR08fZGP.html"
         },
         {
-          "title": "OPPO Reno17 系列手机发布：全焦段 4K 超清长实况，3599 元起（国补后 3099 元起）",
-          "summary": "11-16 20:08 发布 · 由「IT之家」关键词自动聚合，点标题看原文全文",
+          "title": "AI公司转型最难的一步：如何构建AI Native的产品体系",
+          "summary": "企业把大模型接进产品之后，新的经营问题才刚刚展开。客户提出一项任务，系统能拿到哪些信息，由谁核准结果，出现例外时如何处理，都会影响AI能否持续投入使用。产品演示中的能力，需要经由完整的服务过程才能转化为客户价值。 王强宇出任百望股份首席执行官（CEO），为观察这项变化提供了一个具体切口：王强宇如何将",
           "source": "公开新闻源",
-          "date": "2026-11-16 12:08",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/948.htm"
-        },
-        {
-          "title": "杉杉股份：未来两到三年资本开支以负极材料为主",
-          "summary": "11月16日，杉杉股份在2026年第三季度业绩说明会上表示，未来两到三年，公司资本开支以负极材料为主，重点投向云南、四川等一体化基地及海外配套项目，夯实规模与成本优势；偏光片则以高端产品技改和产能优化为主，投资体量相对可控。研发投入方面，两条业务线均保持必要强度：负极围绕硅基、硬碳、快充及固态电池材",
-          "source": "36氪",
-          "date": "2026-11-16 11:53",
+          "date": "2026-11-16 02:12",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://36kr.com/newsflashes/4072374048248707?f=rss"
-        },
-        {
-          "title": "明基上架 AK900ST AI 高尔夫投影机：6000lm 亮度、短焦镜头设计，52999 元",
-          "summary": "IT之家 11 月 16 日消息，明基现已在京东上架 AK900ST“AI 高尔夫投影机”，该产品专为高尔夫模拟及多场景娱乐打造，定价为 52999 元。 京东 明基 AK900ST 投影仪 52999 元 直达链接 该机搭载激光光源，正常寿命达 20000 小时（节能为 30000 小时），具备 ",
-          "source": "公开新闻源",
-          "date": "2026-11-16 11:08",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/921.htm"
-        },
-        {
-          "title": "EPOMAKER 推出 Bamboo75 三模机械键盘：竹质机身 + 竹纹键帽",
-          "summary": "IT之家 11 月 16 日消息，EPOMAKER 上周公布了三模机械键盘 Bamboo75。该系列的 每件产品都拥有纹理独一无二的手工抛光竹材机身 ，搭配原厂 (CHERRY) 高度的 PBT + ABS 混合注塑染料热升华工艺 竹纹侧透键帽 。 Bamboo75 键盘采用 75% 配列，内部为 ",
-          "source": "公开新闻源",
-          "date": "2026-11-16 09:36",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/862.htm"
-        },
-        {
-          "title": "46mm 教育优惠 2379 元：苹果 Apple Watch Series 12 国补京东探底",
-          "summary": "苹果 Apple Watch Series 12 开售于 2026 年 9 月，GPS 款 46mm 定价 3399 元，教育优惠价 3099 元。 京东今日教育优惠版直降至 2379 元，需使用搭载 iOS27 系统的 iPhone 激活签收哦： 京东 Apple Watch Series 12 ",
-          "source": "公开新闻源",
-          "date": "2026-11-16 09:19",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/027/857.htm"
+          "url": "https://www.leiphone.com/category/ai/pzBYjjLW3Cjb6AAO.html"
         },
         {
           "title": "光导与面罩材料：PC / PMMA 的耐候、雾度与镀铝",
@@ -611,64 +591,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "Robert Pattinson 成为第七任 007",
-          "summary": "11-17 00:18 发布 · 由「Solidot」关键词自动聚合，点标题看原文全文",
+          "title": "Seedance 正杀死爱奇艺们",
+          "summary": "2016 年，《如懿传》开机，总投资 3 亿，六百人的剧组，五地转场，264 个拍摄日。2026 年，一个宝妈，哄睡完孩子，坐回电脑前，手搓她的 AI 短剧。",
           "source": "公开新闻源",
-          "date": "2026-11-16 16:18",
+          "date": "2026-11-17 02:05",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.solidot.org/story?sid=85905"
+          "url": "https://www.tmtpost.com/8207907.html"
         },
         {
-          "title": "特斯拉将投资 30 亿欧元扩建德国工厂，目标年产 100 万辆 Cybercab",
-          "summary": "IT之家 11 月 16 日消息，特斯拉周一宣布，将向位于德国柏林郊外的工厂投资 30 亿欧元 （IT之家注：现汇率约合 220.83 亿元人民币） ，扩大当地生产能力。与此同时，德国本土汽车制造商正面临成本高企、市场需求疲软等压力。 特斯拉首席执行官埃隆 · 马斯克（Elon Musk）旗下的电动",
+          "title": "Huang Leaves Nvidia. Chinese AI Buyers and Suppliers Feel It Next",
+          "summary": "Jensen Huang has resigned as Nvidia’s CEO amid personal scandals, rattling a company long identified with one leader. For Chinese firms, the shock run",
           "source": "公开新闻源",
-          "date": "2026-11-16 15:04",
+          "date": "2026-11-17 01:54",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/027/993.htm"
+          "url": "https://www.tmtpost.com/8207932.html"
         },
         {
-          "title": "百度电话会：AI云基础设施已成为收入增长的关键驱动力",
-          "summary": "36氪获悉，11月16日晚，百度在Q3财报电话会上表示，AI云基础设施已成整体收入增长的关键驱动力。三季度，该业务收入同比增长94%，较二季度进一步提速；其中，GPU云在去年同期较高基数下，收入仍同比增长191%，环比增长43%，是AI云基础设施收入增长的主要动力。本季度，GPU云、昆仑芯和MaaS",
+          "title": "三星电子和SK海力士现金持有量过去一年增加一倍多",
+          "summary": "周二公布的公司文件显示，在全球人工智能（AI）繁荣期间芯片需求强劲的推动下，韩国芯片公司三星电子和SK海力士的现金持有量在过去一年中增加了一倍多。根据季度报告，截至9月底，这两家芯片制造商的现金、现金等价物和短期金融工具合计达到329.23万亿韩元（2463.3 亿美元），远高于去年同期的136.3",
           "source": "36氪",
-          "date": "2026-11-16 12:39",
+          "date": "2026-11-17 01:49",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://36kr.com/newsflashes/4072419874132870?f=rss"
+          "url": "https://36kr.com/newsflashes/4073190012965769?f=rss"
         },
         {
-          "title": "华为轮值董事长徐直军罕见在《时代》撰文，从 1993 年出发第一视角讲述华为 33 年创新之路",
-          "summary": "IT之家 11 月 16 日消息，华为官方 X 账号 11 月 11 日分享了轮值董事长徐直军发表在美国《时代》杂志的文章《亲历华为创新之路：看见、亲历、引领》（《Inside Huawei's innovation journey: Seeing it, living it, leading it",
+          "title": "梁文锋越过聊天框",
+          "summary": "一边开源开发工具，一边设限自己的产品，梁文锋要做乔布斯了",
           "source": "公开新闻源",
-          "date": "2026-11-16 12:39",
+          "date": "2026-11-17 01:33",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/027/957.htm"
+          "url": "https://www.tmtpost.com/8207308.html"
         },
         {
-          "title": "胜宏科技：拟向多家银行申请合计707亿元授信额度",
-          "summary": "36氪获悉，胜宏科技公告，公司董事会审议通过多项议案，包括回购公司股份、向马来西亚三级全资子公司增资，以及向浦发银行、平安银行、广发银行、农业银行、渤海银行、工商银行、建设银行、中国银行等多家银行申请合计707亿元综合授信额度。综合授信业务品种主要包括但不限于流动资金贷款、贸易融资、票据业务、供应链",
-          "source": "36氪",
-          "date": "2026-11-16 11:52",
+          "title": "消息称前美团千亿业务负责人刘燕翔离职创业，联手原飞书高管推出 AI 戒指",
+          "summary": "IT之家 11 月 17 日消息，据新浪科技今日报道，原美团门票度假和交通事业部总经理刘燕翔已离职创业，联合前飞书国际化运营负责人 Garin 共同创办乎灵科技（北京）有限公司，品牌名为“乎零（Huling）”，公司已完成千万级人民币种子轮融资，天使轮融资也即将启动。 据知情人士透露，经种子轮投资人",
+          "source": "公开新闻源",
+          "date": "2026-11-17 01:28",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://36kr.com/newsflashes/4072372976538504?f=rss"
+          "url": "https://www.ithome.com/1/028/061.htm"
         },
         {
-          "title": "SemiAnalysis大幅下修AI算力预测：2028年资本开支预测下调近三成，五年硅片出货面积下调17%",
-          "summary": "AI基础设施投资热潮出现新的降温信号。半导体研究机构SemiAnalysis在最新模型更新中，大幅下调了未来数年AI加速器出货、资本开支、HBM需求和电力需求预测。其中，2028年至2030年的调整幅度尤为明显：2028年全球AI加速器资本开支预测被下调28%，2029年和2030年分别下调41%和",
-          "source": "36氪",
-          "date": "2026-11-16 11:50",
+          "title": "谷歌 Pics 升级 Nano Banana 2.1 模型：生图更细腻，改图更准确",
+          "summary": "IT之家 11 月 17 日消息，谷歌昨日（11 月 16 日）发布 Workspace 官方更新公告， 宣布旗下图像工具 Google Pics 升级至 Nano Banana 2.1 模型，进一步改善图像生成和编辑体验。 在推送方面，谷歌表示面向快速发布（Rapid Release）和定期发布（",
+          "source": "公开新闻源",
+          "date": "2026-11-17 01:16",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://36kr.com/newsflashes/4072371411293057?f=rss"
+          "url": "https://www.ithome.com/1/028/058.htm"
         },
         {
           "title": "国家知识产权局 · 审查指南与政策口径",
