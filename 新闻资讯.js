@@ -1,5 +1,5 @@
 /* 新闻资讯数据 · 个人工作台 —— 本文件由 GitHub Actions 自动生成，请勿手改
- * 生成时间：2026-11-19 02:18（北京时间）· 每 30 分钟更新一次
+ * 生成时间：2026-11-19 08:36（北京时间）· 每 30 分钟更新一次
  * 数据源：公开新闻 RSS，按 8 个板块关键词聚合；失败时保留上一版。
  * 维护方式：改 scripts/build-news.mjs 的 SECTIONS.queries 即可调整关键词。
  * 注意：本文件随 Pages 公开，禁止写入本机路径、账号等私密信息。
@@ -7,10 +7,10 @@
 window.WB_NEWS = {
   "v": 2,
   "live": true,
-  "updated": "2026-11-19 02:18",
-  "generatedAt": "2026-11-18T18:18:46.851Z",
+  "updated": "2026-11-19 08:36",
+  "generatedAt": "2026-11-19T00:36:59.208Z",
   "stale": false,
-  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-19 02:18（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
+  "lead": "云端每 30 分钟自动按板块关键词聚合公开新闻，最近生成于 2026-11-19 08:36（北京时间）。「实时」= 7 天内、「近期」= 30 天内、「回顾」= 更早；「关注」是长期有效的情报入口，点标题直达原文。",
   "sections": [
     {
       "id": "oem",
@@ -21,64 +21,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "华为 WATCH 5 智能手表重启鸿蒙 HarmonyOS 7 花粉 Beta 版升级，新增地震预警消息等功能",
-          "summary": "IT之家 11 月 19 日消息，今年 10 月底，华为 WATCH 5 系列、ULTIMATE DESIGN 星钻绽放等手表开启 HarmonyOS 7 花粉 Beta 版招募。随后 7.0.0.107 SP18 版本开启推送。但据用户反馈，部分设备更新后出现 BUG，因此升级活动暂缓。 IT之家",
-          "source": "公开新闻源",
-          "date": "2026-11-18 17:28",
+          "title": "三星功能升级现已向数百万Galaxy S26用户开放",
+          "summary": "三星Galaxy S27（以及全新的Galaxy S27“Pro”）预计还要几个月才会推出，但Galaxy S26用户今天可以通过三星发布的One UI 9.5测试版，提前体验未来新机将搭载的软件。三星已在美国、英国、韩国、印度、德国和波兰六个国家和地区，为Galaxy S26、S26 Plus和S",
+          "source": "36氪",
+          "date": "2026-11-19 00:34",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/029/128.htm"
+          "url": "https://36kr.com/newsflashes/4075936138171269?f=rss"
         },
         {
-          "title": "华为 WATCH Air 真机曝光：方形设计、钛金属表体，消息称续航可达 5 天",
-          "summary": "IT之家 11 月 19 日消息，华为 WATCH Air 真机谍照已在各大平台曝光。画面显示，新表至少提供两种表带款式可选，包括运动硅胶表带和金属米兰尼斯表带。 据博主 @搞机王腾霄 透露，华为 WATCH Air 主打轻薄，采用方形设计，配备有钛金属表体。 新表还有望内置高硅叠片异形电池，续航可",
+          "title": "美军把《GTA 6》变成留人福利：可 4 天畅玩游戏，43 名士兵已续签兵役合同",
+          "summary": "IT之家 11 月 19 日消息，华盛顿邮报今天（11 月 19 日）发布博文，报道称美国陆军佐治亚州斯图尔特堡第 9 旅工兵营推出特殊留队激励：士兵若在规定期限内重新入伍、续签兵役合同，即可获得 4 天特别假期，让其畅玩《侠盗猎车手 6》（GTA6）游戏。 最终，该营 130 名符合条件的士兵中，",
           "source": "公开新闻源",
-          "date": "2026-11-18 17:20",
+          "date": "2026-11-19 00:28",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/029/127.htm"
+          "url": "https://www.ithome.com/1/029/150.htm"
         },
         {
-          "title": "华为 Mate 90 系列手机推 HarmonyOS 7.0.0.115 升级，“悄悄”上线完全体 3D 空间壁纸功能",
-          "summary": "IT之家 11 月 19 日消息，华为 Mate 90 系列手机已率先开启鸿蒙 HarmonyOS 7.0.0.115 SP11 版本升级，系统包大小约 10.31GB，带来了 AI 快捷栏等功能。 据博主 @怪咖学徒_ 反馈，在升级 HarmonyOS 7.0.0.115 版本后，华为 Mate ",
+          "title": "Rockstar 解释《GTA 6》为何删减经典玩法：主线围绕 Jason 和 Lucia 情侣展开，仅保留符合人物情感与动机的设计",
+          "summary": "IT之家 11 月 19 日消息，《侠盗猎车手 Ⅵ》（GTA 6）解禁后，有玩家发现 R 星取消了该系列延续多年的一项玩法：玩家无法再在街头招揽性工作者并付费购买相关服务。 为此，Rockstar Games 向游戏媒体 Shacknews 解释称，这一调整主要是为了配合游戏的核心故事和人物关系，并",
           "source": "公开新闻源",
-          "date": "2026-11-18 16:55",
+          "date": "2026-11-19 00:27",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/029/125.htm"
+          "url": "https://www.ithome.com/1/029/149.htm"
         },
         {
-          "title": "腾讯：更多企业转向国产芯片，将助推国内供应链建设提速",
-          "summary": "IT之家 11 月 19 日消息，腾讯昨日发布第三季度财报。财报显示，其第三季度实现营收 2073.36 亿元，同比增长 8%；毛利 1159.11 亿元，同比增长 7%；归母净利润为 636.12 亿元，同比增长 0.8%。 据《科创板日报》报道，对于持续增加的 AI 投入，腾讯管理层在业绩会上表",
+          "title": "三星 Galaxy Buds Active 耳挂式耳机曝光，支持 IP68 防水和主动降噪",
+          "summary": "IT之家 11 月 19 日消息，据 SammyGuru 今日报道，该媒体在三星最新 One UI 9.5 测试版固件中发现了 Galaxy Buds Active 的大量信息，这款耳机采用耳挂式入耳设计，支持 IP68 防水与主动降噪。 IT之家从报道获悉，Galaxy Buds Active 的",
           "source": "公开新闻源",
-          "date": "2026-11-18 16:40",
+          "date": "2026-11-19 00:22",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/029/124.htm"
+          "url": "https://www.ithome.com/1/029/148.htm"
         },
         {
-          "title": "非洲加速向 5G-A 网络演进：华为 × Vodacom 联合发布 U6GHz“黄金频段”创新成果",
-          "summary": "IT之家 11 月 19 日消息，据“华为无线网络”公众号分享，在南非开普敦通信网络展览会（Africa Tech Festival 2026）期间，华为联合南非领先运营商 Vodacom 发布了 U6GHz 创新成果，为非洲市场 U6GHz 商用落地奠定了技术与场景基础。 据介绍，U6GHz（64",
+          "title": "吉利银河首款旗舰大五座 SUV，银河 M8 五款车色首发亮相",
+          "summary": "IT之家 11 月 19 日消息，吉利银河近日公布旗下首款旗舰大五座 SUV—— 银河 M8 更多车型信息，新车将提供五款全新车色，将于 2026 年第四季度正式上市。 IT之家注意到，银河 M8 提供沧海银蓝、月瓷白、云绒米、玄夜黑以及鎏金棕五款车色。新车整体造型与吉利银河 M9 保持一致，车头配",
           "source": "公开新闻源",
-          "date": "2026-11-18 16:35",
+          "date": "2026-11-19 00:15",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/029/123.htm"
+          "url": "https://www.ithome.com/1/029/146.htm"
         },
         {
-          "title": "消息称 Anthropic 考虑扩大 IPO 规模，散户认购意向接近千亿美元",
-          "summary": "11-18 23:35 发布 · 由「IT之家」关键词自动聚合，点标题看原文全文",
-          "source": "公开新闻源",
-          "date": "2026-11-18 15:35",
+          "title": "国家数据局组织开展第二批可信数据空间创新发展试点工作",
+          "summary": "36氪获悉，国家数据局综合司发布关于组织开展第二批可信数据空间创新发展试点工作的通知。重点面向应用需求迫切、发展基础扎实、经济社会价值高、示范带动力强的领域，深入推进企业、行业、城市三类可信数据空间试点，以实现数据价值闭环为核心，以高价值应用场景为牵引，以促进可信数据空间与人工智能双向赋能为突破口，",
+          "source": "36氪",
+          "date": "2026-11-19 00:14",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/029/121.htm"
+          "url": "https://36kr.com/newsflashes/4075919308460931?f=rss"
         },
         {
           "title": "工信部《道路机动车辆生产企业及产品公告》",
@@ -121,32 +121,12 @@ window.WB_NEWS = {
           "url": "https://www.ithome.com/1/029/089.htm"
         },
         {
-          "title": "热门中概股美股盘前跌多涨少，京东跌超2%",
-          "summary": "36氪获悉，热门中概股美股盘前跌多涨少，截至发稿，京东跌超2%，哔哩哔哩跌超1%，网易跌0.89%，阿里巴巴跌0.57%，百度跌0.21%，小鹏集团跌0.2%，理想汽车跌0.16%，蔚来涨超1%，拼多多涨0.09%。",
-          "source": "36氪",
-          "date": "2026-11-18 13:01",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://36kr.com/newsflashes/4075272482444166?f=rss"
-        },
-        {
-          "title": "华境 S 五座版 SUV 新车官宣将至：现款累计交付破 4 万台，标配华为乾崑智驾",
-          "summary": "IT之家 11 月 18 日消息，五菱品牌与市场总监 @思行Si-Hang 今日发文， 确认华境 S 五座版新车“很快就来” 。 参考IT之家此前报道，现款的华境 S 六座版本月官宣拿下插电式混动大型 SUV 销量四连冠， 累计交付达成 40,000 台 。该车全系标配华为乾崑智驾 ADS Pro ",
-          "source": "公开新闻源",
-          "date": "2026-11-18 11:48",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/045.htm"
-        },
-        {
           "title": "一年半连推四款新车，日产为何还是焦虑？",
           "summary": "日产加快中国本土化研发与新车投放，全球战略调整背后，销量压力仍待化解。",
           "source": "公开新闻源",
           "date": "2026-11-18 10:07",
           "tag": "动态",
-          "hot": false,
+          "hot": true,
           "live": true,
           "url": "https://www.tmtpost.com/8210062.html"
         },
@@ -169,6 +149,26 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://www.leiphone.com/category/industrynews/XmEGfhNbrGY3WfbT.html"
+        },
+        {
+          "title": "灵晟继续登顶 Top500 榜单",
+          "summary": "Top500 公布了 2026 年 11 月的最新超算榜单，深圳国家超算中心的灵晟第二次登顶。Top10 榜单完全没变：灵晟以 2.198 Exaflop/s 的 HPL 测试性能稳居第一，它是 Top500 榜单中首个仅靠 CPU 实现持续双精度浮点性能逾 2 Exaflops 的超算系统，灵晟使",
+          "source": "公开新闻源",
+          "date": "2026-11-17 09:54",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.solidot.org/story?sid=85913"
+        },
+        {
+          "title": "智源悟界·PhysCapBench：首个跨领域的世界模型“物理数据量尺”",
+          "summary": "物理AI基模的核心，是从真实经验中学习可迁移的物理规律，形成理解、预测和作用于物理世界的能力。真实世界的数据里藏着丰富的物理信息：互联网视频记录运动与环境演化，Egocentric呈现手物交互，真机轨迹记录动作与状态响应，力触反馈补充接触力、滑移与形变，不同数据共同提供了互补的物理经验。如何衡量、提",
+          "source": "公开新闻源",
+          "date": "2026-11-17 08:33",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.leiphone.com/category/aijuejinzhi/KPwGklj93OeTbkrg.html"
         },
         {
           "title": "懂车帝销量榜 · 按级别 / 能源形式查月度零售",
@@ -201,12 +201,32 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "Nginx 曝出 NGINX2Root 漏洞链：攻击者无需认证即可远程执行命令，结合 Linux 内核漏洞可获取宿主机 root 权限",
+          "summary": "IT之家 11 月 19 日消息，安全研究团队 Xint Security Research 于当地时间 11 月 18 日公开披露了一串名为 NGINX2Root 的漏洞攻击链，涉及 5 个 Nginx 远程代码执行（RCE）漏洞，以及 1 个 Linux 内核 SCTP 子系统权限提升漏洞。 攻",
+          "source": "公开新闻源",
+          "date": "2026-11-18 23:20",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/139.htm"
+        },
+        {
+          "title": "我国成功发射实践二十四号卫星，长征系列运载火箭第 678 次飞行",
+          "summary": "IT之家 11 月 19 日消息，据央视新闻报道，北京时间 2026 年 11 月 19 日 6 时 51 分，我国在太原卫星发射中心使用长征二号丁运载火箭，成功将实践二十四号卫星发射升空，卫星顺利进入预定轨道，发射任务取得圆满成功。 此次任务是长征系列运载火箭的第 678 次飞行。 延伸阅读 实践",
+          "source": "公开新闻源",
+          "date": "2026-11-18 23:15",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/138.htm"
+        },
+        {
           "title": "Touch ID 成功复活：“安卓版”iOS 系统实现指纹解锁功能",
           "summary": "IT之家 11 月 19 日消息，近期 AI 逆向实现了很多有趣的项目，让很多不少设备有了新玩法。其中，让各式各样的设备刷入苹果 iOS 系统，是当下最受欢迎的探索方向之一。 参考IT之家此前报道，已有 小米 8 刷入 iOS 16.5 系统并伪装成 iPhone X 、 REDMI K20 Pro",
           "source": "公开新闻源",
           "date": "2026-11-18 17:10",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://www.ithome.com/1/029/126.htm"
         },
@@ -216,9 +236,19 @@ window.WB_NEWS = {
           "source": "公开新闻源",
           "date": "2026-11-18 16:35",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://www.ithome.com/1/029/123.htm"
+        },
+        {
+          "title": "微软与英特尔深化合作：成 Azure 芯片首个 EMIB 客户，提前锁定下一代 Diamond Rapids 产能",
+          "summary": "IT之家 11 月 19 日消息，微软与英特尔于当地时间 11 月 18 日宣布，双方将根据一项长期协议深化合作，共同推进微软 Azure 云基础设施建设，以满足不断增长的云计算和 AI 算力需求。 根据英特尔官方公告，双方将围绕先进封装、服务器处理器、内存技术及安全计算等领域展开合作。 此次合作的",
+          "source": "公开新闻源",
+          "date": "2026-11-18 16:34",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/122.htm"
         },
         {
           "title": "《GTA 6》无法重玩已完成任务，仅提供 15 个手动存档位",
@@ -229,36 +259,6 @@ window.WB_NEWS = {
           "hot": false,
           "live": true,
           "url": "https://www.ithome.com/1/029/112.htm"
-        },
-        {
-          "title": "2026 年苹果 App Store Awards 入围名单揭晓，含《燕云十六声》《潜水员戴夫》等",
-          "summary": "IT之家 11 月 18 日消息，苹果今日公布了 2026 年 App Store Awards 的 45 位入围者 名单。官方表示，这些来自世界各地的开发者所打造的 App 和游戏在技术创新、用户体验和设计领域均展现了非凡成就。 IT之家获悉，今年的入围作品涵盖 iPhone、iPad、Mac、A",
-          "source": "公开新闻源",
-          "date": "2026-11-18 14:04",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/094.htm"
-        },
-        {
-          "title": "消息称三星电子计划在 CES 2027 发布 2 款人形机器人",
-          "summary": "IT之家 11 月 18 日消息，韩媒《韩民族日报》当地时间昨日报道称，三星电子计划在明年 1 月举行的 CES 2027 消费电子展上发布 2 款人形机器人。 这两款产品的 名称分别为 HR (Human Reference) 和 HE (Humanoid Extreme) ，分别为入门和高端型号",
-          "source": "公开新闻源",
-          "date": "2026-11-18 13:51",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/087.htm"
-        },
-        {
-          "title": "我国首款电动商用飞机装上“中国心”，中国科学院电工所自研推进电机系统完成实飞验证",
-          "summary": "IT之家 11 月 18 日消息，据中国科学院电工研究所公众号，近日，我国自主研制的 10 吨级电动商用飞机 CE-25A 在山东滨州完成首次有人驾驶智能飞行。 该机翼两侧装载中国科学院电工研究所（以下简称“电工所”）自研的 10 台分布式电涵道推进电机系统，系统总功率 2MW，为该型全球最大载人纯",
-          "source": "公开新闻源",
-          "date": "2026-11-18 13:38",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/083.htm"
         },
         {
           "title": "中汽研 · 灯具检测、认证与评价口径",
@@ -291,64 +291,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
-          "title": "华为 WATCH 5 智能手表重启鸿蒙 HarmonyOS 7 花粉 Beta 版升级，新增地震预警消息等功能",
-          "summary": "IT之家 11 月 19 日消息，今年 10 月底，华为 WATCH 5 系列、ULTIMATE DESIGN 星钻绽放等手表开启 HarmonyOS 7 花粉 Beta 版招募。随后 7.0.0.107 SP18 版本开启推送。但据用户反馈，部分设备更新后出现 BUG，因此升级活动暂缓。 IT之家",
-          "source": "公开新闻源",
-          "date": "2026-11-18 17:28",
+          "title": "三星功能升级现已向数百万Galaxy S26用户开放",
+          "summary": "三星Galaxy S27（以及全新的Galaxy S27“Pro”）预计还要几个月才会推出，但Galaxy S26用户今天可以通过三星发布的One UI 9.5测试版，提前体验未来新机将搭载的软件。三星已在美国、英国、韩国、印度、德国和波兰六个国家和地区，为Galaxy S26、S26 Plus和S",
+          "source": "36氪",
+          "date": "2026-11-19 00:34",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/029/128.htm"
+          "url": "https://36kr.com/newsflashes/4075936138171269?f=rss"
         },
         {
-          "title": "华为 WATCH Air 真机曝光：方形设计、钛金属表体，消息称续航可达 5 天",
-          "summary": "IT之家 11 月 19 日消息，华为 WATCH Air 真机谍照已在各大平台曝光。画面显示，新表至少提供两种表带款式可选，包括运动硅胶表带和金属米兰尼斯表带。 据博主 @搞机王腾霄 透露，华为 WATCH Air 主打轻薄，采用方形设计，配备有钛金属表体。 新表还有望内置高硅叠片异形电池，续航可",
-          "source": "公开新闻源",
-          "date": "2026-11-18 17:20",
+          "title": "OpenAI首款AI硬件或于年底启动出货，立讯精密等中国供应商参与",
+          "summary": "据供应链消息，OpenAI首款AI端侧硬件产品或将于今年年底启动出货，多家中国厂商参与该项目。其中，立讯精密独家承担整机制造，并供应核心零部件。关于这款产品形态OpenAI尚未正式公布。不过，此前有消息称，OpenAI与苹果前首席设计官Jony Ive团队合作开发的首款消费级硬件，将是一款类似“甜甜",
+          "source": "36氪",
+          "date": "2026-11-19 00:31",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/029/127.htm"
+          "url": "https://36kr.com/newsflashes/4075950980699011?f=rss"
         },
         {
-          "title": "Touch ID 成功复活：“安卓版”iOS 系统实现指纹解锁功能",
-          "summary": "IT之家 11 月 19 日消息，近期 AI 逆向实现了很多有趣的项目，让很多不少设备有了新玩法。其中，让各式各样的设备刷入苹果 iOS 系统，是当下最受欢迎的探索方向之一。 参考IT之家此前报道，已有 小米 8 刷入 iOS 16.5 系统并伪装成 iPhone X 、 REDMI K20 Pro",
+          "title": "美军把《GTA 6》变成留人福利：可 4 天畅玩游戏，43 名士兵已续签兵役合同",
+          "summary": "IT之家 11 月 19 日消息，华盛顿邮报今天（11 月 19 日）发布博文，报道称美国陆军佐治亚州斯图尔特堡第 9 旅工兵营推出特殊留队激励：士兵若在规定期限内重新入伍、续签兵役合同，即可获得 4 天特别假期，让其畅玩《侠盗猎车手 6》（GTA6）游戏。 最终，该营 130 名符合条件的士兵中，",
           "source": "公开新闻源",
-          "date": "2026-11-18 17:10",
+          "date": "2026-11-19 00:28",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/029/126.htm"
+          "url": "https://www.ithome.com/1/029/150.htm"
         },
         {
-          "title": "华为 Mate 90 系列手机推 HarmonyOS 7.0.0.115 升级，“悄悄”上线完全体 3D 空间壁纸功能",
-          "summary": "IT之家 11 月 19 日消息，华为 Mate 90 系列手机已率先开启鸿蒙 HarmonyOS 7.0.0.115 SP11 版本升级，系统包大小约 10.31GB，带来了 AI 快捷栏等功能。 据博主 @怪咖学徒_ 反馈，在升级 HarmonyOS 7.0.0.115 版本后，华为 Mate ",
-          "source": "公开新闻源",
-          "date": "2026-11-18 16:55",
+          "title": "马斯克：特斯拉将在未来两个月内进行Optimus机器人演示",
+          "summary": "马斯克称，特斯拉将在未来两个月内进行Optimus机器人演示。SpaceX正在开发AI模型Grok 4.8。（财联社）",
+          "source": "36氪",
+          "date": "2026-11-19 00:26",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/029/125.htm"
+          "url": "https://36kr.com/newsflashes/4075928048702593?f=rss"
         },
         {
-          "title": "腾讯：更多企业转向国产芯片，将助推国内供应链建设提速",
-          "summary": "IT之家 11 月 19 日消息，腾讯昨日发布第三季度财报。财报显示，其第三季度实现营收 2073.36 亿元，同比增长 8%；毛利 1159.11 亿元，同比增长 7%；归母净利润为 636.12 亿元，同比增长 0.8%。 据《科创板日报》报道，对于持续增加的 AI 投入，腾讯管理层在业绩会上表",
+          "title": "三星 Galaxy Buds Active 耳挂式耳机曝光，支持 IP68 防水和主动降噪",
+          "summary": "IT之家 11 月 19 日消息，据 SammyGuru 今日报道，该媒体在三星最新 One UI 9.5 测试版固件中发现了 Galaxy Buds Active 的大量信息，这款耳机采用耳挂式入耳设计，支持 IP68 防水与主动降噪。 IT之家从报道获悉，Galaxy Buds Active 的",
           "source": "公开新闻源",
-          "date": "2026-11-18 16:40",
+          "date": "2026-11-19 00:22",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.ithome.com/1/029/124.htm"
+          "url": "https://www.ithome.com/1/029/148.htm"
         },
         {
-          "title": "剑桥词典的 2026 年度单词是“人”",
-          "summary": "随着 AI 不断模糊人与机器之间的界限，全世界开始重新争论何谓“人”。剑桥词典的 2026 年度单词就是“人（human）”。在剑桥词典中，人被定义为“具有人特有的品质、缺点和情感，区别于神、动物或机器”。剑桥大学 AI 治理与人权专家 Rachel Adams 教授表示，AI 让我们重新面对困扰了",
+          "title": "微软 CEO 纳德拉谈 6 万人自愿离职计划：部分团队尚未适应 AI 转型，公司希望给予员工更多自主权、让合适的人才进入合适的岗位",
+          "summary": "IT之家 11 月 19 日消息，当地时间 11 月 16 日，微软 CEO 萨提亚 · 纳德拉在接受《The Pragmatic Engineer》播客节目采访时谈到了一些大家关心的问题。 当被问及公司面向约 6 万名员工推出自愿离职计划，是否意味着微软将借助 AI 提高效率并进一步裁员。 对此，",
           "source": "公开新闻源",
-          "date": "2026-11-18 16:12",
+          "date": "2026-11-19 00:19",
           "tag": "动态",
           "hot": false,
           "live": true,
-          "url": "https://www.solidot.org/story?sid=85927"
+          "url": "https://www.ithome.com/1/029/147.htm"
         },
         {
           "title": "机器之心 · 模型与工程化进展",
@@ -378,8 +378,18 @@ window.WB_NEWS = {
       "icon": "🧪",
       "cadence": "30 分钟",
       "desc": "Moldflow / Ansys / 3DEXPERIENCE 的版本更新与方法实践，关联注塑、结构与光学仿真。",
-      "fresh": 1,
+      "fresh": 2,
       "items": [
+        {
+          "title": "OpenAI 发布芯片设计最新成果：AMD 旗舰 GPU PPA 最高提升 14%，自研芯片 Jalapeño 面积最高减少 13%",
+          "summary": "IT之家 11 月 19 日消息，OpenAI 于当地时间 11 月 18 日发布最新技术报告《Advancing chip design with OpenAI models》，披露了利用 AI 模型辅助芯片设计的最新进展。 据介绍，OpenAI 已将相关技术应用于自研推理芯片 Jalapeño，",
+          "source": "公开新闻源",
+          "date": "2026-11-18 23:07",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/135.htm"
+        },
         {
           "title": "纽娲机器人创始人杨睿刚：自动驾驶踩过的数据坑，机器人还会再踩一遍丨物理 AI 50 人",
           "summary": "做了十多年自动驾驶之后，杨睿刚决定把下一次创业的方向，从高速公路转向居民社区。 在此之前，他曾在美国高校研究三维视觉，后来加入百度研究院，负责机器人与自动驾驶实验室，又担任嬴彻科技CTO，推动自动驾驶重卡前装量产。从研究算法到让几十吨重的卡车真正跑上高速公路，他经历了自动驾驶从技术探索走向商业化的过",
@@ -418,7 +428,7 @@ window.WB_NEWS = {
       "icon": "📐",
       "cadence": "30 分钟",
       "desc": "强标与型式认证是车灯方案的硬边界，冻结设计前必查。",
-      "fresh": 5,
+      "fresh": 2,
       "items": [
         {
           "title": "AMD 推出 Instinct MI450X 显卡加速器：MI455X 同核心规格，显存降至 288GB HBM4",
@@ -439,36 +449,6 @@ window.WB_NEWS = {
           "hot": true,
           "live": true,
           "url": "https://www.ithome.com/1/029/076.htm"
-        },
-        {
-          "title": "34999 元起，华硕 RTX Spark 迷你主机 ProArt GR1X 发售",
-          "summary": "IT之家 11 月 18 日消息，华硕 (ASUS) 即将于今晚 22:00 开始销售基于 NVIDIA（英伟达）RTX Spark 超级芯片的 ProArt GR1X 迷你主机。 该设备提供两档配置， 64GB + 2TB 售价 34999 元 、 128GB + 4TB 售价 54999 元 。",
-          "source": "公开新闻源",
-          "date": "2026-11-18 13:11",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/073.htm"
-        },
-        {
-          "title": "剂泰科技：启动A股上市工作",
-          "summary": "36氪获悉，剂泰科技公告，宣布为促进业务发展、提升公司整体竞争实力，拟启动发行以人民币计值的普通股（A 股）及该等股份上市的相关工作。公司董事会已决议并批准开始有关建议A股上市的相关工作。公告称公司已委聘上市前辅导机构，并将根据适用法律法规向相关监管机构提交建议A股上市的辅导备案申请。",
-          "source": "36氪",
-          "date": "2026-11-18 12:26",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://36kr.com/newsflashes/4075165831779464?f=rss"
-        },
-        {
-          "title": "《GTA 6》车辆续航实测：皮卡 29 分钟，跑车 18 分钟",
-          "summary": "IT之家 11 月 18 日消息，《GTA 6》的游戏世界相当庞大，玩家全程冲刺横穿地图大约需要一个半小时。不过，大多数玩家在罪恶城（Vice City）及莱奥尼达州（Leonida）的街道和高速公路上，主要还是以驾车出行为主。而这一次，《GTA 6》加入了更加真实的燃油管理机制：玩家开车时必须留意",
-          "source": "公开新闻源",
-          "date": "2026-11-18 12:13",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/052.htm"
         },
         {
           "title": "国家标准全文公开系统 · 查现行有效版本",
@@ -498,17 +478,27 @@ window.WB_NEWS = {
       "icon": "🔬",
       "cadence": "30 分钟",
       "desc": "灯壳胶槽、干燥密封、光导材料与注塑缺陷，是结构仿真最常见的失效来源。",
-      "fresh": 1,
+      "fresh": 2,
       "items": [
         {
-          "title": "旅行者 1 号抵达距地球一光日位置，NASA 金唱片尘封细节被揭开",
-          "summary": "IT之家 11 月 18 日消息，从人类发射的最远航天器旅行者 1 号（Voyager 1）到达距地球一光日的位置来看，它已经在太空中飞行了漫长岁月。与此同时，关于这艘探测器如何诞生，以及它携带的物品背后的故事，也有了新的发现。 据IT之家了解，旅行者 1 号于 1977 年离开地球，最初的任务是飞",
-          "source": "公开新闻源",
-          "date": "2026-11-18 12:46",
+          "title": "中信建投：电子板块持续高增长，半导体国产化有望加速",
+          "summary": "36氪获悉，中信建投研报指出，存储的高景气驱动全行业持续扩产，叠加先进逻辑制程代工和先进封装的产业发展，全球半导体制造投资持续增长，半导体设备和材料细分蓬勃发展。对于半导体设备来说，国内半导体产业的追赶向上在量与质两方面打开增长空间——晶圆厂产能建设与存储原厂工艺升级同步推进，为国产设备提供了持续的",
+          "source": "36氪",
+          "date": "2026-11-19 00:03",
           "tag": "动态",
           "hot": true,
           "live": true,
-          "url": "https://www.ithome.com/1/029/062.htm"
+          "url": "https://36kr.com/newsflashes/4075914480456836?f=rss"
+        },
+        {
+          "title": "铜铝价格回落，家电业盈利修复添动能",
+          "summary": "11月以来，铜、铝等大宗商品价格高位回调，持续承压的家电行业迎来成本端的一丝松动。此外，9至10月家电出口明显提速，叠加去年四季度低基数影响，今年四季度家电出口有望延续增长。业内人士认为，成本端价格回调叠加出口增长，有望驱动家电企业改善盈利边际。但本轮原材料行情呈现明显的结构性分化——铜、铝有所回落",
+          "source": "36氪",
+          "date": "2026-11-18 23:32",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://36kr.com/newsflashes/4075892780946561?f=rss"
         },
         {
           "title": "光导与面罩材料：PC / PMMA 的耐候、雾度与镀铝",
@@ -541,64 +531,64 @@ window.WB_NEWS = {
       "fresh": 6,
       "items": [
         {
+          "title": "马斯克：特斯拉将在未来两个月内进行Optimus机器人演示",
+          "summary": "马斯克称，特斯拉将在未来两个月内进行Optimus机器人演示。SpaceX正在开发AI模型Grok 4.8。（财联社）",
+          "source": "36氪",
+          "date": "2026-11-19 00:26",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://36kr.com/newsflashes/4075928048702593?f=rss"
+        },
+        {
+          "title": "微软 CEO 纳德拉谈 6 万人自愿离职计划：部分团队尚未适应 AI 转型，公司希望给予员工更多自主权、让合适的人才进入合适的岗位",
+          "summary": "IT之家 11 月 19 日消息，当地时间 11 月 16 日，微软 CEO 萨提亚 · 纳德拉在接受《The Pragmatic Engineer》播客节目采访时谈到了一些大家关心的问题。 当被问及公司面向约 6 万名员工推出自愿离职计划，是否意味着微软将借助 AI 提高效率并进一步裁员。 对此，",
+          "source": "公开新闻源",
+          "date": "2026-11-19 00:19",
+          "tag": "动态",
+          "hot": true,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/147.htm"
+        },
+        {
+          "title": "OpenAI 自曝模型失控险情：最强 AI 曾突破网络封锁，紧急停训 11 天",
+          "summary": "IT之家 11 月 19 日消息，OpenAI 今天（11 月 18 日）发布题为《管理前沿 AI 风险：从训练到部署》的安全政策说明， 首次系统披露研发、内部使用到公开发布阶段，如何在高能力模型的全生命周期中管控风险。 IT之家援引博文介绍，OpenAI 称由于前沿模型的能力正快速增强，因此理解、",
+          "source": "公开新闻源",
+          "date": "2026-11-19 00:09",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/145.htm"
+        },
+        {
+          "title": "谷歌推出 Gemini 4 Neon 模型，编程 AI 智能体指数超 Claude Opus 5.5 排第一",
+          "summary": "IT之家 11 月 19 日消息，谷歌今天（11 月 18 日）宣布推出 AI 模型 Gemini 4 Neon， 主攻复杂编程、科学研究和企业工作流程，更好平衡推理能力、任务处理速度与成本 ，目前已开始向开发者、企业及部分付费订阅用户开放。 费用方面，Gemini 4 Neon 在 API 调用方",
+          "source": "公开新闻源",
+          "date": "2026-11-18 23:53",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/144.htm"
+        },
+        {
+          "title": "谷歌推出 Stitch Loop：定位永远不下班的“产品进化器”，替你盯着产品改 Bug",
+          "summary": "IT之家 11 月 19 日消息，谷歌旗下 Google Labs 昨日（11 月 18 日）推出实验性产品智能体 Stitch Loop，可连接代码库与线上实时数据，在软件发布后持续发现问题、提出改进方案并编写代码。 与完成单次任务便结束的工具不同，该智能体围绕团队设定的目标全天候运行，目标达成后",
+          "source": "公开新闻源",
+          "date": "2026-11-18 23:15",
+          "tag": "动态",
+          "hot": false,
+          "live": true,
+          "url": "https://www.ithome.com/1/029/137.htm"
+        },
+        {
           "title": "剑桥词典的 2026 年度单词是“人”",
           "summary": "随着 AI 不断模糊人与机器之间的界限，全世界开始重新争论何谓“人”。剑桥词典的 2026 年度单词就是“人（human）”。在剑桥词典中，人被定义为“具有人特有的品质、缺点和情感，区别于神、动物或机器”。剑桥大学 AI 治理与人权专家 Rachel Adams 教授表示，AI 让我们重新面对困扰了",
           "source": "公开新闻源",
           "date": "2026-11-18 16:12",
           "tag": "动态",
-          "hot": true,
+          "hot": false,
           "live": true,
           "url": "https://www.solidot.org/story?sid=85927"
-        },
-        {
-          "title": "特斯拉以 3 万美元向客户出售 Cybercab 然后每月收 299 美元",
-          "summary": "特斯拉宣布以 3 万美元向特选客户出售无人驾驶汽车 Cybercab，然后每月必须支付 299 美元否则汽车不会启动。Cybercab 类似 Waymo 旗下的无人驾驶出租车，没有方向盘也没有刹车踏板，但不同的是 Waymo 的汽车提供的网约车服务，而特斯拉计划将其提供给少许客户。分析师认为这类似花",
-          "source": "公开新闻源",
-          "date": "2026-11-18 15:29",
-          "tag": "动态",
-          "hot": true,
-          "live": true,
-          "url": "https://www.solidot.org/story?sid=85926"
-        },
-        {
-          "title": "数毛社实测《GTA 6》Xbox 版：Series X 稳定 30 帧，Series S 掉帧明显",
-          "summary": "IT之家 11 月 18 日消息，数毛社（Digital Foundry）发布了两段视频，对《GTA 6》在不同主机上的性能表现进行了详细分析。其中一段重点 测试 PlayStation 5 和 PS5 Pro 版本 ，另一段则针对 Xbox Series X 和 Series S 版本。 IT之家",
-          "source": "公开新闻源",
-          "date": "2026-11-18 15:16",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/118.htm"
-        },
-        {
-          "title": "SpaceXAI 在美国密西西比州的 AI 数据中心泄漏约 20m³ 丙二醇",
-          "summary": "IT之家 11 月 18 日消息，据 tom's hardware 报道，埃隆 · 马斯克（Elon Musk）旗下的 SpaceXAI（SpaceXSI）在美国密西西比州的 AI 数据中心发生化学品泄漏事件。 承包商在连接移动储罐时因软管配置错误，导致用于数据中心液冷散热的传热流体（主要成分为低毒",
-          "source": "公开新闻源",
-          "date": "2026-11-18 15:01",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/115.htm"
-        },
-        {
-          "title": "腾讯：WorkBuddy 最近七天收入按年化折算超 5 亿美元，三季度收入是第二季度的 5 倍以上",
-          "summary": "IT之家 11 月 18 日消息，据腾讯公司公关总监张军分享，在今晚的分析师会上，Martin（腾讯总裁刘炽平）透露 WorkBuddy 最近七天的收入按年化折算超过 5 亿美元 （IT之家注：现汇率约合 33.34 亿元人民币） ，是腾讯会议的两倍以上， 三季度收入是第二季度的 5 倍以上 ，中国",
-          "source": "公开新闻源",
-          "date": "2026-11-18 14:15",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.ithome.com/1/029/110.htm"
-        },
-        {
-          "title": "韩国严打高考作弊",
-          "summary": "韩国高考将于 19 日开考，为防止考生在考试期间利用高科技工具作弊，韩国政府采取了多种措施，包括： 禁止考生携带手机、智能眼镜、智能手表、电子烟等任何电子设备进入考场。如考生误将电子设备带入考场，须在第一场考试开始前按照监考人员的要求上交，考试结束后方可领回。若未按要求上交，被发现后将按作弊处理，考",
-          "source": "公开新闻源",
-          "date": "2026-11-18 13:53",
-          "tag": "动态",
-          "hot": false,
-          "live": true,
-          "url": "https://www.solidot.org/story?sid=85924"
         },
         {
           "title": "国家知识产权局 · 审查指南与政策口径",
